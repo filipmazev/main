@@ -32,11 +32,8 @@ void error() {
 char hexa(int subtraction) {
 char hexaReturn=' ';
     switch(subtraction) {
-    case 10: hexaReturn = 'A'; break; case 15: hexaReturn = 'F'; break;
-    case 11: hexaReturn = 'B'; break; case 16: hexaReturn = 'G'; break;
-    case 12: hexaReturn = 'C'; break; case 17: hexaReturn = 'H'; break;
-    case 13: hexaReturn = 'D'; break; case 18: hexaReturn = 'I'; break;
-    case 14: hexaReturn = 'E'; break; case 19: hexaReturn = 'J'; break; }
+    case 10: hexaReturn = 'A'; break; case 15: hexaReturn = 'F'; break; case 11: hexaReturn = 'B'; break; 
+    case 12: hexaReturn = 'C'; break; case 13: hexaReturn = 'D'; break; case 14: hexaReturn = 'E'; break; }
 return hexaReturn; }
 
 int decimals(double number, int decimalP) {
