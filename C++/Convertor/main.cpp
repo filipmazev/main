@@ -33,7 +33,7 @@ char hexa(int subtraction) {
 char hexaReturn=' ';
     switch(subtraction) {
     case 10: hexaReturn = 'A'; break; case 15: hexaReturn = 'F'; break; case 11: hexaReturn = 'B'; break; 
-    case 12: hexaReturn = 'C'; break; case 13: hexaReturn = 'D'; break; case 14: hexaReturn = 'E'; break; }
+    case 12: hexaReturn = 'C'; break; case 13: hexaReturn = 'D'; break; case 14: hexaReturn = 'E'; break; case 15: 'F'; break; }
 return hexaReturn; }
 
 int decimals(double number, int decimalP) {
