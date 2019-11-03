@@ -111,8 +111,7 @@ long_double_t numberAdd, A[1000], B[1000], number, toDecimal=0; string cnv, cnv2
     cout<<" CONVERTING FROM: "<<endl; cout<<endl;
     cout<<" (1) - DECIMAL - (1) "<<endl;
     cout<<" (2) - BINARY  - (2) "<<endl;
-    cout<<" (3) - OCTAL   - (3) "<<endl;
-    cout<<endl<<" Enter: "; cin>>convChs;
+    cout<<" (3) - OCTAL   - (3) "<<endl;     cout<<endl<<" Enter: "; cin>>convChs;
         while(cin.fail()){error(); cin>>convChs;} while(convChs > 3 || convChs < 1){
     cout<<endl<<" Enter valid option: ";
             cin>>convChs; while(cin.fail()){error(); cin>>convChs;}}
