@@ -57,7 +57,7 @@ int main(){
         int c, h;
          cout<<"Vnesi edna od stranite a,b ili c: ";  cin>>c;  cout<<"Vnesi ja visinata h: ";  cin>>h;
          cout<<"Plostina na triagolnik e: "<<(c*h)/2<<"\n";
-    } // ZA TRIAGOLNIK IMA USTE 3 FORMULI TIE ODPOSLE KE GI DODADAM
+    } /* ZA TRIAGOLNIK IMA USTE 3 FORMULI TIE ODPOSLE KE GI DODADAM */ 
     if (b == 6){
         int c, h, l;
          cout<<"Vnesi ja stranata a: ";  cin>>c;  cout<<"Vnesi ja stranata b: ";  cin>>h;
