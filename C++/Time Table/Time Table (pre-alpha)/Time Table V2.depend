@@ -1,0 +1,104 @@
+# depslib dependency file v1.0
+1532338855 source:c:\users\fico_pico\documents\napreden c++\time table v2\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<limits.h>
+	<cstdlib>
+	<stdio.h>
+	<math.h>
+
+1532871143 source:c:\users\fico_pico\documents\napreden c++\time table\time table\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<limits.h>
+	<cstdlib>
+	<stdio.h>
+	<math.h>
+	<fstream>
+	<time.h>
+
+1532423408 source:h:\time table\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<limits.h>
+	<cstdlib>
+	<stdio.h>
+	<math.h>
+
+1532468138 source:c:\users\fico_pico\documents\napreden c++\time table\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<limits.h>
+	<cstdlib>
+	<stdio.h>
+	<math.h>
+	<fstream>
+
+1532471204 source:c:\users\fico_pico\documents\napreden c++\time table\time table - update 1.00\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<limits.h>
+	<cstdlib>
+	<stdio.h>
+	<math.h>
+	<fstream>
+
+1532678878 source:c:\users\user\documents\time table\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<limits.h>
+	<cstdlib>
+	<stdio.h>
+	<math.h>
+	<fstream>
+
+1532703349 source:c:\users\fico_pico\documents\napreden c++\time table\time table - alogritham and miliseconds update\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<limits.h>
+	<cstdlib>
+	<stdio.h>
+	<math.h>
+	<fstream>
+
+1532704634 source:c:\users\fico_pico\documents\napreden c++\time table\time table - alogritham update\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<limits.h>
+	<cstdlib>
+	<stdio.h>
+	<math.h>
+	<fstream>
+
+1532904515 source:c:\users\fico_pico\documents\napreden c++\time table\time table\time table v2\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<limits.h>
+	<cstdlib>
+	<stdio.h>
+	<math.h>
+	<fstream>
+	<time.h>
+	<gmp.h>
+
+1532904515 source:c:\users\fico_pico\documents\napreden c++\time table\time table v2\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<limits.h>
+	<cstdlib>
+	<stdio.h>
+	<math.h>
+	<fstream>
+	<time.h>
+	<gmp.h>
+
