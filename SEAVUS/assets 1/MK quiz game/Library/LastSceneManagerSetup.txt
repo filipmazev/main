@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/fico_pico/Documents/my first game/Assets/makedonskiquiz.unity
+  isLoaded: 1
+  isActive: 1
