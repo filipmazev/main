@@ -23,7 +23,7 @@ int main()
 
     for ( int i=0; i<n; i++ ){
         for ( int j=0; j<n; j++ ){
-            A[i][j] = '.'; } }
+            A[i][j] = '-'; } }
 
     for ( int i=0; i<n; i++ )
     {   cout<<" ";
@@ -35,18 +35,18 @@ int main()
             if ( (a == false) && ( d2 != ((n/2)+1) ) && ( d2 != (n/2) ) ){
                     if ( i == j ) {
                         if ( (i+j) < (n-1)){ cout<<" D1 | ";  } cout<<" "<<A[i][j];
-                        if ( (i+j) >= n ){ cout<<" | D1"; } }
+                        if ( (i+j) >= n ){ cout<<" | D1 "; } }
                     else if ( (i+j) == (n-1) ) {
                         if ( j < i ){ cout<<" D2 | "; } cout<<" "<<A[i][j];
-                        if ( j > i){ cout<<" | D2"; } }
+                        if ( j > i){ cout<<" | D2 "; } }
                     else { cout<<" "; } }
                 else if ( n%2 == 0 ){ cout<<" "; }
-            else{ if ( i == j ) { cout<<" D1 | "; cout<<" "<<A[i][j]; cout<<" | D2"; }
-            else if ( (i+j) == (n-1) ) { cout<<" "<<A[i][j]; cout<<" | D2"; } else { cout<<" "; } }
-                if ( ( i < j ) && ( (i + j) <= (n-2) ) ) { cout<<" "; }
-                if ( (j < i) && ((i+j) < (n-1)) ) { if ( n%2 != 0 ) cout<<"*"; else cout<<" ";  }
-                if ( ( i > j ) && ( (i + j) > (n-1) ) ) { cout<<" "; }
-                if ( (j > i) && ((i+j) >= n) ){ if ( n%2 != 0 ) cout<<"*"; else cout<<" "; } }
+            else{ if ( i == j ) { cout<<" D1 | "; cout<<" "<<A[i][j]; cout<<" | D2 "; }
+            else if ( (i+j) == (n-1) ) { cout<<" "<<A[i][j]; cout<<" | D2 "; } else { cout<<" "; } }
+                if ( ( i < j ) && ( (i + j) <= (n-2) ) ) { cout<<"*"; }
+                if ( (j < i) && ((i+j) < (n-1)) ) { cout<<" "; }
+                if ( ( i > j ) && ( (i + j) > (n-1) ) ) { cout<<"*"; }
+                if ( (j > i) && ((i+j) >= n) ){ cout<<" "; } }
         cout<<endl;
     }
 
