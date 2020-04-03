@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1583254322 source:c:\users\filip\documents\napreden c++\zadachi shkolo\schtest2\main.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<sstream>
+	<windows.h>
+	<direct.h>
+	<float.h>
+	<string>
+

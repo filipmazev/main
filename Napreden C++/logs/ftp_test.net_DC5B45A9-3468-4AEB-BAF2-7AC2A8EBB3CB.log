@@ -1,0 +1,19 @@
+== Info:   Trying 85.214.110.167:21...
+== Info: TCP_NODELAY set
+== Info: Connection failed
+== Info: connect to 85.214.110.167 port 21 failed: Connection refused
+== Info: Failed to connect to test.net port 21: Connection refused
+== Info: Closing connection 0
+== Info: Hostname test.net was found in DNS cache
+== Info:   Trying 85.214.110.167:21...
+== Info: TCP_NODELAY set
+== Info: Connection failed
+== Info: connect to 85.214.110.167 port 21 failed: Connection refused
+== Info: Failed to connect to test.net port 21: Connection refused
+== Info: Closing connection 1
+== Info:   Trying 85.214.110.167:21...
+== Info: TCP_NODELAY set
+== Info: Connection failed
+== Info: connect to 85.214.110.167 port 21 failed: Connection refused
+== Info: Failed to connect to test.net port 21: Connection refused
+== Info: Closing connection 0

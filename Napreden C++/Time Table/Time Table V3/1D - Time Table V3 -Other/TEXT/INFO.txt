@@ -1,0 +1,97 @@
+void info(int i)
+{
+    system("cls");
+
+    if ( i == 0)
+    {
+        Sleep(150);cout<<endl; cout<<" TIME CALCULATOR                                             |"<<endl;
+        Sleep(50);cout<<" SCIENTIFIC - allows the conversion of days, hours, minutes, |"<<endl;
+        Sleep(50);cout<<" seconds, milliseconds, microseconds and nanoseconds         |"<<endl;
+        Sleep(50);cout<<" into the afore mentioned and years and leap years if that   |"<<endl;
+        Sleep(50);cout<<" option is enabled, offers direct and standard conversion of |"<<endl;
+        Sleep(50);cout<<" the numbers, some of this options may be disabled depending |"<<endl;
+        Sleep(50);cout<<" on your current selected mode, for more information on this |"<<endl;
+        Sleep(50);cout<<" open up the information panel in the extra options option   |"<<endl;
+        Sleep(50);cout<<" by entering 3 in this menu, and 0 in the one that follows   |"<<endl;
+        Sleep(150);cout<<endl; cout<<" DATE CALCULATOR                                             |"<<endl;
+        Sleep(50);cout<<" this mode allows entry of a date after which it gives out   |"<<endl;
+        Sleep(50);cout<<" the amount of days for a given month and year, shows the    |"<<endl;
+        Sleep(50);cout<<" day that the entered date is, was or will be, it shows how  |"<<endl;
+        Sleep(50);cout<<" many days the month has, what day a specific date was       |"<<endl;
+        Sleep(50);cout<<" (works up to 2300s and as low as 1700s for anything above   |"<<endl;
+        Sleep(50);cout<<" or below this years, the program will show the day that the |"<<endl;
+        Sleep(50);cout<<" entered month in the entered year started with, the only    |"<<endl;
+        Sleep(50);cout<<" difference being that above or bellow said numbers the      |"<<endl;
+        Sleep(50);cout<<" program will not take into a count the entered days for     |"<<endl;
+        Sleep(50);cout<<" this process ), shows time past since and time until the    |"<<endl;
+        Sleep(50);cout<<" date entered, standard converted and dynamic direct         |"<<endl;
+        Sleep(50);cout<<" conversion depending on mode, for more information on this  |"<<endl;
+        Sleep(50);cout<<" open up the information panel in the extra options option   |"<<endl;
+        Sleep(150);cout<<endl; cout<<" EXTRA OPTIONS                                               |"<<endl;
+        Sleep(50);cout<<" opens up a menu with extra options such as the options to   |"<<endl;
+        Sleep(50);cout<<" exit or restart the program, change your mode or output     |"<<endl;
+        Sleep(50);cout<<" options,disable or enable year conversion or do not disturb |"<<endl;
+        Sleep(50);cout<<" *for more information on this open up the open up the       |"<<endl;
+        Sleep(50);cout<<" information panel in the extra options option               |"<<endl;
+
+        Sleep(150);cout<<endl; cout<<" i)HINT - enter 3 then 0 to open info for extra options menu |"<<endl;
+        Sleep(50);cout<<" i)HINT - scroll up if all information isn't being displayed |"<<endl;
+    }
+
+    if ( i == 3 )
+    {
+        Sleep(150);cout<<endl; cout<<" YEAR CONVERSION OPTIONS INFO                                | "<<endl;
+        Sleep(50);cout<<" pressing year conversion options will open up a menu        |"<<endl;
+        Sleep(50);cout<<" that allows the option of turning year conversion on/off    |"<<endl;
+        Sleep(50);cout<<" ON -  any of the offered options in time calculator after   |"<<endl;
+        Sleep(50);cout<<" being entered will be converted into years and leap years   |"<<endl;
+        Sleep(50);cout<<" OFF - disables the conversion into years and leap years     |"<<endl;
+        Sleep(50);cout<<endl; cout<<" DISABLE DO NOT ASK FOR MODE                                 |"<<endl;
+        Sleep(50);cout<<" do not ask for mode is an option in this program that when  |"<<endl;
+        Sleep(50);cout<<" activated turns off the prompt for mode selection at each   |"<<endl;
+        Sleep(50);cout<<" start of the program, if this is already disabled it will   |"<<endl;
+        Sleep(50);cout<<" ask if you would like to re-enable the beginning prompt     |"<<endl;
+        Sleep(150);cout<<endl; cout<<" OUTPUT OPTIONS                                              |"<<endl;
+        Sleep(50);cout<<" pressing output options will display your current output    |"<<endl;
+        Sleep(50);cout<<" mode, a prompt will appear asking you if you would like     |"<<endl;
+        Sleep(50);cout<<" to change your current output mode, selecting no will       |"<<endl;
+        Sleep(50);cout<<" return you to the start menu, selecting yes opens up a menu |"<<endl;
+        Sleep(50);cout<<" where you can choose between three different output options |"<<endl;
+        Sleep(50);cout<<" NORMAL - displays the outputted results as whole numbers    |"<<endl;
+        Sleep(50);cout<<" SCIENTIFIC - displays the outputted results as e+0x numbers |"<<endl;
+        Sleep(50);cout<<" if the number is large or small enough to be shown as such  |"<<endl;
+        Sleep(50);cout<<" AUTO - displays the outputted results as whole numbers if   |"<<endl;
+        Sleep(50);cout<<" your mode is in normal or advanced, and show them as e+0x   |"<<endl;
+        Sleep(50);cout<<" if you have previously selected the scientific mode         |"<<endl;
+        Sleep(150);cout<<endl; cout<<" CHANGE MODE                                                 |"<<endl;
+        Sleep(50);cout<<" displays your current mode and asks you if you would want   |"<<endl;
+        Sleep(50);cout<<" to change it or not, selecting no will send you back to the |"<<endl;
+        Sleep(50);cout<<" start menu, selecting yes  opens up a menu with three mode  |"<<endl;
+        Sleep(50);cout<<" offerings, standard, advanced and scientific                |"<<endl;
+        Sleep(50);cout<<" STANDARD - allows the conversion of days, hours, minutes    |"<<endl;
+        Sleep(50);cout<<" and seconds into the afore mentioned and years and leap     |"<<endl;
+        Sleep(50);cout<<" years if that option is enabled, applies afore mentioned    |"<<endl;
+        Sleep(50);cout<<" auto options for the output options if that is selected     |"<<endl;
+        Sleep(50);cout<<" ADVANCED - allows the conversion of days, hours, minutes,   |"<<endl;
+        Sleep(50);cout<<" seconds and millisecond's into the afore mentioned and      |"<<endl;
+        Sleep(50);cout<<" years and leap years if that option is enabled, offers      |"<<endl;
+        Sleep(50);cout<<" direct and standard conversion of the numbers, also adds    |"<<endl;
+        Sleep(50);cout<<" better precision of 15 decimal places and standard digits,  |"<<endl;
+        Sleep(50);cout<<" also applies afore mentioned auto options for the output    |"<<endl;
+        Sleep(50);cout<<" SCIENTIFIC - allows the conversion of days, hours, minutes, |"<<endl;
+        Sleep(50);cout<<" seconds, milliseconds, microseconds and nanoseconds         |"<<endl;
+        Sleep(50);cout<<" into the afore mentioned and years and leap years if that   |"<<endl;
+        Sleep(50);cout<<" option is enabled, offers direct and standard conversion of |"<<endl;
+        Sleep(50);cout<<" the numbers, also adds better precision of 50 decimal       |"<<endl;
+        Sleep(50);cout<<" places and standard digits, also applies afore mentioned    |"<<endl;
+        Sleep(50);cout<<" auto options for the output if that option is selected      |"<<endl;
+        Sleep(150);cout<<endl; cout<<" RESTART, BACK and EXIT                                      |"<<endl;
+        Sleep(50);cout<<" restart - program is restarted if this option is selected   |"<<endl;
+        Sleep(50);cout<<" back - you are returned to the main menu if you select this |"<<endl;
+        Sleep(50);cout<<" exit - the program is closed if this option is selected     |"<<endl;
+
+        Sleep(150);cout<<endl; cout<<" i)HINT - scroll up if all information isn't being displayed |"<<endl;
+    }
+
+    cout<<endl; cout<<" "; system("PAUSE"); system("cls"); Sleep(1000);
+}

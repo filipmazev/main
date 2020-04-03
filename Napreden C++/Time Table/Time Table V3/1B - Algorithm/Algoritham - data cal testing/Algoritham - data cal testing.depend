@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1534092315 source:c:\users\fico_pico\documents\napreden c++\time table\time table v3\algoritham - data cal testing\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<cstdlib>
+	<fstream>
+	<sstream>
+	<cmath>
+	<gmp.h>
+	<cstdint>
+	<iomanip>
+	<ctime>
+

@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1561835152 source:c:\users\filip\documents\napreden c++\cal+\main.cpp
+	<iostream>
+	<windows.h>
+	<float.h>
+	<cstdlib>
+	<fstream>
+	<sstream>
+	<cmath>
+	<cstdint>
+	<iomanip>
+	<ctime>
+	<direct.h>
+

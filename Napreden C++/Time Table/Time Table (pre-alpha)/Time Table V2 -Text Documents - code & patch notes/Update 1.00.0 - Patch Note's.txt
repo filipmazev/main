@@ -1,0 +1,14 @@
+-added direct conversion of minutes, hours, seconds and days
+-added modes, the ability to turn them off and on and change them
+-added do not disturb mode where it doesnt ask you for a mode every time, it remembers the previous mode used
+-added advanced mode - gives out scientific numbers, doesnt show the seconds as full and removes the (beta)
+-added new algorithm for better calculation in advanced mode
+-added milisconds using the aformentioned alogorithm in advanced mode
+-added standard mode - gives out fixed numbers, shows the seconds as a rounded number
+-added error messages for too big numbers and the option to disable them
+-fixed bug where every time the direct conversions would show without decimals or as a e+00x number
+-fixed bug where seconds would go bellow 0 (example: -21.324 seconds), now shows 0 seconds
+-fixed error where every number would go bellow 0, added an error message and guide
+-major text and context bug fixes, including error messages and number variations
+-improved code structuring and look
+-repairs to the space-time continuum, etc.

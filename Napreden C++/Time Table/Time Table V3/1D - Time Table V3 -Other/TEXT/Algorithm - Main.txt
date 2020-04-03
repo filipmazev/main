@@ -1,0 +1,75 @@
+int digits2(int x2)
+{
+    long long int digit = 1;
+    while (x2 >= 0){
+    digit *= 10;
+    x2 -= 1;}
+    return digit;
+}
+
+long_double_t decimal(long_double_t x)
+{
+  x -= (long long int) x;
+  return x;
+}
+
+long_double_t decimal2(long_double_t x1)
+{
+    long long int x2 = x1 * digits2(digits(x1));
+    long_double_t x3 = x2 % digits2(digits(x1));
+    long_double_t x4 = x3 / digits2(digits(x1));
+
+    return x4;
+}
+
+long_double_t HMain(long_double_t day)
+{
+    long_double_t hour1 = decimal2(day) * 24;
+    long_double_t hour2 = hour1;
+
+    return hour2;
+}
+
+long_double_t MMain(long_double_t hour)
+{
+    long_double_t minute1 = decimal2(hour) * 60;
+    long_double_t minute2 = minute1;
+
+    return minute2;
+}
+
+long_double_t SMain(long_double_t minute)
+{
+    long_double_t second1 = decimal2(minute) * 60;
+    long_double_t second2 = second1;
+
+    return second2;
+}
+
+long_double_t MlsMain(long_double_t second)
+{
+    long_double_t millisecond1 = decimal2(second) * 60;
+    long_double_t millisecond2 = millisecond1;
+
+    return millisecond2;
+}
+
+if (chs == 1){ sum /= 86400; c6 = "SECOND"; c62 = "second";}
+        if (chs == 2){ sum /= 1440; c6 = "MINUTE"; c62 = "minute";}
+            if (chs == 3){ sum /= 24;  c6 = "HOUR"; c62 = "hour";}
+                if (chs == 4){ sum = sum; c6 = "DAY"; c62 = "day";}
+
+    dMain = sum; long_double_t hours = decimal(sum) * 24; hMain = hours;
+
+        long_double_t minutes = MMain(hours); mMain = minutes;
+
+            long_double_t seconds = SMain(minutes); sMain = seconds;;
+
+                long_double_t milliseconds = decimal(seconds) * 1000; mlsMain = milliseconds;
+
+                if (chs == 1 && sumOriginal == ceil(seconds)){
+                    sMain = ceil(seconds);mlsMain = 0;}
+
+                    if (chs == 2 && sumOriginal == ceil(minutes)){
+                        mMain = ceil(minutes); sMain = 0; mlsMain = 0;}
+
