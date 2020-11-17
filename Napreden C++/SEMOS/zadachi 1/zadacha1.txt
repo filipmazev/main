@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int m=3, n=3;
+int A[3][3]={{1, 0, 1}, {0, 1, 0}, {1, 0, 1}};
+
+bool check=true;
+for(int i=0; i<m; i++)
+{
+	for(int j=0; j<n; j++)
+	{
+		if(A[i][j]!=A[j][i]) check=false;
+	}
+}
+if(check==true)
+{
+	for(int i=0; i<m; i++)
+	{
+		for(int j=0; j<n; j++)
+		{	
+		cout<<A[j][i]<<" ";
+		}
+	cout<<endl;
+	}		
+}
+if(check==false) cout<<"ne e simetrichna"<<endl;
+
+int C[m][n];			
+for(int i=0; i<m; i++)
+{
+	for(int j=0; j<n; j++)
+	{
+		C[i][j]=A[j][i];
+	}
+}
+bool check2=true;	
+for(int i=0; i<m; i++)
+{
+	for(int j=0; j<n; j++)
+	{
+		if(C[i][j]!=A[j][i]) check2=false;;
+	}
+}
+cout<<" "<<endl;
+cout<<"matricata e:"<<" ";
+cout<<endl;
+if(check2==true)
+{
+	for(int i=0; i<m; i++)
+	{
+		for(int j=0; j<n; j++)
+		{	
+		cout<<C[i][j]<<" ";
+		}
+	cout<<endl;
+	}		
+}			
+if(check2==false) cout<<"transponiranata ne e simetrichna"<<endl;		
+		
+return 0;
+}

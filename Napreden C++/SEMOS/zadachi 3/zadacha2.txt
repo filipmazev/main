@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main(){
+int A[3][2]={
+{1, 2}, {2, 3}, {1, 2} };
+int B[3][2]={
+{0, 1}, {2, -1}, {-1, 2} };
+int Aver=sizeof(A)/sizeof(A[0]);
+int Ahor=sizeof(A[0])/sizeof(int);
+int Bver=sizeof(B)/sizeof(B[0]);
+int Bhor=sizeof(B[0])/sizeof(int);
+if(Aver==Bver && Ahor==Bhor){
+for(int i=0; i<Aver; i++){
+for(int j=0; j<Ahor; j++){
+int R[Aver][Ahor];
+R[i][j]=0;}}}
+for(int i=0; i<Aver; i++){
+for(int j=0; j<Ahor; j++){
+int R[Aver][Ahor];
+R[i][j]=A[i][j] - B[i][j];}}
+cout << "Razlikata e " << endl;
+for(int i=0;i<Aver;i++){
+for(int j=0;j<Ahor;j++){
+int R[Aver][Ahor];
+cout<<R[i][j]<<endl;}
+cout<<endl;}
+return 0;}

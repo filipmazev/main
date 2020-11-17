@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class Vreme{
+    int casovi;
+    int minuti;
+    int sekundi;
+
+public:
+        Vreme(int c, int m, int s)
+        {
+            casovi = c;
+            minuti = m;
+            sekundi = s;
+        }
+    int vratiSekundi()
+    {
+        return 3600*casovi+60*minuti+sekundi;
+    }
+
+    ~Vreme(){}//dekonstrukot
+};
+
+
+int main()
+{
+    Vreme v(3,7,5);
+    cout<<v.vratiSekundi();
+        return 0;
+}

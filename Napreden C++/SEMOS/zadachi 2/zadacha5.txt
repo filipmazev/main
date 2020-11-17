@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int chrbr, i, j=chrbr - 1;
+cout<<"vnesi broj na karakteri: "<<endl;
+cin>>chrbr;
+char a[chrbr];
+for( i = 0; i < chrbr; i++){
+cin>>a[i];}
+bool check=true;
+for(int i=0; i<chrbr%2; i++) {
+if(a[i] != a[j])
+check=true; j--;}
+if(check==true){
+cout<<"palindrom "<<endl;}
+if(check==false) {
+cout<<"ne e palindrom "<<endl;}
+return 0;}

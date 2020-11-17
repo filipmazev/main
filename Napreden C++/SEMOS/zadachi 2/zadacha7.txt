@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main(){
+int chrbr, i, apoz=0, aneg=0;
+cout<<"vnesi broj na broevi koi kje gi vnesuvash: ";
+cin>>chrbr;
+int a[chrbr];
+for ( i=0; i<chrbr; i++){
+cin>>a[i];
+if ( a[i] < 0 ){
+aneg += a[i];}
+if ( a[i] > 0 ){
+apoz += a[i];}}
+cout<<" zbir na pozitivni: "<<apoz<<endl;
+cout<<" zbir na negativni: "<<aneg<<endl;
+return 0;}

@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main(){
+int chrbr, i;
+cout<<"vnesi broj na broevi koi kje gi vnesuvash: ";
+cin>>chrbr;
+int a[chrbr];
+for ( i=0; i<chrbr; i++){
+cin>>a[i];
+if ( a[0] < a[i]){
+int a2= a[0] = a[i];}
+}
+cout<<"najgolem broj: "<<a[0]<<endl;
+return 0;}

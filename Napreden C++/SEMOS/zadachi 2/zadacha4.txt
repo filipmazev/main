@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int i, a[10], i2, a2[10], sum1, sum2, dev;
+for(i=0;i<10;i++){
+cin>>a[i];
+sum1+=a[i];}
+for(i2=0;i2<10;i2++){
+cin>>a2[i2];
+sum2+=a2[i2];}
+if( sum1 > sum2 ) dev = sum1 - sum2;
+if( sum2 > sum1 ) dev = sum2 - sum1;
+cout<<endl;
+cout<<dev<<endl;
+return 0;}

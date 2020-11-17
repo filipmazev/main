@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int n2(int n)/*funkcija do koja kje povikuvame podocna,
+deklarirano e deka kje koristi promenlvia int 'n' */
+{
+    int mult=1;/* mult go stavame da e 1
+    za koga kje se mnozhi da pochnuva od 1, odnosno da mnozhi so 1 */
+    for(int i=n;i>0;i--)/* dodeka novo deklariranata
+    'i', koja pochnuva od brojot vnesen od korisnikot, 
+    e pogolema od 0, kje se broi nadole od i odnosno brojot 
+    vnesen od korisnikot, dodeka istiot ne dostigne 0 */
+        mult*=i;/* sekoja varijacija od i, odnosno ako e pr vneseno 
+        8 od korisnikot, bi bilo 8*1, pa 7*1, etc, dodeka ne dostigne 1*1*/
+    return mult;
+}
+
+int main()
+{
+    int n;//deklarirame promenliva n
+    cin>>n;//korisnikot ja vnesuva ovaa promenliva n
+    int n3=n2(n);/* deklarirame nekoja promenliva koja
+    e ednakva na na fukcijata n2 od 'n' za podocna da se ispechati */
+    cout<<"faktorijal od n e: "<<n3<<endl;//pechatime
+
+return 0;
+}

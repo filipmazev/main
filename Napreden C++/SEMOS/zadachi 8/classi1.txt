@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+class Pravoagolnik
+{
+    int visina;
+    int dolzhina;
+
+public:
+    int setVisina(int v)
+    {
+        visina = v;
+    }
+    int getVisina()
+    {
+        return visina;
+    }
+    int setDolzhina(int d)
+    {
+        dolzhina = d;
+    }
+    int getDolzhina()
+    {
+        return dolzhina;
+    }
+
+    int ploshtina()
+    {
+        return visina*dolzhina;
+    }
+};
+
+
+int main()
+{
+    Pravoagolnik p;
+    cout<<endl<<" Vnesi dolzhina na pravoagolnik: ";
+    int d; cin>>d;
+    p.setDolzhina(d);
+    cout<<endl<<" Vnesi visina na pravoagolnik: ";
+    int v; cin>>v;
+    p.setVisina(v);
+    cout<<endl;
+    cout<<"Ploshtinata e: "<<p.ploshtina()<<endl;
+    return 0;
+}

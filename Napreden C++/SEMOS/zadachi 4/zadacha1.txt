@@ -1,0 +1,26 @@
+#inC:\Users\fico_pico\Documents\4A - Napreden C++\zadachi od 06.22.18 - Funkcii\zadacha1\main.cppclude <iostream>
+using namespace std;
+int sumN(int n)/*funkcija do koja kje povikuvame podocna,
+deklarirano e deka kje koristi promenlvia int 'n' */
+{
+    int sum=0;//promenliva sum pochnuva od 0
+    for (int i=0; i<=n; i++)/* dodeka novo deklariranata
+    'i', koja pochnuva od 0, e pomala ili ednakva na n, vrednost
+    koja koirsnikot ja vnesuva vo main, da se broi nagore od i(0) */
+    {
+    sum+=i;/*na promenlivata sum da i se dodava 'i' dodeka 
+    i ne stigne do n, sum stanuva i ednakva na ovaa vrednost */
+    }
+return sum;
+}
+int main()
+{
+    int n;//promenlivata n do koja kje odi 'i' a so toa i sum
+    cout<<endl<<"Vnesi broj";
+    cin>>n;//vnesuvanje na taa promenliva
+    int sum2=sumN(n);/* deklarirame nekoja promenliva koja 
+    e ednakva na na fukcijata sumN od 'n' za podocna da se ispechati */
+    cout<<sum2<<endl;//pechatenje
+
+return 0;
+}

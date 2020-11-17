@@ -1,0 +1,32 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main()
+{
+    ifstream read;
+    read.open("tekst.txt");
+    string ln;
+    char chr;
+    string txt;
+    /*do krajot na dokumentot, dodeka end of line stane false
+    odnosno koga kje stigneme do krajot na dokumentot */
+    while(read.eof()==false)
+        {
+            getline(read, ln);
+            /*neshtoto na prvata pozicija od linijata
+            da bide so golema bukva, ova se pravi so
+            toupper - kako caps lock, upper cased da bide */
+            ln[0]=toupper(ln[0]);//na 0(prva) pozicija
+            ln[6]=toupper(ln[6]);//na 6(sedma) pozicija
+            txt+=ln+"! \n";/*da dodade ! na krajot na sekoja linija
+            \n oznachuva kraj na linij i se koristi tipichno kako
+            zamena na endl */
+        }
+    //kreiranje vtor dokumet so promenite
+    ofstream wright;
+    wright.open("tekst2.txt");
+    wright<<txt;
+
+    read.close();
+return 0;
+}

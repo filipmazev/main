@@ -1,0 +1,79 @@
+#include <iostream>
+#include <cstdlib>//za system("PAUSE")
+#include<fstream>//vlezno-izlezni datoteki, komandi etc.
+#include<windows.h>//windows komandi od Shell
+using namespace std;/*da ne pishuvam std:: na sekoja komanda
+kako cout, cin, int, char etc. */
+int main()
+{
+A:
+{
+    ofstream izlez("izlez.txt", ios::app);/*datoteka vo koja kje
+    vnesuvame neshta, ios::app za da se zachuvuva ona shto
+    e predhodno vneseno, odnosno da se dopishuva do krajot */
+
+        cout<<endl<<"Vnesi go prviot karakteri: ";
+        char c1, c2;//promenlivi od tipot char
+        cin>>c1;//vnesuvanje na prvata promenliva od tipot char
+        Sleep(750);//odlozhuvanje na toa shto sleduva za 750mS
+        cout<<endl<<"Vnesi go vtoriot karakteri: ";
+        cin>>c2;//vnesuvanje na vtorata promenliva od tipot char
+            Sleep(750);//odlozhuvanje na toa shto sleduva za 750mS
+            cout<<endl<<"Vnesi golemina na niza: ";
+            int n;//promenliva od tipot int pod imeto 'n'
+            cin>>n;//vnesuvanje na taa promenliva
+                //ova kje se povtoruva dodeka ne vnese pravilno
+                while(cin.fail())/*dodeka vnesuvanjeto na promenlivata
+                ne e uspeshno izvrsheno, odnosno vo ovoj sluchaj
+                proveruvame dali vnesenoto e od tochniot tip */
+                {
+                cin.clear();//izbrishi za povtorno vnesuvanje
+                cin.ignore(INT_MAX, '\n');/*ignoriraj go maksimumot
+                , odnosno se shto bilo vnesneno predhodno */
+                cout<<endl<<"Mozhe da vnesuvate samo broevi ";
+                cout<<endl<<"Vnesi broj: ";
+                cin>>n;//povtorno vnesuvanje
+                }
+    /*slednoto bi ni sluzhelo da se proveri shto bi odelo na prvata
+    ili vtorata pozicija vo tekstot koj kje se ispechatuva, isto taka
+    bi sluzhelo za limitiranje na nizata, odnosno da bide golema
+    kolku shto kazhal korisnikot */
+    for(int i=0; i<n; i++)/*dodeka promenlivata 'i' e pomala od vneseniot
+    broj za golemeni na nizata, da broi nagore od i */
+        {
+        if(i%2==0)/*proveruva dali sekoja verzija od 'i' e parna, ako e
+        togash vo izlez kje se ispechati prviot character */
+        izlez<<c1<<" ";//pechatenje na prviot karakter(prvo mesto)
+        else// inaku, ako e neparna verzijata na 'i'
+        izlez<<c2<<" ";//se pechati vtoriot character (vtoro mesto)
+        }
+    izlez<<endl;//prazna linija za sledno vnesuvanje
+    izlez.close();//zatvaranje na datotekata
+}
+system ("PAUSE");//da ne dojde do kraj programata vednash
+//dava opcija za dali saka korisnikot povtorno da ja koristi programata
+cout<<endl<<"Dali sakate povtorno da go napravite ova?";
+cout<<endl<<"Vnesi '1' za da, a '2' za ne";
+cout<<endl<<"(1) - da";
+cout<<endl<<"(2) - ne";
+cout<<endl<<"Enter: ";
+int n2;//promenliva od tipot int pod imeto 'n2'
+cin>>n2;//vnesuvanje na taa promenliva
+//ova kje se povtoruva dodeka ne vnese pravilno
+while(cin.fail())/*dodeka vnesuvanjeto na promenlivata
+ne e uspeshno izvrsheno, odnosno vo ovoj sluchaj
+proveruvame dali vnesenoto e od tochniot tip */
+{
+cin.clear();//izbrishi za povtorno vnesuvanje
+cin.ignore(INT_MAX, '\n');/*ignoriraj go maksimumot,
+odnosno se shto bilo vnesneno predhodno */
+cout<<endl<<"Vnesete broj od edna od opciite: ";
+cin>>n2;//povtorno vnesuvanje
+}
+//ako korisnikot vnel '1' da odi nazad do A
+if (n2==1){ Sleep(850); goto A; }
+//inaku, kraj na programata
+else
+Sleep(750)//da ko odlozhi krajot za 750mS
+return 0;
+}

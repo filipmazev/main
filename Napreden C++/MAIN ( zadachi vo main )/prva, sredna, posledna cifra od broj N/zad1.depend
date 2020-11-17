@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1558976175 source:c:\users\filip\documents\napreden c++\zadachi shkolo\zad1\main.cpp
+	<iostream>
+	<cmath>
+	<cstdlib>
+

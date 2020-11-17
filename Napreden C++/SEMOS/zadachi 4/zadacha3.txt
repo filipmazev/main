@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+int sumN(int n)/*funkcija do koja kje povikuvame podocna,
+deklarirano e deka kje koristi promenlvia int 'n' */
+{
+    int sum=0;//promenliva sum pochnuva od 0
+    for (int i=0; i<=n; i++)/* dodeka novo deklariranata
+    'i', koja pochnuva od 0, e pomala ili ednakva na n, vrednost
+    koja koirsnikot ja vnesuva vo main, da se broi nagore od i(0) */
+    {
+    sum+=i;/*na promenlivata sum da i se dodava 'i' dodeka
+    i ne stigne do n, sum stanuva i ednakva na ovaa vrednost */
+    }
+return sum;
+}
+
+void print(int n,int p)
+{
+cout<<1<<"+";//da pochne so 1+
+    for(int i=2;i<=n;i++)
+    {
+    /* dodeka i e pomala ili = na
+    brojot vnesen od korisikot, da broi nagore od i */
+    cout<<"(";
+    //da stavi (, za postle da bide 1+(...
+        for(int j=1; j<=i; j++)
+        {
+        /*za koga kje se pishuva pr (1+2), ako i e isto so j,
+        mozhe da go pishe i, ako ne e da pishe j+ dodeka j ne stigne
+        do i, za da se pishe j ili potochno i, ova raboti vaka:
+        pr: za i ako e pr 3, vneseno od korisnikot,
+        1+(j(1)+(j(2)+i(3)) - dodeka j ne stigne do i */
+        if(j==i) cout<<j;// ako j e isto so i, da go pise j
+        else cout<<j<<"+";// ako ne e, da stavi j+
+        }
+            if(i==n) cout<<")="<<p<<endl;/* ako i e isto so n,
+            odnosno ako zavrshilo do brojot koj go vnel korisnikot,
+            da zavrshi so ciklusov i da stavi ) po koja kje
+            go dade rezultatot od seto ova */
+            else cout<<")+";/* ako seushte ne stigal do n, da
+            prodolzhi so ciklusov, da zatvori zagrada i dodade +
+            za slednoto */
+    }
+}
+
+int main()
+{
+int n;//promenlivata n do koja kje odi 'i' a so toa i sum
+cout<<endl<<"Vnesi broj";
+cin>>n;//vnesuvanje na taa promenliva
+int sum2=0;
+for(int i=1; i<=n; i++)
+    {
+    sum2+=sumN(i);
+    }
+print(n,sum2);
+
+return 0;
+}

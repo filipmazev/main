@@ -1,0 +1,64 @@
+#include <iostream>
+#include <fstream>//vlezno-izlezni datoteki, komandi etc.
+using namespace std;
+int main()
+{
+    ifstream read("score.txt");/*izlezna datoteka vlez od koja
+    kje chitame, odnosno vo ovoj sluchaj kje gledame igrachi i poenni*/
+    string name, name2;//promenlia string za iminjata na igrachite
+    int points, points2;//promenliva int za poenite
+    cout<<"Vnesi ime na igrach: ";
+    cin>>name;
+    cout<<"Vnesi broj na poeni: ";
+    cin>>points;
+
+    string names[100];
+    int score[100];
+    int i=0;
+    string line;
+    while(read.eof()==false)//dodeka ne stigneme do krajot na linijata
+    {
+        read>>name2>>points2;/*vo datotekata da se ispechatat
+        vneseinte iminja i poeni so toa shto slednoto: */
+        /*promenlivite names i score vo pozicijata [i] odnosno broj
+        koj odi nagore, da se ednakvi na predhodno zadadenite
+        promenlivi name2 i points2 */
+        names[i]=name2;
+        score[i]=points2;
+        i++;//broenje nagore od i
+    }
+    names[i]=name;
+    score[i]=points;
+    read.close();
+    /*ova se pravi za da se menuvaat so pozicii onie koi imaat pogolem
+    broj, pr: 1.100; 2.600; 3.800, 4.900 - 900 kje se zameni so 
+    800, 800[4], 900[3], 600[2] 100[1] - pa od tamu
+    900[3] <> 600[2] - 900[2] 600[3] --> 600[3] <> 800[4] - 600[4] - 800[3] -->
+    900[2] <> 100[1] - 900[1] 100[2] --> 100[2] <> 800[3] - 100[3] - 800[2] -->
+    100[3] <> 600[4] - 100[4] 600[3] --> 900[1], 800[2], 600[3], 100[4]; */
+    for(int j=0; j<=i; j++)/*za j, shto pochnuva od 0, dodeka e
+        pomalo ili ednakvo na i, da broi nagore od 0 */
+        {
+            for(int k=j+1; k<=i; k++)
+            {
+                //menuvanje na mesta spored golemina na vrednost 
+                int sml = score[j];
+                score[j]=score[k];
+                score[k]=sml;
+
+                string smlN = names[j];
+                names[j]=names[k];
+                names[k]=smlN;
+            }
+        }
+ofstream out("score.txt");
+    for (int l=0; l<=i; l++)
+        {
+            out<<names[l]<<" "<<score[l];
+            if(l!=i)
+                out<<endl;
+        }
+    out.close();
+
+return 0;
+}

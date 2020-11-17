@@ -1,0 +1,68 @@
+#include <iostream>
+#include <math.h>
+#include <Windows.h>
+#include <cstdlib>
+using namespace std;
+
+class Tocka
+{
+    int x;
+    int y;
+
+public:
+    void setX(int a)
+    {
+        x = a;
+    }
+    int getX()
+    {
+        return x;
+    }
+    void setY(int b)
+    {
+        y = b;
+    }
+    int getY()
+    {
+        return y;
+    }
+};
+
+
+class pravoagolnik
+{
+public:
+    Tocka t1, t2;
+
+    int plostina(){
+    return fabs(t1.getX()-t2.getX())*fabs(t1.getY()-t2.getY());
+    }
+};
+
+
+
+int main()
+{
+    Tocka t1, t2;
+    int x1, x2, y1, y2;
+
+    cout<<endl<<"Vnesi prvi koordinati (x1,y1): ";
+    cin>>x1>>y1;
+    cout<<endl<<"Vnesi vtori koordinati (x2,y2): ";
+    cin>>x2>>y2;
+    t1.setX(x1);
+    t1.setY(y1);
+    t2.setX(x2);
+    t2.setY(y2);
+
+    pravoagolnik p;
+    p.t1 = t1;
+    p.t2 = t2;
+    cout<<endl;
+    cout<<endl<<"Koordinata: "<<p.plostina();
+    cout<<endl;
+
+    Sleep (8500);
+    system("PAUSE");
+    return 0;
+}

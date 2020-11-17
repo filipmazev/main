@@ -1,0 +1,123 @@
+#include <iostream>
+#include <cstdlib>
+#include <windows.h>
+using namespace std;
+
+class Vreme
+{
+protected:
+    int pochetenDen;
+    string Mesec;
+    string imeGodVreme;
+    string BojaGodVreme;
+    string KarGodVreme;
+public:
+
+    Vreme(int pochDen, string mnth, string igodv, string bgodv, string kargodv)
+    {
+        pochDen = pochDen;
+        Mesec = mnth;
+        imeGodVreme = igodv;
+        BojaGodVreme = bgodv;
+        KarGodVreme = kargodv;
+    }
+      void print()
+    {
+        cout<<"Jas sum "<<imeGodVreme<<endl;
+        cout<<"Pochnuvam na "<<pochetenDen<<" "<<Mesec<<endl;
+        cout<<KarGodVreme<<" omilena boja mi e "<<BojaGodVreme<<endl;
+    }
+};
+
+class Prolet:public Vreme
+{
+public:
+
+    Prolet(int pochDen, string mnth, string igodv, string bgodv, string kargodv):Vreme(pochDen, mnth, igodv, bgodv, kargodv)
+    {
+        int pochetenDen = 22;
+        string Mesec = "Mart";
+        string imeGodVreme = "Prolet";
+        string BojaGodVreme = "zelena";
+        string KarGodVreme = "Pcheli, mnogu pcheli...!";
+    }
+    void PrintKarak()
+    {
+        cout<<"cvetaat cvekjinjata"<<endl;
+    }
+};
+
+class Zima:public Vreme
+{
+public:
+
+    Zima(int pochDen, string mnth, string igodv, string bgodv, string kargodv):Vreme(pochDen, mnth, igodv, bgodv, kargodv)
+    {
+        int pochetenDen = 22;
+        string Mesec = "Dekemvri";
+        string imeGodVreme = "Zima";
+        string BojaGodVreme = "bela";
+        string KarGodVreme = "sakam da se izlizgash na mraz so kola";
+    }
+    void PrintKarak2()
+    {
+        cout<<"kje vrne sneg"<<endl;
+    }
+};
+
+class Esen:public Vreme
+{
+public:
+
+    Esen(int pochDen, string mnth, string igodv, string bgodv, string kargodv):Vreme(pochDen, mnth, igodv, bgodv, kargodv)
+    {
+        int pochetenDen = 22;
+        string Mesec = "Septemvri";
+        string imeGodVreme = "Esen";
+        string BojaGodVreme = "kafena";
+        string KarGodVreme = "kje vrne sekoj den...";
+    }
+    void PrintKarak3()
+    {
+        cout<<"kje pagjaat lisjata"<<endl;
+    }
+
+class Leto:public Vreme
+{
+public:
+
+   Leto(int pochDen, string mnth, string igodv, string bgodv, string kargodv):Vreme(pochDen, mnth, igodv, bgodv, kargodv)
+    {
+        int pochetenDen = 22;
+        string Mesec = "Septemvri";
+        string imeGodVreme = "Esen";
+        string BojaGodVreme = "kafena";
+        string KarGodVreme = "kje vrne sekoj den...";
+    }
+    void PrintKarak4()
+    {
+        cout<<"kje puka sonce"<<endl;
+    }
+
+int main()
+{
+
+    Leto l;
+    l.print();
+    l.PrintKarak();
+    cout<<endl;
+    Zima z;
+    z.print();
+    z.PrintKarak2();
+    cout<<endl;
+    Esen e;
+    e.print();
+    e.PrintKarak4();
+    cout<<endl;
+    Leto l;
+    l.print();
+    l.PrintKarak3();
+    cout<<endl;
+
+    return 0;
+}

@@ -1,0 +1,58 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+//kreiranje struktura na kvadarot so teminjata x, z i y
+struct Teme
+{
+    int x, z, y;
+};
+/*kreiranje na 3 elementi vo kvadarot, vo ovoj sluchaj toa
+kje bidat teminjata x, z i y */
+struct Kvadar
+{
+    Teme teminja[3];
+};
+/*Presmetka na ploshtina kade a, b i c ponataka kje bidat
+deklarirani za sekoe teme, odnosno sekoe teme kje si bide
+a, b ili c, vo zavisnost kako kje gi deklarirame */ 
+int Ploshtina(int a, int b, int c)
+{
+    return 2*(a*b+b*c+c*a);
+}
+/*presmetka na volumen so formulata a * b * c, kade sekoe od
+predhodno navedenite ni pretstavuvaat teme(podocna deklarirano) */
+int Volumen(int a, int b, int c)
+{
+    return a*b*c;
+}
+
+int main()
+{
+    //objekt za kvadarot
+    Kvadar k;
+    /*A, B i C kje ni gi pretstavuvaat trite teminja, predhodno deklarirano
+    vo strukturata Kvadar, kade deklariravme deka kje ima 3 od niv */ 
+    Teme A, B, C;
+    //promenlivi a, b i c, za vnesuvanje na istite
+    int a, b, c;
+    /*deklariranje na velichinite na sekoe teme, najprvin na 
+    A, potoa na B, pa C */
+    cin>>A.x>>A.y>>A.z;
+    cin>>B.x>>B.y>>B.z;
+    cin>>C.x>>B.y>>C.z;
+    //iskreno neznam, samo ovj del go vidov od prezentacijata
+    a = fabs(A.x-B.x);
+	b = fabs(B.y-A.y);
+	c = fabs(C.z-B.z);
+    /*za temeto na pozicija 0, od 3te deklarirani, da e A,
+    na prvata, odnosno [2] da e B i na C da e na vtorata 
+    ili [3] pozicija, vo strukturata kvadar kade go deklariravme ova */
+	k.teminja[0] = A;
+    k.teminja[1] = B;
+    k.teminja[2] = C;
+    //printanje
+    cout<<Ploshtina(a,b,c)<<endl;
+    cout<<Volumen(a,b,c)<<endl;
+
+return 0;}

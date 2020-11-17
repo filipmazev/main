@@ -1,0 +1,26 @@
+#include <iostream>
+#include <fstream>//vlezno-izlezni datoteki, komandi etc.
+using namespace std;
+int main()
+{
+ifstream in("normal.txt");/* datoteka od koja kje gi
+chitame broevite koi kje gi pretvarame vo ascii */
+ofstream out("ascii.txt");/*datoteka koja kje ja 
+kreirame vo koja kje gi zapisheme ascii verziite
+od broevite vo predhodata datoteka */
+int num;//promenliva int pod imeto 'num'
+
+    while(in.eof()==false)/*dodeka ne stigneme do krajot
+    na linijata vo normal.txt fileot, da se pravi slednoto */
+        {
+        in>>num;/*vo in gi deklarirame site neshta kako
+        predhodno deklariranata int num */
+        out<<(char)num<<endl;/*vo drugata datoteka pod imeto out,
+        gi kastrirame(pretvarame) site int-ovi koi predhodno gi 
+        zemavme, vo nivnata verzija kako karakteri */
+        }
+    in.close();
+    out.close();
+
+return 0;
+}

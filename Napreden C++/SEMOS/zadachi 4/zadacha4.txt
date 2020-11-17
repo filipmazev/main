@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int a, b, c;
+cout<<endl<<"Vnesi prv broj: ";
+cin>>a;
+while(cin.fail())/*dodeka vnesuvanjeto na promenlivata
+ne e uspeshno izvrsheno*/
+{
+cin.clear();//izbrishi za povtorno vnesuvanje
+cin.ignore(INT_MAX, '\n');/*ignoriraj go maksimumot
+, odnosno se shto bilo vnesneno predhodno */
+cout<<endl<<"Mozhe da vnesuvate samo broevi ";
+cout<<endl<<"Vnesi broj: ";
+cin>>a;
+}
+cout<<endl<<"Vnesi vtor broj: ";
+cin>>b;
+while(cin.fail())
+{
+cin.clear();
+cin.ignore(INT_MAX, '\n');
+cout<<endl<<"Mozhe da vnesuvate samo broevi ";
+cout<<endl<<"Vnesi broj: ";
+cin>>b;
+}
+    while(a!=b)/*dodeka a ne e ednakvo na b
+    da se povtoruva slednoto */
+    {
+    if(a>b)//ako a e pogolemo od b
+    a=a-b;/* a bi bilo edakvo na a - b zatoa shto go odzimame pomaliot
+    od pogolemiot broj, ova se pravi dodeka a i b se razlichni */
+    c=a;//c e ednakvo na a, za podocna da se ispechati
+        if(b>a)
+        b=b-a;/* b bi bilo edakvo na b - a zatoa shto go odzimame pomaliot
+    od pogolemiot broj, ova se pravi dodeka b i a se razlichni */
+        c=b;//c e ednakvo na b, za podocna da se ispechati
+    }
+cout<<endl<<"NZD e: "<<c;//se pechati odgovorot
+return 0;}

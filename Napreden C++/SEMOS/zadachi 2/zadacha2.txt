@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int i, a[10];
+cout<<"vnesi 10 broja: "<<endl;
+for(i=0;i<10;i++){
+cin>>a[i]; }
+cout<<endl<<" ";
+for(i=0;i<10;i++){
+if( a[i] % 2 != 0){
+cout<<endl<<" ";
+cout<<a[i]<<endl;}
+}
+return 0;}

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main(){
+int chrbr, i, a2=0, a3=0, a4=0;
+cout<<"vnesi broj na broevi koi kje gi vnesuvash: ";
+cin>>chrbr;
+int a[chrbr];
+for ( i=0; i<chrbr; i++){
+cin>>a[i];
+if ( a[i] > a2){
+a4=a3; 
+a3 = a2; 
+a2 = a[i];}
+if ( a[i] > a3){
+a4 = a3; 
+a3 = a[i];}
+if ( a[i] > a4){
+a4 = a[i];} 
+cout<<"najgolem broj 1 e: "<<a2<<endl;
+cout<<"najgolem broj 2 e: "<<a3<<endl;
+cout<<"najgolem broj 3 e: "<<a4<<endl;
+return 0;}

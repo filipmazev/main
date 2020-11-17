@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1559130151 source:c:\users\filip\documents\napreden c++\zadachi shkolo\zad2\main.cpp
-	<iostream>
-	<cstdlib>
-	<windows.h>
-

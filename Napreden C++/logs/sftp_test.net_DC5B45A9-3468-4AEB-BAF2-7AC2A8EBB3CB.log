@@ -1,7 +1,0 @@
-== Info:   Trying 85.214.110.167:22...
-== Info: TCP_NODELAY set
-== Info: Connected to test.net (85.214.110.167) port 22 (#0)
-== Info: SSH MD5 fingerprint: 72c8830fe7c34e0326a81a2e49e6e258
-== Info: SSH authentication methods available: publickey
-== Info: Authentication failure
-== Info: Closing connection 0

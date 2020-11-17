@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+/* nejasno, neznam shto e transportirana matrica... 
+ako e do reshenieto eve go ama copy-paste od Power Point */
+
+cout <<"Da se najde transponirana matrica za sl. matrica: " << endl;
+char J[][5] = {
+{'_','O','_','_','_'},
+{'_','_','_','_','_'}};
+int jRed=sizeof(J)/sizeof(J[0]);
+int jKol=sizeof(J[0])/sizeof(char);
+for(int i=0;i<jRed;i++){
+for(int j=0;j<jKol;j++){
+cout<<J[i][j]<<" ";}
+cout<<endl;}
+cout<<endl;
+cout<<"Transponiranata matrica e: "<<endl;
+char J2[jKol][jRed];
+for(int i=0;i<jKol;i++){
+for(int j=0;j<jRed;j++){
+J2[i][j]=J[j][i];}}
+for(int i=0;i<jKol;i++){
+for(int j=0;j<jRed;j++){
+cout<<J2[i][j]<<" ";}
+cout<<endl;}
+return 0;}

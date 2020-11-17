@@ -1,0 +1,38 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main()
+{
+    ifstream vlez("copy2.txt");/*izlezna datoteka vlez od koja
+    kje chitame, odnosno vo ovoj sluchaj kopirame*/
+        ofstream izlez("paste.txt");/* izleza datoteka imenuvana
+        izlez, vo nea kje pishuvame, odnosno vo ovoj sluchaj
+        kje prekopirae toa shto e vo vlez */
+
+    string line;/*promenliva string bidejki mozhe da ima povekje od edna bukva,
+    za da nema problemi pri zimanjeto na celiot tekst od datoteka vlez podochna */
+    while(vlez.eof()==false)/* dodeka ne dojde krajot na linijata
+    vo datotekata vlez, odosno dodeka eof e false, da go pravi slednoto */
+        {//pochetok na while poradi povekje funkcii otvarame bracket
+            getline(vlez, line);/*ja chita celata funkcijata od datotekata vlez
+            shto e od tipot na proennlivata "line"*/
+                izlez<<line<<endl;/*ispachatija zemanata promenliva od tipot
+                string pod imeto line, vo datotekata izlez */
+        }
+            char chr;/* promenliva char, vo sluchajot da ima i nekoj character kako ','
+            etc., ja stavame ovaa promenliva */
+            vlez.get(chr);//od datotekata vlez da gi zeme odnosno prochita site characters
+            while(vlez)/*dodeka vlez, odnosno kako shto predhodno postavivme
+                dodeka ima characters vo ovoj dokument, da pravi sledno */
+                {
+                izlez<<chr;/* da gi iskopira site zemeni characters vo
+                datotekata imenuvana izlez */
+                vlez.get(chr);
+                }
+
+    //zatvaranje na dvete datoteki
+    vlez.close();
+    izlez.close();
+
+return 0;
+}
