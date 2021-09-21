@@ -26,7 +26,7 @@ int main()
             A[i][j] = '-'; } }
 
     for ( int i=0; i<n; i++ )
-    {   cout<<" ";
+    {   cout<<"" ;
         for ( int j=0; j<n; j++ ){ a=false;
             if ( i == j ) { d1++; } if ( (i+j) == (n-1) ){ d2++; }
             if ( i == (n/2) ) m1=n/2; if ( i < (n/2) ){ m1=(n/2)-1; }
