@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1634846522 source:c:\users\filip\documents\napreden c++\1. finki\zadaci za prv kolokvium - vezbi\zadacha15\main.cpp
+	<iostream>
+	<vector>
+	<cstdio>
+

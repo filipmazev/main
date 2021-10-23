@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1627774740 source:c:\users\filip\documents\napreden c++\3. practice\loginsystem1\main.cpp
+	<iostream>
+	<string.h>
+	<windows.h>
+
