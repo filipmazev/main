@@ -3,7 +3,7 @@
 
 int main()
 {
-    int number, is_int=1, digit_limit = 5, max_size=pow(10,digit_limit);
+    int number, is_int=1, digit_limit = 5, max_size=100000;
 
     int Array_Position[digit_limit];
     for(int i=0; i<digit_limit; i++){ Array_Position[i] = 0; }

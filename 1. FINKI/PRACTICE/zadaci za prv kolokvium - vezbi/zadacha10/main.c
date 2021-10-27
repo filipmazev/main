@@ -23,6 +23,9 @@ int checker(int number)
             if (Array[i] < Array[i+1]) { Alternate_Array[i] = 1; counter++; }
 
             if (Array[i] > Array[i+1]) { Alternate_Array[i] = 0; counter++; }
+
+            if (Array[i] == Array[i+1]) { alternate_check=1; }
+
         }
     }
 
@@ -48,7 +51,6 @@ int main()
         if(is_int == 1) { Array[i] = checker(number); i++; }
     }
 
-    printf("uslovot cik-cak vazhi za: \n");
     for(int j=0; j<i; j++){
         if(Array[j] != 0 ) { printf("%d \n", Array[j]); } }
 

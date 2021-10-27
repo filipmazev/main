@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<ctype.h>
-int counter=0;
 
 int main()
 {
@@ -12,19 +11,11 @@ int main()
     {
         scanf("%c", &character);
 
-        if(isdigit(character))
-        {
-            counter++;
-            number = number * 10 + (character - '0');
-            sum+=number;
-        }
-
-        else { number=0; counter=0; }
-
-        if(counter==1) { sum-=(character - '0'); }
+        if(isdigit(character)) { number = number * 10 + (character - '0'); }
+        else { sum+=number; number=0; }
     }
 
-    printf("sum: %d", sum);
+    printf("%d", sum);
 
     return 0;
 }

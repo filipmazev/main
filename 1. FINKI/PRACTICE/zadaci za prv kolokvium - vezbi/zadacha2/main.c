@@ -19,12 +19,14 @@ int main()
 {
     int number, range=9; scanf("%d", &number);
 
-    while(number<range) { scanf("%d", &number); printf("brojot ne e validen: "); }
+    if(number<range) { scanf("%d", &number); printf("Brojot ne e validen"); return 0; }
+
+    if(number>0) number-=1;
 
     while(prevrten_rekurzija(number, 0) % digit_counter(number) != 0 )
     { number--; }
 
-    printf("max: %d \n", number);
+    printf("%d \n", number);
 
     return 0;
 }

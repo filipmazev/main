@@ -5,7 +5,7 @@ int main()
 {
     int number;
     scanf("%d", &number);
-    char char_1='%', char_2='*', char_3='@';
+    char char_1='%', char_2='.', char_3='@';
 
     while (number<=2) { scanf("%d", &number); }
 

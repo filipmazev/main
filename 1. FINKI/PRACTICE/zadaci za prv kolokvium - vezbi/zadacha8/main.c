@@ -4,7 +4,8 @@
 int checker(int num_1, int temp_num_1, int num_2, int temp_num_2, int counter)
 {
     if (num_1 == 0) {
-        return 1+(temp_num_1-counter); }
+        if (counter!=0){ return 1+(temp_num_1-counter); }
+        else return temp_num_1-counter; }
 
     if (num_2 == 0) {
         return checker (num_1/10,temp_num_1,temp_num_2,temp_num_2,counter); }

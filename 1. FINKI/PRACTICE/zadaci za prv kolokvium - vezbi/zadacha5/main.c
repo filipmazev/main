@@ -1,37 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int first(int number)
-{
-    while (number>=10) { number/=10; }
-    return number;
-}
-
 int main()
 {
-    int range_start, range_end, bigger, smaller, counter=0;
+
+    int range_start, range_end, counter = 0;
     scanf("%d", &range_start); scanf("%d", &range_end);
 
-    while(range_start<0 || range_end<0){
-    scanf("%d", &range_start); scanf("%d", &range_end); }
-    if(range_start > range_end) { int temp;
-    temp = range_start; range_start = range_end; range_end = temp; }
-
-    while (bigger)
+    if (range_start <=0 || range_end <=0)
     {
-        if (counter % 2 == 0)
-        {
-            if (first(bigger)%10 != first(smaller)%10) { bigger=0; counter=-1; }
-            smaller/=10;
-        }
-
-        counter++; bigger/=10;
+        printf("Invalid input");
+        return 0;
     }
 
-    if (counter != 0) { printf("PAREN"); }
+    if (range_start > range_end) {
+        int temp; temp = range_start; range_start = range_end; range_end = temp; }
 
-    else printf("NEPAREN");
+    while (range_end)
+    {
+
+        int last2FromEnd = range_end%100, last1FromStart = range_start%10;
+
+        if (last2FromEnd/10 != last1FromStart) { printf("NE"); return 0; }
+
+        range_end /= 100; range_start /= 10;
+    }
+
+    printf("PAREN");
 
     return 0;
 }
-

@@ -17,9 +17,11 @@ int checker(int number)
         if (storage_digits[i] < storage_digits[i+1]){ Array_Alternate[i] = 1; counter++; }
 
         if (storage_digits[i] > storage_digits[i+1]){ Array_Alternate[i] = 0; counter++; }
+
+        if (storage_digits[i] == storage_digits[i+1]){ Array_Alternate[i] = 1; counter++; }
     }
 
-    for (int i=0; i<counter-1; i++){
+    for (int i=0; i<counter-1; i++){ cout<<" "<<number<<" DEBUG: "<<Array_Alternate[i]<<endl;
         if (Array_Alternate[i] == Array_Alternate[i+1] ){ alternate_check=false; } }
 
     if (alternate_check == true && counter != 0){ return number; }

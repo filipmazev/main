@@ -23,13 +23,16 @@ int checker(int number)
             if (Array[i] < 5) { Alternate_Array[i] = 1; counter++; }
 
             if (Array[i] >= 5) { Alternate_Array[i] = 0; counter++; }
+
+            if (Array[i] == Array[i+1]) { alternate_check=1; }
+
         }
     }
 
     for (int i=0; i<counter-1; i++){
         if (Alternate_Array[i] == Alternate_Array[i+1] ) { alternate_check=1; } }
 
-    if (alternate_check == 0 && counter != 0) { return number; }
+    if (alternate_check == 0 && counter != 0 && number != 10) { return number; }
 
     else return 0;
 }
@@ -48,7 +51,6 @@ int main()
         if(is_int == 1) { Array[i] = checker(number); i++; }
     }
 
-    printf("uslovot cik-cak vazhi za: \n");
     for(int j=0; j<i; j++){
         if(Array[j] != 0 ) { printf("%d \n", Array[j]); } }
 
