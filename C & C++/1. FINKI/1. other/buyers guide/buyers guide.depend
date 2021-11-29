@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1636330781 source:c:\users\filip\documents\napreden c & c++\1. finki\practice\1. other\buyers guide\main.cpp
-	<iostream>
-	<fstream>
-	<vector>
-	<string.h>
-	<sstream>
-	<algorithm>
-

@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1627904518 source:c:\users\filip\documents\napreden c++\3. practice\aho-corasik_test\main.cpp
-	<iostream>
-	<string.h>
-	<fstream>
-	<sstream>
-	<windows.h>
-
