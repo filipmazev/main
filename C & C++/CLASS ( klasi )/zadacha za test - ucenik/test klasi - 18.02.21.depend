@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1613641797 source:c:\users\filip\documents\napreden c++\class ( klasi )\test klasi - 18.02.21\main.cpp
+	<iostream>
+	<cstring>
+	<iomanip>
+	<cstdlib>
+	<windows.h>
+

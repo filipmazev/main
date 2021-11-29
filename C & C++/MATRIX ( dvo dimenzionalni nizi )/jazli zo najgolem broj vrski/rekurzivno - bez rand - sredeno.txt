@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+void CountNodesMax ( int *A, int row, int columb, int maxNodeCount, int cnt ) 
+{
+    int NodeCounter=0;
+       
+        for ( int i=0; i<row; i++) 
+        {
+                for(int j=0; j<columb; j++) 
+                {
+                    NodeCounter+=*(A+i*columb+j); 
+                }
+            if ( cnt == 0 && ( NodeCounter > maxNodeCount ) ) 
+            { 
+                maxNodeCount = NodeCounter; 
+            }
+            if( NodeCounter != 0 ) 
+                { 
+                    if ( NodeCounter == maxNodeCount && cnt != 0 )
+                    { cout<<"i:"<<i<<" | "<<maxNodeCount<<endl; } 
+                NodeCounter=0; 
+                } 
+        }
+    
+    if( cnt==0 ) { cnt+=1; CountNodesMax((int *)A, row, columb, maxNodeCount, cnt ); } 
+}
+
+int main()
+{
+    int row, columb, NodeCounter=0;
+    cin>>row>>columb; int A[row][columb];
+    
+    for ( int i=0; i<row; i++) 
+        { 
+            for(int j=0; j<columb; j++)
+            { 
+                cin>>A[i][j]; 
+            } 
+        }
+    
+    CountNodesMax((int *)A, row, columb, 0, 0);
+}
+
+
+
+

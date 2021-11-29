@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1614851988 source:c:\users\filip\documents\napreden c++\databases ( datoteki )\zadaca3\main.cpp
+	<iostream>
+	<fstream>
+

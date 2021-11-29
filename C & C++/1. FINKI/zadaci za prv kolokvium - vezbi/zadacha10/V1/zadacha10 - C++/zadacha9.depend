@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1634684285 source:c:\users\filip\documents\napreden c++\1. finki\zadaci\zadacha9\main.cpp
+	<iostream>
+	<windows.h>
+
+1634722189 source:c:\users\filip\documents\napreden c++\1. finki\zadaci za prv kolokvium - vezbi\zadacha9\main.cpp
+	<iostream>
+
+1634842997 source:c:\users\filip\documents\napreden c++\1. finki\zadaci za prv kolokvium - vezbi\zadacha10\main.cpp
+	<iostream>
+	<vector>
+
+1634986290 source:c:\users\filip\documents\napreden c++\1. finki\practice\zadaci za prv kolokvium - vezbi\c++\zadacha10\main.cpp
+	<iostream>
+	<vector>
+
+1635497977 source:c:\users\filip\documents\napreden c & c++\1. finki\practice\zadaci za prv kolokvium - vezbi\zadacha10\zadacha10 - c++\main.cpp
+	<iostream>
+	<vector>
+

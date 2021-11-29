@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1613037781 source:c:\users\filip\documents\napreden c++\class ( klasi )\klasi chas 2\main.cpp
+	<iostream>
+	<cstring>
+	<iomanip>
+

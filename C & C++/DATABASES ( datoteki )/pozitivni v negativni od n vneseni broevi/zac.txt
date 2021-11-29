@@ -1,0 +1,5 @@
+ke se vnesuvaat: 3 broevi
+negativen: -2
+negativen: -1
+pozitiven: 4
+ima povekje negativni

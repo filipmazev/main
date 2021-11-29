@@ -1,0 +1,4 @@
+# depslib dependency file v1.0
+1607800455 source:c:\users\filip\documents\napreden c++\matrix ( dvo dimenzionalni nizi )\zbir na sosedni elementi okolu element ( gorel, gored, dolel, doled )\main.cpp
+	<iostream>
+

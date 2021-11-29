@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1606779128 source:c:\users\filip\documents\napreden c++\matrix ( dvo dimenzionalni nizi )\zad12\main.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+
+1606987371 source:c:\users\filip\documents\napreden c++\matrix ( dvo dimenzionalni nizi )\zaemni vrski pomegju nodes\main.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+
+1607273563 source:c:\users\filip\documents\napreden c++\matrix ( dvo dimenzionalni nizi )\zaemni vrski pomegju jazli\main.cpp
+	<iostream>
+

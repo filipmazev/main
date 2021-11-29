@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void MaxVrski ( int *A, int n, int m, int maxV, int rek ) {
+    int cnt=0;
+    for ( int i=0; i<n; i++) {
+        for(int j=0; j<m; j++) { cnt+=*(A+i*m+j); }
+    if ( rek == 0 && ( cnt > maxV ) ) { maxV = cnt; }
+        if( cnt != 0 ) { if ( cnt == maxV && rek != 0 )
+        { cout<<"i:"<<i<<" | "<<maxV<<endl; } cnt=0; } }
+
+    if( rek==0 ) { rek+=1; MaxVrski((int *)A, n, m, maxV, rek ); } }
+
+int main() {
+    int n, m; cin>>n>>m; int A[n][m];
+    for ( int i=0; i<n; i++) { for(int j=0; j<m; j++) { cin>>A[i][j]; } }
+
+    MaxVrski((int *)A, n, m, 0, 0); }
+
+
+
+

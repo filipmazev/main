@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1617013543 source:c:\users\filip\documents\napreden c++\struct ( strukturi )\test123\main.cpp
+	<iostream>
+	<windows.h>
+	<fstream>
+

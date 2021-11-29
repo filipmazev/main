@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1606726275 source:c:\users\filip\documents\napreden c++\matrix ( dvo dimenzionalni nizi )\direkt pat pomegju gradovi\main.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+

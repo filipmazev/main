@@ -1,0 +1,13 @@
+od:1 do:12
+neparen: 1
+paren: 2
+neparen: 3
+paren: 4
+neparen: 5
+paren: 6
+neparen: 7
+paren: 8
+neparen: 9
+paren: 10
+neparen: 11
+ima povekje neparni

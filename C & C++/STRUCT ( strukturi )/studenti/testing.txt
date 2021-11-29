@@ -1,0 +1,10 @@
+
+ STUDENT 1
+ Ime:Igor
+ Prezime:Gosev
+ Bodovi:56
+
+ STUDENT 2
+ Ime:Filip
+ Prezime:Mazev
+ Bodovi:32
