@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1641318465 source:c:\users\filip\documents\github\main\c & c++\#main\codenamenigma\main\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+	<string.h>
+	<cstring>
+	<stdio.h>
+	<stdlib.h>
+	<ctime>
+	<fstream>
+
