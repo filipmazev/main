@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1648469101 source:c:\users\filip\documents\github\1.finki\oop\1.other\my vector - container\main.cpp
+	<iostream>
+	"other/vector.h"
+
+1648468036 c:\users\filip\documents\github\1.finki\oop\1.other\my vector - container\my_vector.h
+	<iostream>
+
+1648468909 c:\users\filip\documents\github\1.finki\oop\1.other\my vector - container\other\vector.h
+	<iostream>
+
