@@ -35,8 +35,8 @@ int main()
     operator >> | friend std::istream &operator >> (std::istream &input, const arr &x); | input<<arr[size++]; return input; | enter a element in array, expands the array for size of n+1
     push_back() | push_back an element in array, expands the array for size of n+1
     set()       | set(size_t index, element) | sets the value of the array element at index (size_t index) to the sent element if in range, otherwise throws bad::alloc
-    assign()    | syntax: my_array.assign(element1, element2, element3 ... ) | changes the size and values of the current array to whatever is assigned | *works only for int, char, double, float, size_t, bool and their unsigned or long/long long counterparts
-    insert()    | syntax: my_array.insert(element1, element2, element3 ... ) | appends the values in (...) to the end of the array and changes its size accordingly | *works only for int, char, double, float, size_t, bool and their unsigned or long/long long counterparts
+    assign()    | syntax: my_array.assign(element1, element2, element3 ... ) | changes the size and values of the current array to whatever is assigned in the parameter pack (...)
+    insert()    | syntax: my_array.insert(element1, element2, element3 ... ) | appends the values in parameter pack (...) to the end of the array and changes its size accordingly
     pop_back()  | pop back the array for one element, reduces the size of the array for n-=1
     clear()     | deletes every element in the array and sets the size to 0
     erase()    | remove(size_t i) remove a specific element in array at index size_t i
@@ -47,7 +47,7 @@ int main()
     */
 
     // EXAMPLE CODE
-    std::oth::arr<Class_Example> my_arr_of_objects; int n; std::cout<<std::endl<<" ENTER SIZE: "; std::cin>>n; std::cout<<std::endl;
+    std::oth::arr<Class_Example> my_arr_of_objects; int n=5;
 
     for(int i=0; i<n; i++){ Class_Example obj = Class_Example(i, "test"); my_arr_of_objects.push_back(obj); }
 
@@ -72,10 +72,6 @@ int main()
     //print()
     std::cout<<" function print() \t |"; my_arr_of_objects.print(); std::cout<<std::endl;
 
-    //push_back()
-    Class_Example obj2 = Class_Example(0, "add1");
-    std::cout<<" function push_back() \t |"; my_arr_of_objects.push_back(obj2); my_arr_of_objects.print(); std::cout<<std::endl;
-
     //set()
     Class_Example obj_set = Class_Example(1, "set");
     std::cout<<" function set() \t |"; my_arr_of_objects.set(0, obj_set); my_arr_of_objects.print(); std::cout<<std::endl;
@@ -83,26 +79,26 @@ int main()
     //clear()
     std::cout<<" function clear() \t | size: "; my_arr_of_objects.clear(); std::cout<<my_arr_of_objects.size(); my_arr_of_objects.print(); std::cout<<std::endl;
 
-    std::cout<<std::endl<<" DYNAMIC RESIZING AND OTHER FUNCTIONS: "<<std::endl; std::oth::arr<int> my_arr_of_ints; std::cout<<std::endl;
+    std::cout<<std::endl<<" DYNAMIC RESIZING WITH INSERT AND ASSIGN: "<<std::endl<<std::endl;
 
     //assign
-    my_arr_of_ints.assign(1,2,3,4,5,6,7,8);
-    std::cout<<" function assign() \t | size: "; std::cout<<my_arr_of_ints.size()<<" | "; my_arr_of_ints.print(); std::cout<<std::endl;
+    Class_Example obj1(0, "assign"); Class_Example obj2(1, "assign"); Class_Example obj3(2, "assign"); my_arr_of_objects.assign(obj1, obj2, obj3);
+    std::cout<<" function assign() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; my_arr_of_objects.print(); std::cout<<std::endl;
 
     //resize
-    my_arr_of_ints.resize(5);
-    std::cout<<" function resize() \t | size: "; std::cout<<my_arr_of_ints.size()<<" | "; my_arr_of_ints.print(); std::cout<<std::endl;
+    my_arr_of_objects.resize(2);
+    std::cout<<" function resize() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; my_arr_of_objects.print(); std::cout<<std::endl;
 
     //pop_back
-    my_arr_of_ints.pop_back();
-    std::cout<<" function pop_back() \t | size: "; std::cout<<my_arr_of_ints.size()<<" | "; my_arr_of_ints.print(); std::cout<<std::endl;
+    my_arr_of_objects.pop_back();
+    std::cout<<" function pop_back() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; my_arr_of_objects.print(); std::cout<<std::endl;
 
     //insert
-    my_arr_of_ints.insert(9,10,11,12);
-    std::cout<<" function insert() \t | size: "; std::cout<<my_arr_of_ints.size()<<" | "; my_arr_of_ints.print(); std::cout<<std::endl;
+    Class_Example obj4(3, "insert"); Class_Example obj5(4, "insert"); my_arr_of_objects.insert(obj4, obj5);
+    std::cout<<" function insert() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; my_arr_of_objects.print(); std::cout<<std::endl;
 
     //clear
-    std::cout<<" function clear() \t | size: ";  my_arr_of_ints.clear(); std::cout<<my_arr_of_ints.size()<<std::endl;
+    std::cout<<" function clear() \t | size: ";  my_arr_of_objects.clear(); std::cout<<my_arr_of_objects.size()<<std::endl;
 
     return 0;
 }

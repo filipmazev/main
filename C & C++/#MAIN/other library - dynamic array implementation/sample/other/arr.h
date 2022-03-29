@@ -20,7 +20,6 @@
 
 #include <iostream>
 #include <array>
-#include <list>
 
 namespace std _GLIBCXX_VISIBILITY(default)
 {
@@ -93,17 +92,17 @@ namespace std _GLIBCXX_VISIBILITY(default)
 
             template <typename... T> constexpr auto assign(T&&... t)->std::array <TYPE, sizeof...(T)>
             {
-                std::list<TYPE> list = { { std::forward<T>(t)... } };
-                     this->num = list.size(); this->_size = list.size(); delete[] this->_arr; this->_arr = new TYPE[this->_size];
-                int k = 0; for (TYPE const& i : list) { this->_arr[k++] = i; }
+                std::array<TYPE, sizeof...(T)> _new = { { std::forward<T>(t)... } };
+                delete[] this->_arr; this->_arr = new TYPE[sizeof...(T)]; for(int i=0; i<sizeof...(T); i++){ this->_arr[i] = _new[i]; }
+                this->_size = sizeof...(T); this->num = _size; return { { std::forward<T>(t)... } };
             }
 
             template <typename... T> constexpr auto insert(T&&... t)->std::array <TYPE, sizeof...(T)>
             {
-                std::list<TYPE> list = { { std::forward<T>(t)... } };
-                this->_size += list.size(); TYPE *tmp = new TYPE[this->_size]; for(int i=0; i<this->num; i++){ tmp[i] = this->_arr[i]; }
-                    int k = this->num; for (TYPE const& i : list) { tmp[k++] = i; } this->num += list.size();
-                delete[] this->_arr; this->_arr = new TYPE[this->_size]; this->_arr = tmp;
+                std::array<TYPE, sizeof...(T)> _new = { { std::forward<T>(t)... } };
+                this->_size += _new.size(); TYPE *tmp = new TYPE[this->_size]; for(int i=0; i<this->num; i++){ tmp[i] = this->_arr[i]; }
+                    int k = this->num; for (TYPE const& i : _new) { tmp[k++] = i; } this->num += _new.size();
+                delete[] this->_arr; this->_arr = new TYPE[this->_size]; this->_arr = tmp; return { { std::forward<T>(t)... } };
             }
 
             inline void resize(size_t new_size)
