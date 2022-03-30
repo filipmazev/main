@@ -19,7 +19,7 @@
 #if __cplusplus >= 201402L
 
 #include <iostream>
-#include <array>
+#include <list>
 
 namespace std _GLIBCXX_VISIBILITY(default)
 {
@@ -90,19 +90,18 @@ namespace std _GLIBCXX_VISIBILITY(default)
 							for (unsigned int j=i; j<this->num; j++){ this->_arr[j] = this->_arr[j + 1]; } break; } } }
 			}
 
-			template <typename... T> constexpr auto assign(T&&... t)->std::array <TYPE, sizeof...(T)>
+			template <typename... T> constexpr auto assign(T&&... t)
 			{
-				std::array<TYPE, sizeof...(T)> _new = { { std::forward<T>(t)... } };
+				std::list<TYPE> list = { { std::forward<T>(t)... } };
 				this->num = this->num!=sizeof...(T)?(delete[] this->_arr, this->_arr = new TYPE[sizeof...(T)]),sizeof...(T):this->num; this->_size = this->num;
-				for(int i=0; i<sizeof...(T); i++){ this->_arr[i] = _new[i]; } return { { std::forward<T>(t)... } };
+                unsigned int pos = 0; for (auto const &i: list) { this->_arr[pos++] = i; }
 			}
 
-			template <typename... T> constexpr auto insert(T&&... t)->std::array <TYPE, sizeof...(T)>
+			template <typename... T> constexpr auto insert(T&&... t)
 			{
-				std::array<TYPE, sizeof...(T)> _new = { { std::forward<T>(t)... } };
-				this->_size += _new.size(); TYPE *tmp = new TYPE[this->_size];
-					int j=0; for(int i=0; i<this->_size; i++){ tmp[i] = i<this->num?this->_arr[i]:_new[j++]; }
-				this->num += _new.size(); delete[] this->_arr; this->_arr = new TYPE[this->_size]; this->_arr = tmp; return { { std::forward<T>(t)... } };
+				std::list<TYPE> list = { { std::forward<T>(t)... } }; TYPE _new[sizeof...(T)]; unsigned int pos = 0; for (auto const &i: list) { _new[pos++] = i; }
+				this->_size += sizeof...(T); TYPE *tmp = new TYPE[this->_size]; int j=0; for(int i=0; i<this->_size; i++){ tmp[i] = i<this->num?this->_arr[i]:_new[j++]; }
+				this->num += sizeof...(T); delete[] this->_arr; this->_arr = new TYPE[this->_size]; this->_arr = tmp;
 			}
 
 			inline void resize(size_t new_size)

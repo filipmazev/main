@@ -9,12 +9,12 @@
 	<array>
 	<list>
 
-1648592064 source:c:\users\filip\documents\github\main\c & c++\#main\other library - dynamic array implementation\sample\main.cpp
+1648635541 source:c:\users\filip\documents\github\main\c & c++\#main\other library - dynamic array implementation\sample\main.cpp
 	<iostream>
 	<string>
-	"other/arr.h"
+	<other/arr.h>
 
-1648591948 c:\users\filip\documents\github\main\c & c++\#main\other library - dynamic array implementation\sample\other\arr.h
+1648635408 c:\users\filip\documents\github\main\c & c++\#main\other library - dynamic array implementation\sample\other\arr.h
 	<iostream>
-	<array>
+	<list>
 
