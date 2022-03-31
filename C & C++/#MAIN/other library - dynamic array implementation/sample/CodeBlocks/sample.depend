@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1648509789 source:c:\users\filip\documents\github\main\c & c++\#main\other library - vector implementation\sample\main.cpp
+	<iostream>
+	<string>
+	"other/arr.h"
+
+1648509532 c:\users\filip\documents\github\main\c & c++\#main\other library - vector implementation\sample\other\arr.h
+	<iostream>
+	<array>
+	<list>
+
+1648749768 source:c:\users\filip\documents\github\main\c & c++\#main\other library - dynamic array implementation\sample\main.cpp
+	<iostream>
+	<string>
+	<other/arr.h>
+
+1648735668 c:\users\filip\documents\github\main\c & c++\#main\other library - dynamic array implementation\sample\other\arr.h
+	<iostream>
+	<list>
+
+1648750424 source:c:\users\filip\documents\github\main\c & c++\#main\other library - dynamic array implementation\codeblocks\sample - code blocks\main.cpp
+	<iostream>
+	<string>
+	"other/arr.h"
+
+1648762985 c:\users\filip\documents\github\main\c & c++\#main\other library - dynamic array implementation\codeblocks\sample - code blocks\other\arr.h
+	<iostream>
+	<list>
+
