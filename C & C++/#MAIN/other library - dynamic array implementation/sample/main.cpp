@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string> //not required, for to_string function in Class_Example
-#include <other/arr.h> //if linked: #include <other/arr.h>
+#include "other/arr.h" //if linked: #include <other/arr.h>
 
 //example class for use in (1) EXAMPLE CODE
 class Class_Example
@@ -45,6 +45,7 @@ int main()
     operator >>  | friend std::istream &operator >> (std::istream &input, const arr &x); | input<<arr[size++]; return input; | enter a element in array, expands the array for size of n+1
     operator []  | auto operator[] (size_type n); | Returns the element at position n in the arr container.
     resize()     | change the size of the array
+    compact()    | removes all empty elements of the array and changes the size accordingly
     push_back()  | append an element at the end of an array
     push_front() | append an element at the begging of an array
     set()        | set(size_t index, element) | sets the value of the array element at index (size_t index) to the sent element if in range, otherwise throws bad::alloc
@@ -52,93 +53,108 @@ int main()
     insert()     | syntax: my_array.insert(element1, element2, element3 ... ) | appends the values in parameter pack (...) to the end of the array and changes its size accordingly
     pop_back()   | removes the last element of the array
     pop_front()  | removes the first element of the array
-    erase()      | remove(size_t i) remove a specific element in array at index size_t i
+    erase()      | erase(size_t i), erase a specific element in the array at index size_t i and change the size of the array accordingly
+    remove()     | remove(size_t i), remove a specific element in the array at index size_t i, does not change the size of the array
     clear()      | deletes every element in the array and sets the size to 0
     front()      | returns the index of the first element of the array
     back()       | returns the index of the last element of the array
     at()         | at(size_t index), returns the element at sent index
     size()       | returns the current size of the array
     length()     | returns the current number of populated elements in the array
+    print()      | prints all non-empty elements of the array
+    show()       | prints all elements of the array
     */
 
     // EXAMPLE CODE (1)
-    std::oth::arr<Class_Example> my_arr_of_objects; std::cout<<std::endl<<" Enter size: "; int n; std::cin>>n; std::cout<<std::endl;
-    for(int i=0; i<(n==0?n+1:n); i++){ Class_Example obj = Class_Example(i, "test"); my_arr_of_objects.push_back(obj); }
+    std::oth::arr<Class_Example> my_arr_of_objects; std::cout<<std::endl<<"Enter size: "; int n; std::cin>>n; std::cout<<std::endl;
+    for(int i=0; i<(n==0?n+1:n); i++){ ++my_arr_of_objects; Class_Example obj = Class_Example(i, "test"); my_arr_of_objects.set(i,obj); }
 
     //size()
-    std::cout<<" function size() \t | size: "<<my_arr_of_objects.size()<<std::endl;
+    std::cout<<"function size() | size: "<<my_arr_of_objects.size()<<std::endl;
 
     //operator >>
-    std::cout<<" operator >> \t \t | size: "; std::cout<<my_arr_of_objects.size()<<"  | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"operator >> | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
     //operator [] & front() | back()
-    std::cout<<" operator [], front/back | size: "; std::cout<<my_arr_of_objects.size()<<"  | front: ";
+    std::cout<<"operator [], front/back | size: "; std::cout<<my_arr_of_objects.size()<<"  | front: ";
     std::cout<<my_arr_of_objects[my_arr_of_objects.front()]<<" back: "<<my_arr_of_objects[my_arr_of_objects.back()]<<std::endl;
 
     //resize()
     my_arr_of_objects.resize(50);
-    std::cout<<" function resize() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"function resize() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
     //set() & operator ++
     my_arr_of_objects.clear(); for(int i=0; i<(n==0?n+1:n); i++){ ++my_arr_of_objects; Class_Example obj = Class_Example(i, "test"); my_arr_of_objects.set(i,obj); }
     Class_Example obj_set = Class_Example(1, "set"); my_arr_of_objects.set(48, obj_set);
-    std::cout<<" function set() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"function set() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
     //operator =
     std::oth::arr<Class_Example> new_obj_list = my_arr_of_objects;
-    std::cout<<" operator = \t \t | size: "; std::cout<<new_obj_list.size()<<" | "; std::cout<<new_obj_list<<std::endl;
+    std::cout<<"operator = | size: "; std::cout<<new_obj_list.size()<<std::endl; std::cout<<new_obj_list<<std::endl;
 
     //operator -=
     my_arr_of_objects-=obj_set;
-    std::cout<<" operator -= \t \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"operator -= | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
     //operator !=
     new_obj_list = my_arr_of_objects; bool check = my_arr_of_objects != new_obj_list;
-    std::cout<<" operator != \t \t | true(1)/false(0): "; std::cout<<check<<std::endl;
+    std::cout<<"operator != | true(1)/false(0): "; std::cout<<check<<std::endl;
 
     //operator +=
      my_arr_of_objects+=obj_set;
-    std::cout<<" operator += \t \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"operator += | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
     //operator ==
-    check = my_arr_of_objects != new_obj_list;
-    std::cout<<" operator == \t \t | true(1)/false(0): "; std::cout<<check<<std::endl;
+    check = my_arr_of_objects == new_obj_list;
+    std::cout<<"operator == | true(1)/false(0): "; std::cout<<check<<std::endl;
 
     //operator --
     --my_arr_of_objects;
-    std::cout<<" operator -- \t \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"operator -- | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
     //assign
     Class_Example obj1(0, "assign"); Class_Example obj2(1, "assign"); Class_Example obj3(2, "assign"); my_arr_of_objects.assign(obj1, obj2, obj3);
-    std::cout<<" function assign() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; my_arr_of_objects.print(); std::cout<<std::endl;
+    std::cout<<"function assign() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; my_arr_of_objects.print(); std::cout<<std::endl;
 
      //insert
     Class_Example obj4(3, "insert"); Class_Example obj5(4, "insert"); my_arr_of_objects.insert(obj4, obj5);
-    std::cout<<" function insert() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; my_arr_of_objects.print(); std::cout<<std::endl;
+    std::cout<<"function insert() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; my_arr_of_objects.print(); std::cout<<std::endl;
 
     //push_front
     my_arr_of_objects.push_front(obj_set);
-    std::cout<<" function push_front() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"function push_front() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
     //push_back()
     my_arr_of_objects.push_back(obj_set);
-    std::cout<<" function push_back() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"function push_back() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
     //pop_front
     my_arr_of_objects.pop_front();
-    std::cout<<" function pop_front() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; my_arr_of_objects.print(); std::cout<<std::endl;
+    std::cout<<"function pop_front() | size: "; std::cout<<my_arr_of_objects.size()<<" | "; my_arr_of_objects.print(); std::cout<<std::endl;
 
     //pop_back()
     my_arr_of_objects.pop_back();
-    std::cout<<" function pop_back() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"function pop_back() | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
 
     //erase()
     my_arr_of_objects.erase(2);
-    std::cout<<" function erase() \t | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"function erase() | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+
+    //erase()
+    my_arr_of_objects.remove(0);
+    std::cout<<"function erase() | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+
+    //show()
+    my_arr_of_objects.resize(9); my_arr_of_objects.set(7,obj_set);
+    std::cout<<"function show() | size: "; std::cout<<my_arr_of_objects.size()<<" | "<<std::endl; my_arr_of_objects.show(); std::cout<<std::endl;
+
+    //compact()
+    my_arr_of_objects.compact();
+    std::cout<<"function compact() | size: "; std::cout<<my_arr_of_objects.size()<<" | "<<std::endl; my_arr_of_objects.show(); std::cout<<std::endl;
 
     //clear
     my_arr_of_objects.clear();
-    std::cout<<" function clear() \t | size: "; std::cout<<my_arr_of_objects.size()<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"function clear() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl<<std::endl; my_arr_of_objects.show(); std::cout<<std::endl;
 
     return 0;
 }
