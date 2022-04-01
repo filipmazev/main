@@ -78,9 +78,9 @@ namespace std
             {
                 if (this->_size != new_size)
                 {
-                    TYPE* tmp = new TYPE[new_size]; bool* c_tmp = new bool[new_size];
-                    for (int i = 0; i < (new_size < this->_size ? new_size : this->_size); i++) { tmp[i] = this->_arr[i]; c_tmp[i] = this->check[i]; }
-                    for (int i = this->_size; i < new_size; i++) { c_tmp[i] = false; } this->_size = new_size; this->num = this->num > this->_size ? this->_size : this->num;
+                    TYPE* tmp = new TYPE[new_size]; bool* c_tmp = new bool[new_size]; size_t comp = new_size < this->_size ? new_size : this->_size;
+                    for (int i = 0; i < new_size; i++) { tmp[i] = i < comp ? this->_arr[i] : TYPE(); c_tmp[i] = i < comp ? this->check[i] : false; }
+                    this->_size = new_size; this->num = this->num > this->_size ? this->_size : this->num;
                     delete[] this->_arr; this->_arr = new TYPE[new_size]; this->_arr = tmp; delete[] this->check; this->check = new bool[new_size]; this->check = c_tmp;
                 }
             }
@@ -104,7 +104,7 @@ namespace std
             inline void remove(size_t index) { if (index < this->_size && index >= 0) { this->check[index] = false; this->_arr[index] = TYPE(); this->num--; } }
 
             inline void set(size_t index, TYPE element) {
-                if (index < this->_size && this->_size > 0) { if (this->check[index] != true) { this->num++; } this->check[index] = true; this->_arr[index] = element; }
+                if (index >= 0) { if (index >= this->_size) { resize(index + 1); } if (this->check[index] != true) { this->num++; } this->check[index] = true; this->_arr[index] = element; }
                 else { throw std::bad_alloc{}; }
             }
 
@@ -145,7 +145,7 @@ namespace std
 
             const bool empty() noexcept { return (this->num == 0); }
 
-            inline void clear() { while (!empty()) { pop_back(); } }
+            inline void clear() { resize(0); } 
 
             const size_t size() noexcept { return this->_size; }
 

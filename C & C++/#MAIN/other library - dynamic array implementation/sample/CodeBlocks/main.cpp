@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string> //not required, for to_string function in Class_Example
-#include <other/arr.h> //if linked: #include <other/arr.h>
+#include "other/arr.h" //if linked: #include <other/arr.h>
 
 //example class for use in (1) EXAMPLE CODE
 class Class_Example
@@ -67,7 +67,7 @@ int main()
 
     // EXAMPLE CODE (1)
     std::oth::arr<Class_Example> my_arr_of_objects; std::cout<<std::endl<<"Enter size: "; int n; std::cin>>n; std::cout<<std::endl;
-    for(int i=0; i<(n==0?n+1:n); i++){ ++my_arr_of_objects; Class_Example obj = Class_Example(i, "test"); my_arr_of_objects.set(i,obj); }
+    for(int i=0; i<(n==0?n+1:n); i++){ Class_Example obj = Class_Example(i, "test"); my_arr_of_objects.set(i,obj); }
 
     //size()
     std::cout<<"function size() | size: "<<my_arr_of_objects.size()<<std::endl;
@@ -154,7 +154,7 @@ int main()
 
     //clear
     my_arr_of_objects.clear();
-    std::cout<<"function clear() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl<<std::endl; my_arr_of_objects.show();
+    std::cout<<"function clear() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl;
 
     return 0;
 }
