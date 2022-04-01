@@ -55,7 +55,7 @@ namespace std
 
             friend std::istream& operator >> (std::istream& input, arr& other) noexcept
             {
-                if (other.num + 1 >= other._size) { resize(other._size + 1); } other.check[other.num] = true; input << other._arr[other.num++]; return input;
+                if (other.num + 1 >= other._size) { other.resize(other._size + 1); } other.check[other.num] = true; input >> other._arr[other.num++]; return input;
             }
 
             inline arr& operator ++ () { resize(this->_size + 1); return *this; }
@@ -157,5 +157,3 @@ namespace std
         };
     } // namespace oth
 } // namespace std
-
-
