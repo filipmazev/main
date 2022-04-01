@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string> //not required, for to_string function in Class_Example
-#include "other/arr.h" //if linked: #include <other/arr.h>
+#include <other/arr.h> //if linked: #include <other/arr.h>
 
 //example class for use in (1) EXAMPLE CODE
 class Class_Example
@@ -130,19 +130,19 @@ int main()
 
     //pop_front
     my_arr_of_objects.pop_front();
-    std::cout<<"function pop_front() | size: "; std::cout<<my_arr_of_objects.size()<<" | "; my_arr_of_objects.print(); std::cout<<std::endl;
+    std::cout<<"function pop_front() | size: "; std::cout<<my_arr_of_objects.size()<<" | "<<std::endl; my_arr_of_objects.print(); std::cout<<std::endl;
 
     //pop_back()
     my_arr_of_objects.pop_back();
-    std::cout<<"function pop_back() | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"function pop_back() | size: "; std::cout<<my_arr_of_objects.size()<<" | "<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
     //erase()
     my_arr_of_objects.erase(2);
-    std::cout<<"function erase() | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"function erase() | size: "; std::cout<<my_arr_of_objects.size()<<" | "<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
-    //erase()
+    //remove()
     my_arr_of_objects.remove(0);
-    std::cout<<"function erase() | size: "; std::cout<<my_arr_of_objects.size()<<" | "; std::cout<<my_arr_of_objects<<std::endl;
+    std::cout<<"function remove() | size: "; std::cout<<my_arr_of_objects.size()<<" | "<<std::endl; std::cout<<my_arr_of_objects<<std::endl;
 
     //show()
     my_arr_of_objects.resize(9); my_arr_of_objects.set(7,obj_set);
@@ -154,7 +154,7 @@ int main()
 
     //clear
     my_arr_of_objects.clear();
-    std::cout<<"function clear() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl<<std::endl; my_arr_of_objects.show(); std::cout<<std::endl;
+    std::cout<<"function clear() | size: "; std::cout<<my_arr_of_objects.size()<<std::endl<<std::endl; my_arr_of_objects.show();
 
     return 0;
 }
