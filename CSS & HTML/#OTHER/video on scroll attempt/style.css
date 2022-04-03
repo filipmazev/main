@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+}
+
+.intro
+{
+    height: 100vh;    
+}
+
+.intro video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1
+{ 
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 15px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 235px;
+    color: white;
+}
+
+section h1{
+    padding-top: 300px;
+    padding-bottom: 300px;
+    text-align: center;
+    font-size: 80px;
+}
+
+section #main {
+    position: relative;
+
+    padding-top: 50px;
+    padding-bottom: 330px;
+    height: 100%;
+    overflow: hidden;
+    color: black;
+    position: absolute;
+   }
+
+section .overlay 
+{
+    background: rgba(143, 143, 143, 0.1);
+    overflow: hidden;
+    padding-left: 1903px;
+    height: 100%;
+    color: black;
+}
