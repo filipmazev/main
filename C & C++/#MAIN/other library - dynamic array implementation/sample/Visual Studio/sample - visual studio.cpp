@@ -156,5 +156,9 @@ int main()
     my_arr_of_objects.clear();
     std::cout << "function clear() | size: "; std::cout << my_arr_of_objects.size() << std::endl;
 
+    //operator []
+    std::oth::arr<int> my_arr_of_ints;
+    std::cin >> my_arr_of_ints;
+
     return 0;
 }
