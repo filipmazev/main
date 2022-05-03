@@ -112,9 +112,9 @@ namespace std
 
             size_t front() noexcept { if (this->_size > 0) { int i = 0; while (this->check[i] != true) { i++; } return i; } else { return 0; } }
 
-            inline void push_back(TYPE element) 
+            inline void push_back(TYPE element)
             {
-                size_t b_pos = back(); if(b_pos==0){ push_front(element); } 
+                size_t b_pos = back(); if(b_pos==0){ push_front(element); }
                 else { if(b_pos+1 >= this->_size) { resize(this->_size+1); } this->check[b_pos+1] = true; this->_arr[b_pos+1] = element; ++this->num; }
             }
 
@@ -141,11 +141,22 @@ namespace std
                 std::list<TYPE> list = { { std::forward<T>(t)... } }; for (auto const& i : list) { push_back(i); }
             }
 
+            inline std::oth::arr<TYPE> unique()
+            {
+                std::oth::arr<TYPE> _unique; _unique.set(0, this->_arr[0]); int cnt=0;
+
+                for (size_t i = 0; i < this->size(); i++) { bool checker = false;
+                    for (size_t j = 0; j < cnt; j++) { if (this->_arr[i] == _unique[j]) { checker = true; break; } }
+                        if (checker == false && this->check[i] == true) { _unique.set(cnt++, this->_arr[i]); } }
+
+                return _unique;
+            }
+
             auto at(size_t index) noexcept { return this->_arr[index]; }
 
             const bool empty() noexcept { return (this->num == 0); }
 
-            inline void clear() { resize(0); } 
+            inline void clear() { resize(0); }
 
             const size_t size() noexcept { return this->_size; }
 
