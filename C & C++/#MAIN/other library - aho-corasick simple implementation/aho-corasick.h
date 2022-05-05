@@ -9,7 +9,7 @@
 // A minimal implementation of aho-corasick Trie algorithm / oth::arr
 ///
 
-/** @file other/arr */
+/** @file other/aho-corasick */
 
 #include <iostream>
 #include <vector>

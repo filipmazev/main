@@ -1,0 +1,15 @@
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\bin\Debug\Properties\Sublime.pkgdef
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\bin\Debug\sublime-text.png
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\bin\Debug\Sublime.pkgdef
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\bin\Debug\Sublime-Theme.vsix
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\bin\Debug\extension.vsixmanifest
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\obj\Debug\Sublime-Theme.csproj.AssemblyReference.cache
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\obj\Debug\_EmptyResource.resources
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\obj\Debug\Sublime-Theme.csproj.GenerateResource.cache
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\obj\Debug\Sublime-Theme.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\obj\Debug\Sublime-Theme.csproj.CoreCompileInputs.cache
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\obj\Debug\Sublime-Theme.dll
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\obj\Debug\Sublime-Theme.pdb
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\obj\Debug\extension.vsixmanifest
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\obj\Debug\files.json
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\Sublime-Theme\obj\Debug\createTemplateManifests.cache
