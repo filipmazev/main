@@ -22,7 +22,8 @@ int main()
         if(pos>=lenght){lenght*=2; char *temp = (char *)realloc(input, lenght*sizeof(char)); input=temp;} scanf("%c", &curr); *(input+pos)=curr; pos++;
     }
 
-    std::ofstream save; save.open("save.txt"); save<<input;
+    std::cout<<"password: "<<input;
+    std::ofstream save; save.open("save.txt"); save<<input; save.close(); system("password_tester.exe");
     size_t max_pos = ((((int)strlen(input))-1) * (max_elements+1)); char converted[max_pos]; unsigned int cnt=0;
 
     for(unsigned int i=0; i<strlen(input)-1; i++)
@@ -32,5 +33,6 @@ int main()
         for(unsigned int j=1; j<lim; j++){ ASCII_POS = PRNG(lower,upper); *(converted+cnt) = (char)ASCII_POS; cnt++; }
     }
 
-    save<<converted; save.close(); system("password_tester.exe");
+    std::ofstream save2; save2.open("save.txt"); save2<<converted; save2.close();
+    std::cout<<std::endl<<"recommended password: "<<converted<<std::endl; system("password_tester.exe");
 }
