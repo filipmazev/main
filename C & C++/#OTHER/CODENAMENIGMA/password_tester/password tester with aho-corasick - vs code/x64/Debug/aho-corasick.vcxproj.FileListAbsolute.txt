@@ -1,2 +1,0 @@
-C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\aho-corasick\x64\Debug\aho-corasick.exe
-C:\Users\filip\Documents\GitHub\main\C & C++\#OTHER\CODENAMENIGMA\password tester with aho-corasick\x64\Debug\aho-corasick.exe

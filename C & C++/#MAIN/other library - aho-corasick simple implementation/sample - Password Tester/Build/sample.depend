@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1651772225 source:c:\users\filip\documents\github\main\c & c++\#main\other library - aho-corasick simple implementation\sample\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<fstream>
+	<Windows.h>
+	"other/arr.h"
+	"other/aho-corasick.h"
+
+1651615922 c:\users\filip\documents\github\main\c & c++\#main\other library - aho-corasick simple implementation\sample\other\arr.h
+	<iostream>
+	<list>
+
+1651772148 c:\users\filip\documents\github\main\c & c++\#main\other library - aho-corasick simple implementation\sample\other\aho-corasick.h
+	<iostream>
+	<vector>
+	<string>
+
+1651772225 source:c:\users\filip\documents\github\main\c & c++\#main\other library - aho-corasick simple implementation\sample - password tester\build\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<fstream>
+	<Windows.h>
+	"other/arr.h"
+	"other/aho-corasick.h"
+
+1651615922 c:\users\filip\documents\github\main\c & c++\#main\other library - aho-corasick simple implementation\sample - password tester\build\other\arr.h
+	<iostream>
+	<list>
+
+1651772550 c:\users\filip\documents\github\main\c & c++\#main\other library - aho-corasick simple implementation\sample - password tester\build\other\aho-corasick.h
+	<iostream>
+	<vector>
+	<string>
+
