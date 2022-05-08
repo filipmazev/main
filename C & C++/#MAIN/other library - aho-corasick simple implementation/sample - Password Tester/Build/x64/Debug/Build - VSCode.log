@@ -1,0 +1,12 @@
+﻿  Build - VSCode.cpp
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\other library - aho-corasick simple implementation\sample - Password Tester\Build - VSCode\other\aho-corasick.h(54,1): warning C4267: '=': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\other library - aho-corasick simple implementation\sample - Password Tester\Build - VSCode\other\aho-corasick.h(64,48): warning C4018: '<': signed/unsigned mismatch
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\other library - aho-corasick simple implementation\sample - Password Tester\Build - VSCode\other\arr.h(111,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\other library - aho-corasick simple implementation\sample - Password Tester\Build - VSCode\other\arr.h(111): message : while compiling class template member function 'size_t std::oth::arr<char>::back(void) noexcept'
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\other library - aho-corasick simple implementation\sample - Password Tester\Build - VSCode\other\arr.h(117): message : see reference to function template instantiation 'size_t std::oth::arr<char>::back(void) noexcept' being compiled
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\other library - aho-corasick simple implementation\sample - Password Tester\Build - VSCode\Build - VSCode.cpp(55): message : see reference to class template instantiation 'std::oth::arr<char>' being compiled
+  Build - VSCode.vcxproj -> C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\other library - aho-corasick simple implementation\sample - Password Tester\Build - VSCode\x64\Debug\Build - VSCode.exe

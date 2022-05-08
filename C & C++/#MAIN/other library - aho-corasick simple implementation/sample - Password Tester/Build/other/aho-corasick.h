@@ -86,8 +86,8 @@ namespace std
                 return this->nodes[v].go[c];
             }
 
-            inline bool easy_test(std::string str) noexcept { int cnt, curr = 0; for (auto c : str) { curr = nodes[curr].go[c]; if (curr != 0) { cnt++; } } return (str.size() == cnt); }
-            inline bool hard_test(std::string str) noexcept { int cnt, curr = 0; for (auto c : str) { curr = nodes[curr].go[c]; if (curr != 0) { cnt++; } } return (cnt >= str.size()/2); }
+            inline bool easy_test(std::string str) noexcept { int cnt = 0, curr = 0; for (auto c : str) { curr = nodes[curr].go[c]; if (curr != 0) { cnt++; } } return (str.size() == cnt); }
+            inline bool hard_test(std::string str) noexcept { int cnt = 0, curr = 0; for (auto c : str) { curr = nodes[curr].go[c]; if (curr != 0) { cnt++; } } return (cnt >= str.size()/2); }
 
             ~Trie(){}
         };
