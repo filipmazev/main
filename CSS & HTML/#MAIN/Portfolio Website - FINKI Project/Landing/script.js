@@ -12,7 +12,6 @@ $(function () {
     }();
 });
 
-
 (function(){
 
     var addEvent = function (el, type, fn) {
@@ -59,5 +58,5 @@ $(function () {
     };
   })();
 
-window.fitText( document.getElementById("Title_Text"), 0.9);
-window.fitText( document.getElementById("mail"), 0.9);
+window.fitText( document.getElementById("Title_Text"), 0.73);
+window.fitText( document.getElementById("mail"), 0.8);

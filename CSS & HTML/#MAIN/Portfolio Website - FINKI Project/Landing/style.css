@@ -1,10 +1,28 @@
+:root{
+	--background-color: white;
+	--text-color: black;
+	--secondary-text-color: rgb(35,35,35);
+	--mail-button-color: rgba(253, 253, 253, 0.9);
+}
+
 *{
+	color: var(--text-color);
+	background-color: var(--background-color);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	box-sizing: border-box;
+}
+
+header{
+	display: none;
+}
+
+.main-container{
+	margin-top: -7%;
 }
 
 .main-container #Title_Text{
     font-size: 500%;
-    text-align: center;
+    text-align: left;
 }
 
 .main-container #Title_Text:hover{
@@ -14,28 +32,29 @@
 .main-container .Title-Text-Container{
 	max-width: 100%; 
 	padding: 2%; 
-	margin-top: 2%; 
-	margin-bottom: 2%;
+	margin-bottom: -13%;
 	margin-left: 1%; 
 	margin-right: 1%; 
-	border-radius: 15px; 
 	box-sizing: border-box; 
-	background-color: rgba(245,245,245,0.6);
-	background-size: cover;
-	box-shadow: black;
-	box-shadow: 0px 3px 7px rgb(150, 150, 150);
 }
 
 .mailto-link {
 	position: relative;
-    font-size: 150%;
-    color: black;
-    font-weight: 100;
-	text-decoration: none;
+    font-size: 100%;
+    color: var(--text-color);
+    font-weight: 350;
+}
+
+.content_1{
+	display: flex;
+	margin-top: -2%;
+	font-size: 200%;
+	font-weight: 650;
 }
 
 .mailto-message {
 	left: 50%;
+	top: 1%;
 	transform: translate(-50%, -100%);
 	position: absolute;
 	display: none;
@@ -43,8 +62,8 @@
 	width: 100%;
 	white-space: nowrap;
 	font-size: 80%;
-	background-color: rgba(253, 253, 253, 0.9);
-	color: rgb(35, 35, 35);
+	background-color: var(--mail-button-color);
+	color: var(--secondary-text-color);
 	padding: 2px 6px;
 	border-radius: 8px;
     font-weight: 300;
@@ -52,39 +71,66 @@
 	&:before {
 		content: '';
 	}
-
-	&:before {
-		top: 1%;
-		left: 50%;
-		border: solid transparent;
-		height: 0;
-		width: 0;
-		position: absolute;
-		pointer-events: none;
-		border-color: rgba(255, 255, 255, 0);
-		border-top-color: #ffffff;
-		border-width: 4px;
-		margin-left: -4px;
-	}
 }
 .mailto-link:hover .mailto-message,
-.mailto-link:focus .mailto-message,
-.mailto-link:focus-within .mailto-message {
+.mailto-link:focus .mailto-message {
     display: block;
 }
 
 @media screen and (max-width: 600px) {
     .main-container #Title_Text{   
         padding-top: 5%;
-		text-align: center;
+		text-align: left;
     }
-
-	.main-container .Title-Text-Container{
-		border-radius: 2%;
-		box-shadow: 0px 1px 2px rgb(150, 150, 150);
-	}
 
 	.mailto-link {
 		font-size: 80%;
 	}
+
+	.content_1{
+		margin-top: -4%;
+		font-size: 110%;
+		margin-top: -4%;
+		font-size: 125%;
+		max-width: 90%;
+	}
+
+	.main-container #Title_Text{   
+        margin-top: 8%;
+		text-align: left;
+    }
+
+	.mailto-link {
+		font-size: 85%;
+	}
 } 
+
+@media only screen 
+  and (min-device-width: 768px)  
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    
+	.main-container #Title_Text{   
+		padding-top: 5%;
+		text-align: left;
+    }
+
+	.mailto-link {
+		font-size: 85%;
+	}
+
+	.content_1{
+		margin-top: -4%;
+		font-size: 165%;
+		max-width: 70%;
+	}
+}
+
+@media (prefers-color-scheme: dark){
+	:root{
+		--background-color: black;
+		--text-color: white;
+		--secondary-text-color: rgb(234, 234, 234);
+		--mail-button-color: rgba(2, 2, 2, 0.9);
+	}
+}
