@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <string>
 #include <fstream>
 #include <Windows.h>
@@ -13,7 +12,7 @@ namespace fs = std::filesystem;
 
 #pragma comment(lib, "urlmon.lib")
 
-#define CHAR_TYPES 4
+constexpr auto CHAR_TYPES = 4;
 
 enum char_types { upper, lower, numeric, special };
 
@@ -22,7 +21,7 @@ void color(int c) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), c);
 inline int* diversity_score(std::string password) noexcept
 {
     bool check_UPPER = false, check_LOWER = false, check_SPECIAL = false, check_NUMERIC = false;
-    int* arr = new int[CHAR_TYPES + 1]; for (int i = 0; i < CHAR_TYPES; i++) { arr[i] = 0; } int cnt_UPPER = 0, cnt_LOWER = 0, cnt_SPECIAL = 0, cnt_NUMERIC = 0;
+    int* arr = new int[CHAR_TYPES + 1]; for (unsigned int i = 0; i < CHAR_TYPES; i++) { arr[i] = 0; } int cnt_UPPER = 0, cnt_LOWER = 0, cnt_SPECIAL = 0, cnt_NUMERIC = 0;
 
     for (unsigned int i = 0; i < password.size(); i++) {
         if (isalpha(password[i]) && isupper(password[i])) { arr[upper] = ++cnt_UPPER; check_UPPER = true; }
@@ -40,7 +39,7 @@ int main()
     
     if (!checker.is_open()) {
         fs::create_directory("C:\\ProgramData\\Password Tester");
-        URLDownloadToFile(NULL, _T("https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000.txt"), _T("C:\\ProgramData\\Password Tester\\list.txt"), 0, NULL);
+        URLDownloadToFile(NULL, _T("https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-10000.txt"), _T("C:\\ProgramData\\Password Tester\\list.txt"), 0, NULL);
     } 
 
     std::ifstream file("C:\\ProgramData\\Password Tester\\list.txt"); double low_score_limit = 0.5, mid_score_limit = 1, high_score_limit = 5;
@@ -48,7 +47,7 @@ int main()
     std::string str; int i = 0;
     std::oth::Trie t(SIZE); while (std::getline(file, str)) { t.add(str, i); i++; } t.build_automation();
 
-    std::string password; std::cin >> password;
+    std::string password; std::cout << "Enter your password: "; std::cin >> password;
 
     bool val_easy = t.easy_test(password), val_hard = t.hard_test(password);
 
