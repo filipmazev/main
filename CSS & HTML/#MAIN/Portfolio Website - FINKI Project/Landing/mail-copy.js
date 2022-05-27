@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$('a[href^=mailto]').addClass('mailto-link');
 
 	var mailto = $('.mailto-link');
-	var messageCopy = '';
+	var messageCopy = 'Click to copy';
 	var messageSuccess = 'Copied to clipboard';
 	
 	mailto.append('<span class="mailto-message"></span>');

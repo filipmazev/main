@@ -1,28 +1,80 @@
 :root{
 	--background-color: white;
 	--text-color: black;
-	--secondary-text-color: rgb(35,35,35);
+	--secondary-text-color: rgb(58, 58, 58);
 	--mail-button-color: rgba(253, 253, 253, 0.9);
+	--gr_1: rgba(255,255,255,0.8);
+	--gr_2: rgba(255,255,255,0.5);
+}
+
+body::-webkit-scrollbar{
+	width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track{
+	background: var(--background-color);
+}
+
+body::-webkit-scrollbar-thumb{
+	background: var(--secondary-text-color);
+	border-radius: 15rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: var(--text-color);
 }
 
 *{
-	color: var(--text-color);
-	background-color: var(--background-color);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	box-sizing: border-box;
 }
 
-header{
-	display: none;
+body{
+	margin: 0;
+	overflow: hidden;
+	background: url("render_3.png");
+	background-repeat: no-repeat;
+	color: var(--text-color);
+}
+
+.noise {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	overflow: hidden;
+	background-color: var(--text-color);
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right bottom, 
+	var(--gr_1), 
+	var(--gr_2)), 
+	url(noise.svg);
+	backdrop-filter: blur(2rem);
+	z-index: -1;
+  }
+
+.scene, canvas{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
 
 .main-container{
+	display: flex;
+	flex-direction: column;
 	margin-top: -7%;
+	z-index: 1;
 }
 
 .main-container #Title_Text{
+	display: flex;
+	margin-left: -1%;
+	margin-bottom: 10%;
     font-size: 500%;
-    text-align: left;
+	z-index: 1;
 }
 
 .main-container #Title_Text:hover{
@@ -31,11 +83,9 @@ header{
 
 .main-container .Title-Text-Container{
 	max-width: 100%; 
-	padding: 2%; 
+	padding-top: 2%; 
+	padding-bottom: 2%; 
 	margin-bottom: -13%;
-	margin-left: 1%; 
-	margin-right: 1%; 
-	box-sizing: border-box; 
 }
 
 .mailto-link {
@@ -80,7 +130,6 @@ header{
 @media screen and (max-width: 600px) {
     .main-container #Title_Text{   
         padding-top: 5%;
-		text-align: left;
     }
 
 	.mailto-link {
@@ -89,15 +138,13 @@ header{
 
 	.content_1{
 		margin-top: -4%;
-		font-size: 110%;
 		margin-top: -4%;
-		font-size: 115%;
+		font-size: 85%;
 		max-width: 90%;
 	}
 
 	.main-container #Title_Text{   
         margin-top: 8%;
-		text-align: left;
     }
 
 	.mailto-link {
@@ -112,7 +159,6 @@ header{
     
 	.main-container #Title_Text{   
 		padding-top: 5%;
-		text-align: left;
     }
 
 	.mailto-link {
@@ -130,7 +176,9 @@ header{
 	:root{
 		--background-color: black;
 		--text-color: white;
-		--secondary-text-color: rgb(234, 234, 234);
+		--secondary-text-color: rgb(210, 210, 210);
 		--mail-button-color: rgba(2, 2, 2, 0.9);
+		--gr_1: rgba(0,0,0,0.9);
+		--gr_2: rgba(0,0,0,0.6);
 	}
 }
