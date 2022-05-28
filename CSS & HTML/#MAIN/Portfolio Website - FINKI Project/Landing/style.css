@@ -3,7 +3,7 @@
 	--text-color: black;
 	--secondary-text-color: rgb(58, 58, 58);
 	--mail-button-color: rgba(253, 253, 253, 0.9);
-	--gr_1: rgba(255,255,255,0.8);
+	--gr_1: rgba(255,255,255,0.7);
 	--gr_2: rgba(255,255,255,0.5);
 }
 
@@ -32,9 +32,18 @@ body::-webkit-scrollbar-thumb:hover {
 body{
 	margin: 0;
 	overflow: hidden;
-	background: url("render_3.png");
+	background-color: var(--background-color);
 	background-repeat: no-repeat;
 	color: var(--text-color);
+}
+
+#video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -2;
 }
 
 .noise {
@@ -51,7 +60,7 @@ body{
 	var(--gr_1), 
 	var(--gr_2)), 
 	url(noise.svg);
-	backdrop-filter: blur(2rem);
+	backdrop-filter: blur(0.7rem);
 	z-index: -1;
   }
 
@@ -179,6 +188,6 @@ body{
 		--secondary-text-color: rgb(210, 210, 210);
 		--mail-button-color: rgba(2, 2, 2, 0.9);
 		--gr_1: rgba(0,0,0,0.9);
-		--gr_2: rgba(0,0,0,0.6);
+		--gr_2: rgba(0, 0, 0, 0.6);
 	}
 }

@@ -58,5 +58,5 @@ $(function () {
     };
   })();
 
-window.fitText( document.getElementById("Title_Text"), 0.73);
+window.fitText( document.getElementById("Title_Text"), 0.78);
 window.fitText( document.getElementById("mail"), 0.8);
