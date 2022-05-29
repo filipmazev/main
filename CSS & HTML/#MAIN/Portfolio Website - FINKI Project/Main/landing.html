@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>Mazev F.</title>
+</head>
+<body>
+
+    <header>
+        <div class = "Title-Text-Container" id="landing" onselectstart="return false"> 
+            <h1 id="Title_Text"> Title Text </h1> 
+            <p id="text">Freelance Coding, Photography and Design work.</p>
+        </div>
+
+        <div class="Mail-Container"> 
+            <p id="mail"> <a href="mailto:filipmazev@gmail.com"> filipmazev@gmail.com</a> </p>
+       </div>
+    </header>
+
+    <section id="section1">
+        <div class="container"> 
+            <div class="card">
+                <div class="content">
+                    <h2>/1</h2>
+                    <h3>Coding</h3>
+                    <p style="min-height: 160px; margin-top: 1rem; margin-bottom: 1rem;">
+                        Your Wish Is My CMD;<br>
+                        <br>
+                        C/C++, C#, HTML, CSS and JavaScript development, 
+                        for when you need a great looking 
+                        functional website or application. 
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="content">
+                    <h2>#2</h2>
+                    <h3>Photography</h3>
+                    <p style="min-height: 160px; margin-top: 1rem; margin-bottom: 1rem;">
+                        Capture The Feeling<br>
+                        <br>
+                        Stock up on your best moments and frame the past, 
+                        get your photos professionally done for 
+                        those moments should truly last.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Design</h3>
+                    <p style="min-height: 160px; margin-top: 1rem; margin-bottom: 1rem;">
+                        Top Text<br>
+                        <br>
+                        From concept to realization, materialize your ideas 
+                        and distinguish your brand with the perfect solution 
+                        for your creative desires.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <video autoplay loop muted playsinline style="pointer-events: none" id="video"> 
+            <source src="bubbles.webm" type="video/webm">
+        </video>    
+    </section>
+
+    <script src="./app.js"> </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="mail-copy.js"> </script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        glare: true, "max-glare": 1,
+	});
+    </script>
+</body>
+</html>
