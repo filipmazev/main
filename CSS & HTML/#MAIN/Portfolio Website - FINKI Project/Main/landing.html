@@ -77,12 +77,15 @@
     <script src="./app.js"> </script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script src="mail-copy.js"> </script>
-    <script>
+    <script>       
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    } else {
         VanillaTilt.init(document.querySelectorAll(".card"), {
-		max: 25,
-		speed: 400,
-        glare: true, "max-glare": 1,
-	});
+		    max: 25,
+		    speed: 400,
+            glare: true, "max-glare": 1,
+	    });
+    }     
     </script>
 </body>
 </html>
