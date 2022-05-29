@@ -155,7 +155,6 @@ section{
 	width: 280px;
 	height: 400px;
 	margin: 30px;
-	box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background: linear-gradient(to right bottom, 
 	var(--gr_3), 
@@ -227,11 +226,22 @@ section{
 		--mail-button-color: rgba(2, 2, 2, 0.9);
 		--gr_1: rgba(0,0,0,0.9);
 		--gr_2: rgba(0, 0, 0, 0.6);
-        --gr_3: rgba(0, 0, 0, 0.95);
-        --gr_4: rgba(0, 0, 0, 0.85);
+        --gr_3: rgba(0, 0, 0, 0.85);
+        --gr_4: rgba(0, 0, 0, 0.75);
         --header-color: rgb(7, 7, 7);
         --num-color: rgba(22, 22, 22, 0.2);
 	}
+
+    .container .card{
+        border-top: 1px solid rgba(48, 48, 48, 0.5);
+        border-left: 1px solid rgba(66, 66, 66, 0.5);
+    }
+}
+
+@media (prefers-color-scheme: light){
+    .container .card{
+        box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+    }
 }
 
 @media screen and (max-width: 600px) {
