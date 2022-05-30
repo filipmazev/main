@@ -12,14 +12,14 @@ $(function () {
     }();
 });
 
-/* function bgChanger(){
-    if(this.scrollY > this.innerHeight / 4){
+function bgChanger(){
+    if(this.scrollY > this.innerHeight / 6){
         document.body.classList.add("bg-active");
-        document.body.classList.remove("Title-Text-Container");
+        document.body.classList.remove("second-page");
     }
     else{
         document.body.classList.remove("bg-active");
     }
 }
 
-window.addEventListener("scroll", bgChanger); */
+window.addEventListener("scroll", bgChanger); 
