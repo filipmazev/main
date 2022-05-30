@@ -69,13 +69,13 @@ body{
     transition: all 0.5s ease;
 }
 
+
 header{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 1;
     flex-direction: column;
     color: var(--text-color);
     background-color: var(--header-color);
@@ -136,17 +136,15 @@ header{
     display: block;
 }
 
-section{
+#section1{
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-}
-
-#section1{
+    justify-content: center;
     overflow: hidden;
-    padding-bottom: 15%;
+    padding-bottom: 35vh;
+    position: relative;
 }
 
 .cards{
@@ -167,6 +165,7 @@ section{
 	max-width: 1200px;
 	flex-wrap: wrap;
 	z-index: 2;
+    perspective: 100rem;
 }
 
 .container .card{
@@ -205,12 +204,16 @@ section{
     font-size: 1.8em;
     color: var(--text-color);
     z-index: 1;
+    animation: moveCards 0.7s 0.7s forwards;
+    opacity: 0;
 }
 
 .container .card .content p{
     font-size: 1em;
     color: var(--text-color);
     font-weight: 300;
+    animation: moveCards 0.7s 0.8s forwards;
+    opacity: 0;
 }
 
 .container .card .content a{
@@ -224,9 +227,11 @@ section{
     text-decoration: none;
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: moveCards 0.7s 0.9s forwards;
+    opacity: 0;
 }
 
-#mountains{
+svg{
     padding-top: 5%;
     object-fit: contain;
     position: fixed;
@@ -245,6 +250,18 @@ section{
     background-color: var(--header-color);
 }
 
+@keyframes moveCards {
+    0%{
+        transform: translateY(40rem) 
+        rotateY(-20deg);
+    }
+    100%{
+        transform: translateY(0) 
+        rotateY(0); 
+        opacity: 1;
+    }
+}
+
 @media (prefers-color-scheme: dark){
 	:root{
 		--background-color: black;
@@ -256,7 +273,7 @@ section{
         --gr_3: rgba(0, 0, 0, 0.85);
         --gr_4: rgba(0, 0, 0, 0.75);
         --header-color: rgb(4, 4, 4);
-        --num-color: rgba(32, 32, 32, 0.2);
+        --num-color: rgba(20, 20, 20, 0.2);
         --pg2-bg-color: #0d001c;
         --l1: #0d001c;
         --l2: #110331;
