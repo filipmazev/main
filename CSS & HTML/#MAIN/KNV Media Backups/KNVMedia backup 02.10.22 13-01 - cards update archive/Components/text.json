@@ -1,0 +1,122 @@
+{
+	"SecureToken" : "709e054f-54fa-4115-933d-a6d7c552a45e",
+
+	"Navigation-Item-1" : "HOME",
+	"Navigation-Item-2" : "ABOUT",
+	"Navigation-Item-3" : "HOW IT WORKS",
+	"Navigation-Item-4" : "CONTACT",
+
+	"Landing-Title" : "KNV HELPS YOUR BUISNESS SCALE TO 6 & 7 FIGURES",
+	"Landing-SubHeader" : "WITH DIGITAL MARKETING",
+	"Landing-Button" : "CONTACT NOW",
+	"Landing-Scroll-Message" : "scroll down",
+
+	"About-Heading" : "KNV, meaning Kristijan and Viktor, is a social media marketing agency (SMMA).",
+	"About-Paragraph-1" : "We are young and ambitious entrepreneurs who want to make a change in the Digital Marketing area. We want to help other like-minded individuals expand their reach online and scale their business.",
+	"About-Paragraph-2" : "Kristijan Sotirovski - Digital Marketing (Social Media, SEO, PPC, Affiliate Marketing), George Mason University (GMU), Google certificate for Digital Marketing.",
+	"About-Paragraph-3" : "Viktor Trajkovski - Graphic Design (Logo Design, Web Design, Motion Graphics), Music Producer, Content Creator, European University Skopje, Macedonia, Google certificate for Digital Marketing.",
+	"About-Button" : "CONTACT NOW",
+
+	"How-It-Works-Title-Line-1" : "YOU GIVE US AN IDEA. WE CREATE A STRATEGY.",
+	"How-It-Works-Title-Line-2" : "WE CREATE A DESIGN. YOU CREATE REVENUE.",
+	"How-It-Works-Paragraph-1" : "We deliver creative content that resonates with your customers.",
+	"How-It-Works-Paragraph-2-Line-1" : "Our service uses various social media platforms to attract more customers",
+	"How-It-Works-Paragraph-2-Line-2" : "to your profile, product or business.",
+
+	"Modal-Message-Top": "ORDER",
+	"Modal-Message-Mail" : "Please enter your email address so we can get in touch with you as soon as possible.",
+	"Edit-Mode-Message" : "Changes made in edit mode won't be saved on exit",
+	"ModalButtonMessage1" : "ORDER",
+	"ModalButtonMessage2" : "✓",
+	"ModalOrderMessageStart" : "A client has requested the following services: ",
+	"ModalSuccessMessage" : "Thank you! Your request has been successfuly submitted. We'll get back to you as soon as possible. &#128526",
+
+	"CardBundleOption0" : "FB/IG MANAGEMENT",
+	"CardBundleOption1" : "SEO",
+	"CardBundleOption2" : "MARKETING CONSULTING",
+	"CardBundleOption3" : "CUSTOM GRAPHIC DESIGN",
+	"CardBundleOption4" : "PAID TRAFFIC",
+	"CardBundleOption5" : "DIGITAL MARKETING SPECIALIST",
+	"CardBundleOption6" : "RUNNING ADS",
+	"CardBundleOption7" : "PPC",
+	"CardBundleOption8" : "WEB DESIGN AND DEV",
+	"CardBundleOption9" : "DATA ANALYTICS",
+	"CardBundleOption10" : "CONTENT CREATION",
+
+	"CardBundleOptionExtras" : "2,3,8,10",
+
+	"Card-1-Title" : "GOLD",
+	"Card-1-Bundle-Message" : "$1,150",
+	"Card1OptionsList": "0,2,6,3",
+	"Card-1-Open-Heading" : "GOLD BUNDLE",
+	"Card-1-Open-Paragraph" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, debitis qui? Esse, facere explicabo? Ab ipsa quasi saepe laudantium quod.",
+
+	"Card-2-Title" : "PLATINUM",
+	"Card-2-Bundle-Message" : "$2,300",
+	"Card2OptionsList": "4,5,6,1,7",
+	"Card-2-Open-Heading" : "PLATINUM BUNDLE",
+	"Card-2-Open-Paragraph" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, debitis qui? Esse, facere explicabo? Ab ipsa quasi saepe laudantium quod.",
+
+	"Card-3-Title" : "DIAMOND",
+	"Card-3-Bundle-Message" : "$5,000",
+	"Card3OptionsList": "1,2,4,5,6,7,8,9",
+	"Card-3-Open-Heading" : "DIAMOND BUNDLE",
+	"Card-3-Open-Paragraph" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, debitis qui? Esse, facere explicabo? Ab ipsa quasi saepe laudantium quod.",
+
+	"Card-4-Title" : "EXTRAS",
+	"Card-4-Bundle-Message" : "EXTRA",
+	"Card4OptionsList": "8,10,3,2",
+	"Card-4-Open-Heading" : "TAILORED-MADE",
+	"Card-4-Open-Paragraph" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, debitis qui? Esse, facere explicabo? Ab ipsa quasi saepe laudantium quod.",
+
+	"CardOrderMessage" : "ORDER",
+
+	"How-It-Works-Card-1-Title" : "FACEBOOK",
+	"How-It-Works-Card-1-Content" : "<b> Paid Traffic, Running Ads, </b> Facebook Media Consulting and Account Management.",
+	"How-It-Works-Card-2-Title" : "INSTAGRAM",
+	"How-It-Works-Card-2-Content" : "<b> Paid Traffic, Running Ads, </b> Content Design and Account Management.",
+	"How-It-Works-Card-3-Title" : "GOOGLE",
+	"How-It-Works-Card-3-Content" : "<b> Search Engine Optimisation, </b> Pay-Per-Click and Running Ads.",
+	"How-It-Works-Card-4-Title" : "TIKTOK",
+	"How-It-Works-Card-4-Content" : "<b> Posting Strategy, Running Ads </b> and Content Tailored Sponsor Segments.",
+
+	"Contact-Heading-Line-1" : "LET'S GET TO WORK",
+	"Contact-Heading-Line-2" : "TELL US YOUR EXPECTATIONS!",
+	"Contact-Heading-Line-3" : "LET'S GET TO KNOW EACH OTHER AND MAKE A STRATEGY",
+	
+	"ContactField1Placeholder": "YOUR NAME",
+	"ContactField2Placeholder": "YOUR EMAIL",
+	"ContactField3Placeholder": "SUBJECT",
+	"ContactField4Placeholder": "MESSAGE",
+	"ContactButtonMessage1" : "SEND",
+	"ContactButtonMessage2" : "SENT",
+
+	"ContactSendTo" : "contact@knvmedia.com",
+	"ContactDefaultSubject" : "Work Inquiry",
+
+	"Footer-Segment-1-Title" : "EXPLORE",
+	"Footer-Segment-1-Link-1" : "HOME",
+	"Footer-Segment-1-Link-2" : "ABOUT",
+	"Footer-Segment-1-Link-3" : "HOW IT WORKS",
+	"Footer-Segment-1-Link-4" : "CONTACT",
+
+	"Footer-Segment-2-Title" : "PORTFOLIO",
+	"Footer-Segment-2-Link-1" : "OUR CLIENTS",
+	"FooterSegment2Link1Direct" : "./Components/pages/404.html",
+
+	"Footer-Segment-3-Title" : "FOLLOW",
+	"Footer-Segment-3-Link-1" : "INSTAGRAM",
+	"FooterSegment3Link1Direct" : "https://www.instagram.com/knv.media/",
+	"Footer-Segment-3-Link-2" : "FACEBOOK",
+	"FooterSegment3Link2Direct" : "https://www.facebook.com/knvmedia22",
+	"Footer-Segment-3-Link-3" : "LINKEDIN",
+	"FooterSegment3Link3Direct" : "https://www.linkedin.com/company/knv-media/",
+	
+	"Footer-Segment-4-Title" : "GET IN TOUCH",
+	"Footer-Segment-4-Link-1" : "CONTACT@KNVMEDIA.COM",
+	"FooterSegment4Link1Direct" : "mailto: contact@knvmedia.com",
+	"Footer-Segment-4-Link-2" : "KRISTIJAN@KNVMEDIA.COM",
+	"FooterSegment4Link2Direct" : "mailto: kristijan@knvmedia.com",
+	"Footer-Segment-4-Link-3" : "VIKTOR@KNVMEDIA.COM ",
+	"FooterSegment4Link3Direct" : "mailto: viktor@knvmedia.com"
+}

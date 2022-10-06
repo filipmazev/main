@@ -1,13 +1,16 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Id="Sublime_Theme.f786f751-9034-4667-8785-3d7cb822b33b" Version="1.0" Language="en-US" Publisher="filipmazev" />
-    <DisplayName>Sublime_Theme</DisplayName>
+    <Identity Id="Sublime_Theme.f786f751-9034-4667-8785-3d7cb822b33b" Version="1.15" Language="en-US" Publisher="filipmazev" />
+    <DisplayName>Sublime_Theme_Monokai</DisplayName>
     <Description xml:space="preserve">Identical Sublime Text Monokai theme for Visual Studio Code
 
 For C#, this theme is exactly the same Monokai's theme of Sublime Text but for Visual Studio Code instead. Unlike default C# VSCode's Monokai, this is an actual, perfect and identical copy of the loved by all Sublime Text's theme. It's name is Sublime Monokai.
 
 While I put special focus on making it identical specifically for C#, it is also close to identical in the case of C, C++ and Python. For other languages like Javascript, Ruby, Java, etc, it's not guaranteed to be 100% identical (or maybe yes, I didn't tested it), but it'll work anyway as just another Monokai theme :)</Description>
+    <ReleaseNotes>updated the title and added an example</ReleaseNotes>
     <Icon>sublime-text.png</Icon>
+    <PreviewImage>C++ example.JPG</PreviewImage>
+    <Tags>sublime, theme, monokai</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">

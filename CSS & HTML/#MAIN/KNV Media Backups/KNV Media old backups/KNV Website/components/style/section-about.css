@@ -1,0 +1,289 @@
+.section-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-left: 20%;
+    padding-right: 20%;
+
+    background: white;
+}
+
+.content-container-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-top: 12rem;
+
+    gap: 10rem;
+
+    width: 100%;
+}
+
+.content-about{
+    color: var(--main-text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    gap: 1rem;
+    max-width: 45%;
+
+    left: 0 !important; 
+}
+
+.content-about h4{
+    font-family: custom-bold !important;
+    font-size: 185%;
+}
+
+.content-about p{
+    font-family: custom-regular !important;
+    font-size: 150%;
+    font-weight: 550;
+}
+
+.button-about a{
+    font-family: custom-bold !important;
+    color: white;
+    font-size: 165%;
+    text-decoration: none;
+}
+
+.button-about{
+    background-color: var(--main-text-color);
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 65px;
+
+    margin-top: 0.5rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+
+.image-about{
+    margin-top: 8px;
+    margin-right: 85px;
+}
+
+.image-about svg{
+    width: 130%;
+    height: 130%;
+}
+
+@media screen and (max-width: 600px) { 
+    .section-about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .content-container-about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: -rem;
+    
+        gap: 1rem;
+    
+        width: 100%;
+    }
+
+    .content-about h4{
+        font-size: 130%;
+    }
+    
+    .content-about p{
+        font-size: 100%;
+    }
+    
+    .content-about{
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        max-width: 100%;
+    }
+
+    .image-about{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-about{
+        margin-top: -1rem;
+        margin-right: 0;
+    }
+
+    .image-about svg{
+        width: 90%;
+        height: 90%;
+    }
+
+    .button-about{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 160px;
+        height: 50px;
+    }
+
+    .button-about a{
+        font-size: 135%;
+    }
+}
+
+@media only screen 
+and (min-device-width: 600px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .section-about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+  
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .content-container-about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: transparent;
+    
+        gap: 1rem;
+    
+        width: 100%;
+    }
+    
+    .content-about{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+        gap: 1rem;
+    }
+
+    .content-about h4{
+        font-size: 240%;
+    }
+    
+    .content-about p{
+        font-size: 140%;
+        font-weight: 500;
+    }
+
+    .button-about a{
+        font-size: 165%;
+    }
+
+    .button-about{
+        background-color: var(--main-text-color);
+        border: none;
+        border-radius: 5px;
+        width: 195px;
+        height: 65px;
+    }
+
+    .image-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .image-about svg{
+        width: 120%;
+        height: 120%;
+    }
+}
+
+@media screen and (max-width: 1000px) 
+and (min-width: 600px) {
+    .section-about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 10%;
+    }
+
+    .content-container-about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: transparent;
+    
+        gap: 1rem;
+    
+        width: 100%;
+    }
+    
+    .content-about{
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        max-width: 100%;
+    }
+
+    .content-about h4{
+        font-size: 240%;
+    }
+    
+    .content-about p{
+        font-size: 150%;
+        font-weight: 500;
+    }
+
+    .button-about a{
+        font-size: 165%;
+    }
+
+    .button-about{
+        background-color: var(--main-text-color);
+        border: none;
+        border-radius: 5px;
+        width: 195px;
+        height: 65px;
+    }
+
+    .image-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .image-about svg{
+        width: 120%;
+        height: 120%;
+    }
+}

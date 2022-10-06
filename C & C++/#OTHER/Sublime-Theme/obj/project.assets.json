@@ -9931,11 +9931,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\filip\\Documents\\GitHub\\main\\C & C++\\#MAIN\\Sublime-Theme\\Sublime-Theme.csproj",
-      "projectName": "Sublime-Theme",
-      "projectPath": "C:\\Users\\filip\\Documents\\GitHub\\main\\C & C++\\#MAIN\\Sublime-Theme\\Sublime-Theme.csproj",
+      "projectUniqueName": "C:\\Users\\filip\\Documents\\GitHub\\main\\C & C++\\#OTHER\\Sublime-Theme\\Sublime-Theme.csproj",
+      "projectName": "Sublime-Theme-Monokai",
+      "projectPath": "C:\\Users\\filip\\Documents\\GitHub\\main\\C & C++\\#OTHER\\Sublime-Theme\\Sublime-Theme.csproj",
       "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\filip\\Documents\\GitHub\\main\\C & C++\\#MAIN\\Sublime-Theme\\obj\\",
+      "outputPath": "C:\\Users\\filip\\Documents\\GitHub\\main\\C & C++\\#OTHER\\Sublime-Theme\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="KNV Media: Social Media Marketing Agency">
+    <meta name="keywords" content="SMMA, Social, Media, Social Media, Social Media Marketing, Social Marketing, Media Marketing, Marketing, TikTok, Instagram, Facebook, Google">
+    <meta name="author" content="KNV Media">
+
+    <link rel="stylesheet" href="./Components/style/1testing.css">
+    <link rel="stylesheet" href="./Components/style/swiper-bundle.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./Components/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Components/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Components/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Components/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./Components/favicon/safari-pinned-tab.svg" color="#6d00ff">
+    <link rel="shortcut icon" href="./Components/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#6d00ff">
+    <meta name="msapplication-config" content="./Components/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#6d00ff">
+
+    <title> Home - KNVMedia</title>
+</head>
+
+<body onload="scrollToPos(); textLoad(); checkForm(); checkTag();">
+
+    <div class="wrapper">
+
+        <div class="swiperWrap">
+
+            <div class="swiper mySwiper"> 
+
+                <div class="swiper-wrapper">
+
+                    <div class="card-swiper card1 swiper-slide"> 1 </div>
+
+                    <div class="card-swiper card2 swiper-slide"> 2 </div>
+
+                    <div class="card-swiper card3 swiper-slide"> 3 </div>
+
+                    <div class="card-swiper card4 swiper-slide"> 4 </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card-container-grid container">
+
+            <div class="card card1"> 1 </div>
+
+            <div class="card card2"> 2 </div>
+
+            <div class="card card3"> 3 </div>
+
+            <div class="card card4"> 4 </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"> </script>
+
+    <script src="./Components/js/gsap.min.js"> </script>
+    <script src="./Components/js/Flip.min.js"> </script>
+
+    <script src="./Components/js/swiper-bundle.min.js"> </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+    </script>
+
+    <script>
+        gsap.registerPlugin(Flip);
+
+        let container = document.querySelector('.container');
+        let cards = document.querySelectorAll('.card');
+    
+        cards.forEach(item => {
+            item.addEventListener('click', function cardClicked(clicked){
+
+                document.querySelector(".swiperWrap").classList.toggle("swiper-active");
+            
+                items = gsap.utils.toArray('.card');
+                let state = Flip.getState(items, {props: "opacity"});
+
+                document.querySelectorAll('.card').forEach(card => {
+
+                    if(card !== item){
+                        if(!card.classList.contains("open")){ card.classList.toggle("closed"); }
+                        else{ card.classList.toggle("closed"); card.classList.toggle("open"); }  
+                    }
+
+                    else{
+                        card.classList.toggle("open");
+                        if(card.classList.contains("closed")){ card.classList.toggle("closed"); }
+                    }
+
+                });
+
+                var closed = document.querySelectorAll('.closed'); if(closed !== null && closed.length > 0){
+                    document.querySelectorAll('.card').forEach(card => {
+                        if(card.classList.contains("open") === false && card.classList.contains("closed") == false && card !== item){ card.classList.toggle("closed"); }
+                    });
+                }
+
+                Flip.from(state, {
+                    duration: .4,
+                    ease: "power1.inOut",
+                    absolute: true,
+                    nested: true,
+                    rotation: true,
+                });
+            });
+        });
+    </script> 
+
+</body>
+</html>

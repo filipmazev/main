@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation">
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/404.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#6d00ff">
+    <link rel="shortcut icon" href="../favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#6d00ff">
+    <meta name="msapplication-config" content="../favicon/browserconfig.xml">
+    <meta name="theme-color" content="#6d00ff">
+
+    <title> 404 - KNVMedia</title>
+</head>
+
+<body onload="textLoad();">
+
+    <canvas id="canvas" width="32" height="32"> </canvas>
+
+    <section class="main-container-404" id="404">
+        
+        <di class="content-404"> 
+
+            <h1 id="text"> </h1>
+            <p>WE CAN'T FIND THE PAGE THAT YOU WERE LOOKING FOR</p>
+            <a class="button-404" href="../../index.html"> RETURN HOME </a>
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"> </script>
+
+    <script type="text/javascript" src="../js/404/blotter.js"> </script>
+    <script type="text/javascript" src="../js/404/rollingDistortMaterial.js"> </script>
+    <script type="text/javascript" src="../js/404/fontfaceonload.js"> </script>
+    <script type="text/javascript" src="../js/404/gradientCanvas.js"> </script>
+
+    <script>    
+        var fontSize = getComputedStyle(document.body).getPropertyValue('--404-size');
+
+        $(window).resize(function(){location.reload();});
+
+        FontFaceOnload("custom-heading", {
+            success: function() {
+                var innerText = document.getElementById('text');
+                var text = new Blotter.Text("404", {
+                    family: "custom-heading",
+                    size: fontSize,
+                    fill: "white",
+                });
+
+                let material = new Blotter.RollingDistortMaterial();
+                material.uniforms.uSineDistortSpread.value = 0.015;
+                material.uniforms.uSineDistortCycleCount.value = 2;
+                material.uniforms.uSineDistortAmplitude.value = 0.01;
+                material.uniforms.uNoiseDistortVolatility.value = 11;
+                material.uniforms.uNoiseDistortAmplitude.value = 0.01;
+                material.uniforms.uRotation.value = 180;
+                material.uniforms.uSpeed.value = 0.08;
+
+                // these all properties u can set on Blotter.js Materials Documentation
+
+                let blotter = new Blotter(material, {
+                    texts: text
+                });
+
+                let scope = blotter.forText(text);
+                scope.appendTo(innerText);
+            },
+            error: function() {},
+            timeout: 5000
+        });
+    </script>
+
+</body>
+</html>

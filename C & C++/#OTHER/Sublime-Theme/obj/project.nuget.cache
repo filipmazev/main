@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iBj4L0Q+DMtP6SAFZmJqLCb35OWwZu5GMpioZ9AwMCTbFCU19L5pUHbM+niLFl3hMASwNI4mxT7PU+VnM1hB6Q==",
+  "dgSpecHash": "DxxevjhA1YL9Ij9f6csSJVgnjnZxDNAg1B1gsVULrzr9Y76orqQ4oRqagFDkl1VgDbu6OMnA9kL5o2+pmLEvCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\filip\\Documents\\GitHub\\main\\C & C++\\#MAIN\\Sublime-Theme\\Sublime-Theme.csproj",
+  "projectFilePath": "C:\\Users\\filip\\Documents\\GitHub\\main\\C & C++\\#OTHER\\Sublime-Theme\\Sublime-Theme.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\filip\\.nuget\\packages\\envdte\\17.0.31902.203\\envdte.17.0.31902.203.nupkg.sha512",
     "C:\\Users\\filip\\.nuget\\packages\\envdte100\\17.0.31902.203\\envdte100.17.0.31902.203.nupkg.sha512",

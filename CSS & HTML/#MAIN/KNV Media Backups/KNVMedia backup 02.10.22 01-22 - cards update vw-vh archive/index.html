@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="KNV Media: Social Media Marketing Agency">
+    <meta name="keywords" content="SMMA, Social, Media, Social Media, Social Media Marketing, Social Marketing, Media Marketing, Marketing, TikTok, Instagram, Facebook, Google">
+    <meta name="author" content="KNV Media">
+
+    <link rel="stylesheet" href="./Components/style/style.css">
+    <link rel="stylesheet" href="./Components/style/nav.css">
+    <link rel="stylesheet" href="./Components/style/footer.css">
+    <link rel="stylesheet" href="./Components/style/section-hero.css">
+    <link rel="stylesheet" href="./Components/style/section-about.css">
+    <link rel="stylesheet" href="./Components/style/section-workings.css">
+    <link rel="stylesheet" href="./Components/style/section-contact.css">
+    <link rel="stylesheet" href="./Components/style/onepage.css">
+    <link rel="stylesheet" href="./Components/style/swiper-bundle.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./Components/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Components/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Components/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Components/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./Components/favicon/safari-pinned-tab.svg" color="#6d00ff">
+    <link rel="shortcut icon" href="./Components/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#6d00ff">
+    <meta name="msapplication-config" content="./Components/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#6d00ff">
+
+    <title> Home - KNVMedia</title>
+</head>
+
+<body onload="scrollToPos(); textLoad(); checkForm(); checkTag(); createSwipe();">
+
+    <div class="h">
+        
+        <div class="logo" id="logo-link" onclick="moveToSection(1);" style="cursor: pointer;">  
+            <svg viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <g id="LOGO-2" serif:id="LOGO 2">
+                    <path id="nav-logo-fill" d="M242.637,680.979c-0,10.694 8.669,19.363 19.363,19.363c7.306,0 15.612,0 22.918,0c5.135,0 10.06,-2.04 13.691,-5.671c3.632,-3.631 5.672,-8.556 5.672,-13.692l-0,-122.417l3.082,-0c8.63,-0 14.178,6.78 15.411,15.411c-0,-0 11.054,75.538 16.07,109.81c1.391,9.51 9.548,16.559 19.159,16.559l22.505,0c5.625,0 10.971,-2.445 14.65,-6.701c3.678,-4.255 5.323,-9.9 4.509,-15.465c-5.304,-36.245 -15.249,-104.203 -15.249,-104.203c-3.082,-20.343 -17.26,-35.137 -36.37,-40.069c28.356,-4.315 34.52,-22.808 36.37,-52.397c-0,-0 7.696,-113.52 10.927,-161.177c0.363,-5.35 -1.51,-10.612 -5.171,-14.53c-3.662,-3.918 -8.785,-6.142 -14.148,-6.142l-22.788,-0c-10.202,-0 -18.654,7.915 -19.322,18.096c-3.089,47.109 -11.142,169.917 -11.142,169.917c-0.616,8.63 -6.781,15.411 -15.411,15.411l-3.082,0l-0,-184.061c-0,-5.136 -2.04,-10.061 -5.672,-13.692c-3.631,-3.631 -8.556,-5.671 -13.691,-5.671l-22.918,-0c-10.694,-0 -19.363,8.669 -19.363,19.363c-0,67.813 -0,294.145 -0,361.958Z" style="fill:#6d00ff; fill-rule:nonzero;"/>
+                    <path id="nav-logo-fill" d="M532.363,294.726c-25.274,0 -45,17.877 -50.548,34.521c0,-0 -1.083,-6.502 -2.235,-13.41c-1.556,-9.336 -9.634,-16.179 -19.1,-16.179c-6.186,-0 -13.281,-0 -19.713,-0c-10.694,-0 -19.363,8.669 -19.363,19.363c0,67.813 0,294.145 0,361.958c0,10.694 8.669,19.363 19.363,19.363c7.306,0 15.612,0 22.918,0c5.135,0 10.06,-2.04 13.692,-5.671c3.631,-3.631 5.671,-8.556 5.671,-13.692l-0,-316.595c-0,-8.631 6.781,-15.411 15.411,-15.411c8.63,-0 15.411,6.78 15.411,15.411l-0,504.576c-0,5.136 -2.04,10.061 -5.671,13.692c-3.632,3.632 -8.557,5.672 -13.692,5.672l-352.164,-0c-10.694,-0 -19.363,-8.67 -19.363,-19.363l0,-737.922c0,-5.135 2.04,-10.06 5.672,-13.691c3.631,-3.632 8.556,-5.672 13.691,-5.672l715.314,0c5.135,0 10.06,2.04 13.691,5.672c3.632,3.631 5.672,8.556 5.672,13.691l-0,737.922c-0,10.693 -8.669,19.363 -19.363,19.363l-62.986,-0c-5.136,-0 -10.061,2.04 -13.692,5.671c-3.632,3.631 -5.672,8.556 -5.672,13.692l0,22.95c0,5.135 2.04,10.06 5.672,13.692c3.631,3.631 8.556,5.671 13.692,5.671l122.867,-0c5.135,0 10.06,-2.04 13.691,-5.671c3.632,-3.632 5.672,-8.557 5.672,-13.692l-0,-861.274c-0,-10.694 -8.669,-19.363 -19.363,-19.363l-835.076,-0c-10.694,0 -19.363,8.669 -19.363,19.363l0,861.274c0,5.135 2.04,10.06 5.672,13.692c3.631,3.631 8.556,5.671 13.691,5.671c81.054,-0 392.635,-0 473.689,-0c5.135,0 10.06,-2.04 13.691,-5.671c3.632,-3.632 5.672,-8.557 5.672,-13.692c-0,-104.118 -0,-592.76 -0,-592.76c-0,-24.041 -13.562,-43.151 -43.151,-43.151Z" style="fill:#6d00ff;fill-rule:nonzero;"/>
+                    <path id="nav-logo-fill" d="M671.062,644.863c-0,0 -13.688,-255.496 -17.512,-326.878c-0.55,-10.277 -9.044,-18.327 -19.335,-18.327l-22.057,-0c-5.445,-0 -10.639,2.292 -14.308,6.315c-3.669,4.024 -5.474,9.406 -4.974,14.828c6.511,70.534 27.414,296.98 33.412,361.958c0.919,9.962 9.277,17.583 19.281,17.583c16.415,0 40.735,0 57.15,0c10.004,0 18.361,-7.621 19.281,-17.583c5.998,-64.978 26.9,-291.424 33.411,-361.958c0.501,-5.422 -1.305,-10.804 -4.974,-14.828c-3.669,-4.023 -8.862,-6.315 -14.307,-6.315l-22.057,-0c-10.292,-0 -18.785,8.05 -19.336,18.327c-3.824,71.382 -17.511,326.878 -17.511,326.878l-6.164,0Z" style="fill:#6d00ff;fill-rule:nonzero;"/>
+                    <path id="nav-logo-fill" d="M719.693,907.47c-0,-10.694 -8.669,-19.364 -19.363,-19.364l-52.372,0c-10.694,0 -19.363,8.67 -19.363,19.364l-0,23.167c-0,10.694 8.669,19.363 19.363,19.363l52.372,-0c10.694,0 19.363,-8.669 19.363,-19.363l-0,-23.167Z" style="fill:#6d00ff;"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="hamburger-on"> 
+            <span class="bars"></span>
+            <span class="bars"></span>
+            <span class="bars"></span>
+        </div>
+
+        <nav class="nav" id="nav">
+            <ul class="nav-links">
+                <div class="nav-link"> <li data-id="#1"> <a onclick="moveToSection(1);" style="cursor: pointer;" href="#1home" data-tag="Navigation-Item-1"> </a> </li> </div> 
+                <div class="nav-link"> <li data-id="#2"> <a onclick="moveToSection(2);" style="cursor: pointer;" href="#2about" data-tag="Navigation-Item-2"> </a> </li> </div>
+                <div class="nav-link"> <li data-id="#3"> <a onclick="moveToSection(3);" style="cursor: pointer;" href="#3workings" data-tag="Navigation-Item-3"> </a> </li> </div> 
+                <div class="nav-link"> <li data-id="#4"> <a onclick="moveToSection(4);" style="cursor: pointer;" href="#4contact" data-tag="Navigation-Item-4"> </a> </li> </div>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="wrapper">
+
+        <div class="main">
+      
+            <section class="page1 section-hero" id="1home">
+                
+                <div class="content-wrapper content-container-hero">
+
+                    <div class="title-container">
+                        <h1 data-tag="Landing-Title"> </h1>
+                    </div>
+
+                    <h3 data-tag="Landing-SubHeader"> </h3>
+
+                    <a id="button-contact-1" data-tag="Landing-Button" class="button-hero" onclick="moveToSection(4);" style="cursor: pointer;" data-link="#4contact"> </a>
+
+                </div>
+
+                <p class="arrow-text bounce-text" data-tag="Landing-Scroll-Message"> </p>
+                <div class="arrow bounce" onclick="moveToSection(2);" style="cursor: pointer"> </div>
+
+            </section>
+        
+            <section class="page2 section-about" id="2about">
+                
+                <div class="content-wrapper content-container-about">
+
+                    <div class="content-about">
+
+                        <h4 data-tag="About-Heading"> </h4>
+                        <p data-tag="About-Paragraph-1"> </p>
+                        <p data-tag="About-Paragraph-2"> </p>
+                        <p data-tag="About-Paragraph-3"> </p>
+
+                        <a id="button-contact-2" data-tag="About-Button" class="button-about" onclick="moveToSection(4);" style="cursor: pointer;" data-link="#4contact"> </a> 
+
+                    </div>
+
+                    <div class="image-about">
+                        <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                            <g id="LOGOS"> <g id="LOGO-2" serif:id="LOGO 2">
+                            <path d="M214.041,701.088c0,11.882 9.633,21.515 21.515,21.515c8.117,-0 17.347,-0 25.464,-0c5.706,-0 11.178,-2.267 15.213,-6.302c4.035,-4.035 6.301,-9.507 6.301,-15.213l0,-136.02l3.425,0c9.589,0 15.753,7.535 17.123,17.124c0,-0 12.283,83.931 17.856,122.011c1.546,10.567 10.609,18.4 21.287,18.4l25.006,-0c6.25,-0 12.191,-2.718 16.277,-7.446c4.087,-4.729 5.916,-11 5.011,-17.184c-5.894,-40.272 -16.944,-115.781 -16.944,-115.781c-3.424,-22.603 -19.178,-39.041 -40.411,-44.521c31.507,-4.794 38.357,-25.342 40.411,-58.219c0,0 8.552,-126.133 12.142,-179.085c0.403,-5.945 -1.678,-11.791 -5.746,-16.145c-4.069,-4.353 -9.761,-6.825 -15.72,-6.825l-25.32,0c-11.336,0 -20.727,8.796 -21.469,20.107c-3.432,52.344 -12.38,188.797 -12.38,188.797c-0.685,9.589 -7.534,17.124 -17.123,17.124l-3.425,-0l0,-204.513c0,-5.706 -2.266,-11.178 -6.301,-15.213c-4.035,-4.035 -9.507,-6.302 -15.213,-6.302l-25.464,0c-11.882,0 -21.515,9.633 -21.515,21.515c0,75.348 0,326.828 0,402.176Z" style="fill:#6d00ff;fill-rule:nonzero;"/>
+                            <path d="M535.959,271.918c-28.082,-0 -50,19.863 -56.164,38.356c-0,-0 -1.204,-7.224 -2.484,-14.899c-1.729,-10.374 -10.704,-17.978 -21.222,-17.978c-6.873,0 -14.757,0 -21.903,0c-11.882,0 -21.515,9.633 -21.515,21.515c0,75.348 0,326.828 0,402.176c0,11.882 9.633,21.515 21.515,21.515c8.117,-0 17.347,-0 25.464,-0c5.706,-0 11.178,-2.267 15.213,-6.302c4.035,-4.035 6.301,-9.507 6.301,-15.213l0,-351.773c0,-9.589 7.535,-17.123 17.124,-17.123c9.589,-0 17.123,7.534 17.123,17.123l-0,560.641c-0,5.706 -2.267,11.178 -6.302,15.213c-4.034,4.035 -9.507,6.302 -15.213,6.302l-391.292,-0c-11.882,-0 -21.515,-9.633 -21.515,-21.515l0,-819.912c0,-5.706 2.267,-11.178 6.302,-15.213c4.034,-4.035 9.507,-6.302 15.213,-6.302l794.792,0c5.706,0 11.179,2.267 15.213,6.302c4.035,4.035 6.302,9.507 6.302,15.213l-0,819.912c-0,11.882 -9.633,21.515 -21.515,21.515l-69.984,-0c-5.706,-0 -11.179,2.266 -15.213,6.301c-4.035,4.035 -6.302,9.507 -6.302,15.213l0,25.5c0,5.706 2.267,11.179 6.302,15.214c4.034,4.034 9.507,6.301 15.213,6.301l136.519,-0c5.706,0 11.178,-2.267 15.213,-6.301c4.034,-4.035 6.301,-9.508 6.301,-15.214l0,-956.97c0,-11.883 -9.632,-21.515 -21.514,-21.515l-927.862,-0c-11.882,0 -21.514,9.632 -21.514,21.515l-0,956.97c-0,5.706 2.267,11.179 6.301,15.214c4.035,4.034 9.507,6.301 15.213,6.301c90.06,-0 436.261,-0 526.32,-0c5.707,0 11.179,-2.267 15.214,-6.301c4.034,-4.035 6.301,-9.508 6.301,-15.214c0,-115.687 0,-658.622 0,-658.622c0,-26.712 -15.068,-47.945 -47.945,-47.945Z" style="fill:#6d00ff;fill-rule:nonzero;"/>
+                            <path d="M690.068,660.959c0,-0 -15.208,-283.884 -19.457,-363.198c-0.611,-11.419 -10.048,-20.364 -21.483,-20.364l-24.509,0c-6.049,0 -11.82,2.548 -15.896,7.018c-4.077,4.47 -6.083,10.45 -5.527,16.474c7.234,78.373 30.459,329.978 37.124,402.177c1.022,11.069 10.307,19.537 21.423,19.537c18.239,-0 45.261,-0 63.5,-0c11.116,-0 20.402,-8.468 21.423,-19.537c6.665,-72.199 29.89,-323.804 37.124,-402.177c0.556,-6.024 -1.45,-12.004 -5.526,-16.474c-4.077,-4.47 -9.847,-7.018 -15.897,-7.018l-24.508,0c-11.435,0 -20.872,8.945 -21.484,20.364c-4.249,79.314 -19.457,363.198 -19.457,363.198l-6.85,-0Z" style="fill:#6d00ff;fill-rule:nonzero;"/>
+                            <path d="M744.103,952.744c0,-11.882 -9.632,-21.515 -21.515,-21.515l-58.19,0c-11.882,0 -21.515,9.633 -21.515,21.515l0,25.741c0,11.883 9.633,21.515 21.515,21.515l58.19,-0c11.883,0 21.515,-9.632 21.515,-21.515l0,-25.741Z" style="fill:#6d00ff;"/></g></g>
+                        </svg>
+                    </div>    
+
+                </div>
+
+            </section>
+
+            <section class="page4 section-workings" id="3workings">
+
+                <div class="content-wrapper content-workings">
+
+                    <h1> <span data-tag="How-It-Works-Title-Line-1"> </span> <br> 
+                        <span data-tag="How-It-Works-Title-Line-2"> </span>
+                    </h1>
+
+                    <p data-tag="How-It-Works-Paragraph-1"> </p>
+
+                    <p> 
+                        <span data-tag="How-It-Works-Paragraph-2-Line-1"> </span> <br> 
+                        <span data-tag="How-It-Works-Paragraph-2-Line-2"> </span> 
+                    </p>
+
+                    <div class="modal" id="modal"> 
+
+                        <div class="modal-success-message">
+
+                            <div class="modal-success-message-tick">
+                                <svg width="100%" height="100%" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                    <path d="M14.089,20.832l9.585,-9.585c0.122,-0.122 0.191,-0.287 0.191,-0.46c-0,-0.173 -0.069,-0.338 -0.191,-0.46c-0.356,-0.356 -0.845,-0.846 -1.201,-1.201c-0.122,-0.122 -0.287,-0.191 -0.46,-0.191c-0.173,0 -0.338,0.069 -0.46,0.191l-8.025,8.025l-3.216,-3.216c-0.122,-0.122 -0.288,-0.19 -0.46,-0.19c-0.173,-0 -0.339,0.068 -0.461,0.19c-0.355,0.356 -0.845,0.845 -1.2,1.201c-0.122,0.122 -0.191,0.288 -0.191,0.46c-0,0.173 0.069,0.338 0.191,0.461c1.195,1.195 3.666,3.666 4.775,4.775c0.31,0.31 0.813,0.31 1.123,0Z" style="fill:white;"/>
+                                </svg>
+                            </div>
+
+                            <p data-tag="ModalSuccessMessage"> </p>
+                        </div>
+
+                        <div class="modal-header"> 
+                            <p class="modal-header-text"> </p>
+                            <button class="modal-close-button" data-close-button> <hr> </button>
+                        </div>
+
+                        <div class="modal-content"> 
+
+                            <div class="modal-order">
+                                <div class="modal-heading2"> 
+                                    <p class="modal-order-p" data-tag="Modal-Message-Top"> </p>
+    
+                                    <button class="edit-button" data-edit-target="#modal">
+                                        <svg width="100%" preserveAspectRatio="xMidYMax slice" viewBox="0 0 30 30" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                            <path d="M3.39,20.843L9.157,26.61C9.227,26.68 9.266,26.776 9.265,26.877C9.263,26.978 9.222,27.075 9.15,27.148C9.139,27.158 9.128,27.169 9.117,27.18C8.834,27.464 8.452,27.626 8.055,27.631C7.843,27.634 7.635,27.592 7.446,27.509L0.923,29.599C0.773,29.648 0.61,29.609 0.5,29.5C0.391,29.39 0.352,29.227 0.401,29.077L2.495,22.543C2.264,21.991 2.381,21.322 2.84,20.863C2.844,20.859 2.848,20.855 2.852,20.85C2.925,20.778 3.022,20.737 3.123,20.735C3.224,20.734 3.32,20.773 3.39,20.843ZM18.929,5.056C18.892,5.019 18.841,4.998 18.788,4.998C18.735,4.998 18.684,5.019 18.647,5.056C17.239,6.464 5.769,17.934 4.361,19.342C4.324,19.379 4.303,19.43 4.303,19.483C4.303,19.536 4.324,19.587 4.361,19.624C5.202,20.465 9.535,24.798 10.376,25.639C10.413,25.676 10.464,25.697 10.517,25.697C10.57,25.697 10.621,25.676 10.658,25.639C12.066,24.231 23.536,12.761 24.944,11.353C24.981,11.316 25.002,11.265 25.002,11.212C25.002,11.159 24.981,11.108 24.944,11.071C24.103,10.23 19.77,5.897 18.929,5.056ZM29.034,7.263C29.815,6.482 29.815,5.216 29.034,4.435C27.999,3.4 26.6,2.001 25.565,0.966C24.784,0.185 23.518,0.185 22.737,0.966C21.494,2.208 19.883,3.82 19.883,3.82L26.18,10.117C26.18,10.117 27.792,8.506 29.034,7.263Z">
+                                        </svg>
+                                    </button>  
+                                </div>
+                                
+                                <div class="card-items modal-items order-items"> </div>
+
+                                <div class="card-items modal-items item-add-mode"> </div>
+
+                                <div class="editModeMessage" data-tag="Edit-Mode-Message"> </div>
+
+                            </div>
+
+                            <form id="contact-form-modal" class="modalForm" onsubmit="orderModal(); return false">
+
+                                <input id="email-modal" type="email" class="input-mail-modal" placeholder="YOUR EMAIL" data-type="email">
+                                <hr class="contact-hr-modal hr-mail-modal modalForm" id="hr-mail-modal"> 
+                                
+                                <div class="modalMessageMail" data-tag="Modal-Message-Mail"> </div>
+
+                                <button id="modal-form-button" class="modal-form-button" formnovalidate type="submit" data-tag="ModalButtonMessage1"> </button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div id="overlay"> </div> <div class="modal-backdrop"> </div> <div class="modal-backdrop modal-backdrop-blur"> </div> <div class="modal-backdrop modal-backdrop-front"> </div> 
+
+                    <div class="swiper mySwiper">
+
+                        <div class="cards-workings">
+
+                            <div class="card-workings card1 compact">  
+                                
+                                <div class="card-hitbox"> </div>
+
+                                <div class="card-banner card-header"> 
+                                    <h3 data-tag="Card-1-Title" class="card-title"> </h3> 
+                                    <button class="card-close-button" onclick="closeCard()"> <hr> </button>
+                                </div>
+                                
+                                <div class="card-center"> 
+                                    <h1 data-tag="Card-1-Bundle-Message"> </h1> 
+                                    <h2 data-tag="Card-1-Open-Heading"> </h2>
+                                    <p data-tag="Card-1-Open-Paragraph"> </p>
+                                </div>
+
+                                <div class="card-content-container">
+                                    <div class="card-items"> </div>
+                                </div>
+
+                                <div class="card-banner card-footer"> <button class="card-add-button" data-modal-target="#modal" onclick="generateModal(1)"> <p class="card-add-button-content"> + </p> </button> </div>
+
+                            </div>
+
+                            <div class="card-workings card2 compact">  
+                                
+                                <div class="card-hitbox"> </div>
+
+                                <div class="card-banner card-header"> 
+                                    <h3 data-tag="Card-2-Title" class="card-title"> </h3> 
+                                    <button class="card-close-button" onclick="closeCard()"> <hr> </button>
+                                </div>
+                                
+                                <div class="card-center"> 
+                                    <h1 data-tag="Card-2-Bundle-Message"> </h1> 
+                                    <h2 data-tag="Card-2-Open-Heading"> </h2>
+                                    <p data-tag="Card-2-Open-Paragraph"> </p>
+                                </div>
+
+                                <div class="card-content-container">
+                                    <div class="card-items"> </div>
+                                </div>
+
+                                <div class="card-banner card-footer"> <button class="card-add-button" data-modal-target="#modal" onclick="generateModal(2)"> <p class="card-add-button-content"> + </p> </button> </div>
+
+                            </div>
+
+                            <div class="card-workings card3 compact">  
+                                
+                                <div class="card-hitbox"> </div>
+
+                                <div class="card-banner card-header"> 
+                                    <h3 data-tag="Card-3-Title" class="card-title"> </h3> 
+                                    <button class="card-close-button" onclick="closeCard()"> <hr> </button>
+                                </div>
+                                
+                                <div class="card-center"> 
+                                    <h1 data-tag="Card-3-Bundle-Message"> </h1> 
+                                    <h2 data-tag="Card-3-Open-Heading"> </h2>
+                                    <p data-tag="Card-3-Open-Paragraph"> </p>
+                                </div>
+
+                                <div class="card-content-container">
+                                    <div class="card-items"> </div>
+                                </div>
+
+                                <div class="card-banner card-footer"> <button class="card-add-button" data-modal-target="#modal" onclick="generateModal(3)"> <p class="card-add-button-content"> + </p> </button> </div>
+
+                            </div>
+
+                            <div class="card-workings card4 compact">  
+                                
+                                <div class="card-hitbox"> </div>
+
+                                <div class="card-banner card-header"> 
+                                    <h3 data-tag="Card-4-Title" class="card-title"> </h3> 
+                                    <button class="card-close-button" onclick="closeCard()"> <hr> </button>
+                                </div>
+                                
+                                <div class="card-center"> 
+                                    <h1 data-tag="Card-4-Bundle-Message"> </h1> 
+                                    <h2 data-tag="Card-4-Open-Heading"> </h2>
+                                    <p data-tag="Card-4-Open-Paragraph"> </p>
+                                </div>
+
+                                <div class="card-content-container">
+                                    <div class="card-items"> </div>
+                                </div>
+
+                                <div class="card-banner card-footer"> <button class="card-add-button" data-modal-target="#modal" onclick="generateModal(4)"> <p class="card-add-button-content"> + </p> </button> </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="page5 section-contact" id="4contact">
+
+                <div class="content-wrapper content-contact">
+                
+                    <div class="content-segment-1-contact">
+
+                        <h1 id="contact_title" data-tag="Contact-Heading-Line-1"> </h1>
+            
+                        <h2 data-tag="Contact-Heading-Line-2"> </h2>
+
+                        <h2 data-tag="Contact-Heading-Line-3"> </h2>
+
+                    </div>
+
+                    <div class="content-segment-2-contact">
+
+                    <form id="contact_form" onsubmit="sendEmail(); return false">
+                        <input id="name" type="text" class="input-field input-name" placeholder="YOUR NAME" data-type="name">
+                        <hr class="contact-hr hr-name" id="hr-name"> 
+                        <input id="email" type="email" class="input-field input-mail" placeholder="YOUR EMAIL" data-type="email">
+                        <hr class="contact-hr hr-mail" id="hr-mail"> 
+                        <input id="subject" type="text" class="input-field input-subject" placeholder="SUBJECT" data-type="subject">
+                        <hr class="contact-hr hr-subject" id="hr-subject"> 
+                        <textarea id="message" type="text" class="input-field input-message" placeholder="MESSAGE" data-type="message"></textarea>
+                        <hr class="contact-hr hr-message" id="hr-message"> 
+                        <button id="contact_button" class="contact_button" formnovalidate type="submit" data-tag="ContactButtonMessage1"> </button>
+                    </form>
+
+                    </div>
+                
+                </div>
+
+            </section>
+        
+            <section class="page3" id="footer">
+
+                    <footer>
+
+                        <div class="footer-content">
+                
+                            <div class="footer-section">
+                                <div class="footer-section-title" data-tag="Footer-Segment-1-Title"> </div>
+                                
+                                <ul> 
+                                    <li> <a id="footer-link-1" onclick="moveToSection(1);" style="cursor: pointer;" data-tag="Footer-Segment-1-Link-1" data-link="#1home"> </a> </li>
+                                    <li> <a id="footer-link-2" onclick="moveToSection(2);" style="cursor: pointer;" data-tag="Footer-Segment-1-Link-2" data-link="#2about"> </a> </li>
+                                    <li> <a id="footer-link-3" onclick="moveToSection(3);" style="cursor: pointer;" data-tag="Footer-Segment-1-Link-3" data-link="#3workings"> </a> </li>
+                                    <li> <a id="footer-link-4" onclick="moveToSection(4);" style="cursor: pointer;" data-tag="Footer-Segment-1-Link-4" data-link="#4contact"> </a> </li>
+                                </ul>
+                            </div>
+                
+                            <div class="footer-section">
+                                <div class="footer-section-title" data-tag="Footer-Segment-2-Title"> </div>
+                                
+                                <ul> 
+                                    <li> <a id="Footer2Link1" href="#" data-tag="Footer-Segment-2-Link-1"> </a> </li>
+                                </ul>
+                            </div>
+                
+                            <div class="footer-section">
+                                <div class="footer-section-title" data-tag="Footer-Segment-3-Title"> </div>
+                                
+                                <ul> 
+                                    <li> <a id="Footer3Link1" href="#" target="_blank" data-tag="Footer-Segment-3-Link-1"> </a> </li>
+                                    <li> <a id="Footer3Link2" href="#" target="_blank" data-tag="Footer-Segment-3-Link-2"> </a> </li>
+                                    <li> <a id="Footer3Link3" href="#" target="_blank" data-tag="Footer-Segment-3-Link-3"> </a> </li>
+                                </ul>
+                            </div>
+                
+                            <div class="footer-section">
+                                <div class="footer-section-title" data-tag="Footer-Segment-4-Title"> </div>
+                                
+                                <ul> 
+                                    <li> <a id="Footer4Link1" href="#" data-tag="Footer-Segment-4-Link-1"> </a> </li>
+                                    <li> <a id="Footer4Link2" href="#" data-tag="Footer-Segment-4-Link-2"> </a> </li>
+                                    <li> <a id="Footer4Link3" href="#" data-tag="Footer-Segment-4-Link-3"> </a> </li>
+                                </ul>
+                            </div>
+                
+                        </div>
+                
+                        <hr id="footer-hr">
+                
+                        <div class="copyright"> <font style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"> © </font> 2022 KNVMedia. All rights reserved. </div>
+                
+                    </footer>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"> </script>
+
+    <script type="text/javascript" src="./Components/js/nav.js"> </script>
+    <script type="text/javascript" src="./Components/js/gradient.js"> </script>
+    <script type="text/javascript" src="./Components/js/smtp.js"> </script>
+    <script type="text/javascript" src="./Components/js/contact.js"> </script>
+
+    <script src="./Components/js/onepage-config.js"> </script>
+    <script src="./Components/js/loader.js"> </script>
+
+    <script src="./Components/js/info-more.js"> </script>
+
+    <script src="./Components/js/gsap.min.js"> </script>
+    <script src="./Components/js/Flip.min.js"> </script>
+    <script src="./Components/js/swiper-bundle.min.js"> </script>
+    <script src="./Components/js/cards.js"> </script>
+
+    <script> 
+        function moveToSection(index){ if(document.documentElement.clientWidth >= maxWidth) { $(".main").moveTo(index); window.location.hash = "#" + index; } } 
+        function scrollToTop(){ window.scrollTo(0,0); }
+        function checkTag(){ if(window.location.hash === "#null"){ window.location.hash = "" } else return; }
+
+        var hasScrolled = 0; var maxWidth = 1450;
+        if(document.documentElement.clientWidth < maxWidth) {  
+        var MobileLinks=document.querySelectorAll('[data-link]');
+        for (var index in MobileLinks){ if(MobileLinks.hasOwnProperty(index)){
+        MobileLinks[index].setAttribute("href", MobileLinks[index].getAttribute('data-link')) } }
+        document.getElementById("logo-link").setAttribute("onclick","scrollToTop()") }
+
+        setInterval(function() { 
+        if(document.documentElement.clientWidth >= maxWidth) {  
+        if(window.location.hash != "#1" && hasScrolled === 0 && window.location.hash != "" && window.location.hash != "#0"){ hasScrolled = 1;  
+        document.querySelector('.arrow').classList.add('hide-arrow'); 
+        document.querySelector('.arrow-text').classList.add('hide-arrow'); }
+        const remover = document.querySelectorAll('.reached'); 
+        remover.forEach(elem => { elem.classList.remove("reached"); });
+        const element = document.querySelector('[data-id="' + window.location.hash + '"]'); 
+        if(!element.classList.contains("reached")){ element.classList.toggle("reached"); } } }, 100); 
+
+        var ww = $(window).width();
+        var limit = maxWidth;
+
+        const form = document.getElementById('contact_form');
+        function saveForm(){ if (typeof(sessionStorage) !='undefined'){ Array.from(form.elements).forEach(element => { 
+        if(!element.classList.contains('contact_button')){ sessionStorage.setItem(element.getAttribute('data-type'), element.value);} });
+        if(document.getElementById("contact_form").classList.contains("form-submited")){ sessionStorage.setItem('form-submited', 'true'); } } }
+        function checkForm(){ if (typeof(sessionStorage) !='undefined'){ Array.from(form.elements).forEach(element => { 
+        if(!element.classList.contains('contact_button')){ element.value = sessionStorage.getItem(element.getAttribute('data-type')); } }); 
+        if(sessionStorage.getItem('form-submited') === 'true'){ sendEmail(); } sessionStorage.clear(); } }
+
+        function refresh() { saveForm(); 
+        ww = $(window).width(); var w = ww<limit ? (location.reload(true)) : ( ww>limit ? (location.reload(true)) : ww=limit ); } var tOut;
+        $(window).resize(function() {
+            var resW = $(window).width(); clearTimeout(tOut);
+            if ( (ww>limit && resW<limit) || (ww<limit && resW>limit) ) {      
+            if (typeof(sessionStorage) !='undefined'){ sessionStorage.setItem('scrollPosition', window.location.hash.replace('#', '')); }
+            tOut = setTimeout(refresh, 10); }
+        });
+
+        function scrollToPos(){ 
+        if (typeof(sessionStorage) !='undefined'){ if(document.documentElement.clientWidth < maxWidth){ 
+        var cnt = 0; $(document).ready(function () { $('section').each(function () { cnt++; var i = $(this).attr('id');
+        if(cnt == sessionStorage.getItem('scrollPosition')){ window.location.hash = i; return; } }); }); 
+        window.location.hash = "#" + sessionStorage.getItem('scrollPosition'); } } }
+
+        function regEx(str, stringBefore, stringAfter){ var exp = new RegExp(`(?<=${stringBefore})(.*)(?=${stringAfter})`, "g"); 
+        var match = str.match(exp); if(match != null){ return match.toString(); } else { return null; } }
+        function regExCounter(str, stringBeforeStart, enumerator, stringBeforeEnd, stringAfter){ var count=0;
+        while(regEx(str, stringBeforeStart + (enumerator++) + stringBeforeEnd, stringAfter) != null){ ++count; } return (count <= 0 ? 0 : (count)); };
+
+        var cardOptionsArray = new Array(); var cardOptionsConfiguration = new Array(); var generatedDivsArray = new Array(); 
+        var cardOptionsExtrasConfig = new Array(); var cardOptionsExtras = new Array(); var CardsCount = 0;
+
+        function initCards(LngObject){ var str = JSON.stringify(LngObject);
+        CardsCount = regExCounter(str, '"Card-', 1, '', '-Title":"'); var CardBundleOptionCount = regExCounter(str, '"CardBundleOption', 0, '":"', '",');
+        cardOptionsExtrasConfig = LngObject.CardBundleOptionExtras.split(",");
+        for(var i=0; i<CardBundleOptionCount; i++){ var cardOption = regEx(str, '"CardBundleOption' + i + '":"', '",'); 
+        if(cardOption != null){ cardOptionsArray.push((cardOption.substring(0, cardOption.indexOf('"')))); } 
+        if(i+1 <= CardsCount){ var options = regEx(str, '"Card' + (i+1) + 'OptionsList":"', '",'); 
+        if(options != null){ cardOptionsConfiguration.push((options.substring(0, options.indexOf('"')))); } } } 
+
+        for(var i=0; i<CardsCount; i++){ var divCreator = ''; var cardOptionsConfigurationSplit = cardOptionsConfiguration[i].toString().split(","); 
+        for(var j=0; j<cardOptionsConfigurationSplit.length; j++){ var optionType = "bundle-option"; 
+        for(var k=0; k<cardOptionsExtrasConfig.length; k++){ if((cardOptionsConfigurationSplit[j] === cardOptionsExtrasConfig[k])){ optionType = "extra-option"; 
+        if((cardOptionsExtras.includes(cardOptionsArray[cardOptionsConfigurationSplit[j]]) === false)){ cardOptionsExtras.push(cardOptionsArray[cardOptionsConfigurationSplit[j]]); } break; } }
+        divCreator += '<div class="card-item ' + optionType + '"> <p> ' + cardOptionsArray[cardOptionsConfigurationSplit[j]] + ' </p> <div class="item-remove"> <hr> </div> </div>\n'; }
+        document.querySelector('.card' + (i+1) + ' .card-content-container .card-items').innerHTML = divCreator; generatedDivsArray.push(divCreator) } }
+    
+        function createSwipe(){ 
+        var swiperContainer = document.querySelector(".mySwiper"); var swiperWrapper = document.querySelector(".cards-workings"); var swiperSlides = document.querySelectorAll(".card-workings");
+        if(document.documentElement.clientWidth < maxWidth) { if(swiperContainer !== null){ if(swiperContainer.querySelector(".swiper") === null){ swiperContainer.classList.add("swiper"); }; }
+        if(swiperWrapper !== null){ if(swiperWrapper.querySelector(".swiper-wrapper") === null){ swiperWrapper.classList.add("swiper-wrapper"); }; }
+        if(swiperSlides !== null){ swiperSlides.forEach(function swiperSlidesAdd(item){ if(item.querySelector(".swiper-slide") === null){ item.classList.add("swiper-slide"); } }); }
+        var swiper = new Swiper(".mySwiper", { effect: "cards", grabCursor: true, });  } 
+        else{ if(swiperContainer !== null){ if(swiperContainer.querySelector(".swiper") === null){ swiperContainer.classList.remove("swiper"); }; }
+        if(swiperWrapper !== null){ if(swiperWrapper.querySelector(".swiper-wrapper") === null){ swiperWrapper.classList.remove("swiper-wrapper"); }; }
+        if(swiperSlides !== null){ swiperSlides.forEach(function swiperSlidesAdd(item){ if(item.querySelector(".swiper-slide") === null){ item.classList.remove("swiper-slide"); } }); } } }
+    </script>
+
+    <script>
+        var MySecureToken; var ContactSendTo; var ContactDefaultSubject;
+        var ContactField1Placeholder; var ContactField2Placeholder; var ContactField3Placeholder; var ContactField4Placeholder;
+        var ContactButtonMessage1 = "SEND"; var ContactButtonMessage2 = "SENT"; var CardOrderMessage = "ORDER";
+        var ModalButtonMessage1 = "ORDER"; var ModalButtonMessage2 = "✓"; var ModalOrderMessageStart = "A client has requested the following services: ";
+
+        function InteractionTranslator(LngObject){ 
+            MySecureToken = LngObject.SecureToken; ContactDefaultSubject = LngObject.ContactDefaultSubject; ContactSendTo = LngObject.ContactSendTo;
+            ContactButtonMessage1 = LngObject.ContactButtonMessage1; ContactButtonMessage2 = LngObject.ContactButtonMessage2; CardOrderMessage = LngObject.CardOrderMessage;
+            ModalButtonMessage1 = LngObject.ModalButtonMessage1; ModalButtonMessage2 = LngObject.ModalButtonMessage2; ModalOrderMessageStart = LngObject.ModalOrderMessageStart;
+
+            document.getElementById('name').placeholder = LngObject.ContactField1Placeholder;
+            document.getElementById('email').placeholder = LngObject.ContactField2Placeholder; 
+            document.getElementById('subject').placeholder = LngObject.ContactField3Placeholder 
+            document.getElementById('message').placeholder = LngObject.ContactField4Placeholder;
+            document.getElementById('Footer2Link1').setAttribute("href", LngObject.FooterSegment2Link1Direct);
+            document.getElementById('Footer3Link1').setAttribute("href", LngObject.FooterSegment3Link1Direct);
+            document.getElementById('Footer3Link2').setAttribute("href", LngObject.FooterSegment3Link2Direct);
+            document.getElementById('Footer3Link3').setAttribute("href", LngObject.FooterSegment3Link3Direct);
+            document.getElementById('Footer4Link1').setAttribute("href", LngObject.FooterSegment4Link1Direct);
+            document.getElementById('Footer4Link2').setAttribute("href", LngObject.FooterSegment4Link2Direct);
+            document.getElementById('Footer4Link3').setAttribute("href", LngObject.FooterSegment4Link3Direct);
+        }
+    </script>
+
+</body>
+</html>

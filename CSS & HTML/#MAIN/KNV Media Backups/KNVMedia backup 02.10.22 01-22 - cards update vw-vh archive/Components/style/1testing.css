@@ -1,0 +1,168 @@
+:root{
+    --workings-text-color: white;
+
+    --section-workings-bg-color-gr-stop-1: black;
+    --section-workings-bg-color-gr-stop-2: #070013;
+    --section-workings-bg-color-gr-stop-3: #0d0020;
+    --section-workings-bg-color-gr-stop-4: #1a003e;
+    --section-workings-bg-color-gr-stop-5: #290060;
+
+    --modal-accent-color: #6d00ff;
+    --modal-accent-color-2: rgb(88, 0, 202);
+    --card-workings-width: 13.21vw;
+    --card-workings-height: 30vh;
+    --cards-gap: 2.3vw;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    color: var(--workings-text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 7rem;
+
+    height: 100vh;
+
+    padding-left: 20%;
+    padding-right: 20%;
+
+    background: -webkit-linear-gradient(top, rgb(0,0,0), rgb(0,0,0), #6d00ff);
+
+    overflow: hidden;
+}
+
+.swiper{
+    width: var(--card-workings-width);
+    height: var(--card-workings-height);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: var(--cards-gap);
+
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.swiperWrap{
+    display: none;
+    position: absolute;
+    transform: translateX(23.333vw) translateY(1.5vh);
+    z-index: 9;
+    overflow: visible !important;
+}
+
+.card{
+    grid-row: 1;
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    transform: rotate(0deg);
+
+    justify-content: space-between;
+
+    width: var(--card-workings-width);
+    height: var(--card-workings-height);
+
+    border: none;
+    border-radius: 1.5vh;
+
+    color: var(--main-text-color);
+    background-color: red;
+
+    z-index: 0;
+
+    cursor: pointer;
+    pointer-events: fill;
+}
+
+.card-swiper{
+    grid-row: 1;
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    transform: rotate(0deg);
+
+    justify-content: space-between;
+
+    width: var(--card-workings-width);
+    height: var(--card-workings-height);
+
+    border: none;
+    border-radius: 1.5vh;
+
+    color: var(--main-text-color);
+    background-color: red;
+
+    z-index: 0;
+
+    cursor: pointer;
+    pointer-events: fill;
+}
+
+.card1{
+    background-color: red;
+    grid-column: 1;
+}
+
+.card2{
+    background-color: purple;
+    grid-column: 2;
+}
+
+.card3{
+    background-color: cyan;
+    grid-column: 3;
+}
+
+.card4{
+    background-color: orange;
+    grid-column: 4;
+}
+
+.open{
+    width: calc(calc(var(--card-workings-width) * 3));
+    grid-column: 1 !important;
+
+    z-index: 0;
+}
+
+.closed{
+    grid-column: 4 !important;
+    opacity: 0;
+}
+
+.card1.closed{
+    z-index: 4;
+}
+
+.card2.closed{
+    z-index: 3;
+}
+
+.card3.closed{
+    z-index: 2;
+}
+
+.card4.closed{
+    z-index: 1;
+}
+
+.swiperWrap.swiper-active{
+    display: block;
+}

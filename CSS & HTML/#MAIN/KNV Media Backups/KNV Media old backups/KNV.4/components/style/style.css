@@ -1,0 +1,136 @@
+:root{
+	--background-color: #51238f;
+    --header-color: rgb(251, 251, 251);
+    --button-color: white;
+    
+	--text-color: black;
+    --secondary-text-color: #e2ccff;
+    --hr-color: rgb(225, 225, 225);
+
+    --pop-up-message-color: #0071e3;
+    --svg-color: #f9f9f9;
+
+    --select-text-color: #f9f9f9;
+    --select-bg-color: #282828;
+}
+
+/*
+@media (prefers-color-scheme: dark){
+	:root{
+		--background-color: rgb(10, 10, 10);
+        --header-color: rgb(4, 4, 4);
+        --button-color: rgb(5, 5, 5);
+
+		--text-color: white;
+		--secondary-text-color: rgb(210, 210, 210);
+        --hr-color: rgb(57, 57, 57);
+
+        --pop-up-message-color: #0071e3;
+        --svg-color: rgb(10, 10, 10);
+
+        --select-text-color: #282828;
+        --select-bg-color: #f9f9f9;
+    }
+}*/
+
+@font-face {
+    src: url(../font/regular.ttf);
+    font-family: custom-regular;
+}
+
+@font-face {
+    src: url(../font/bold.ttf);
+    font-family: custom-bold;
+}
+
+@font-face {
+    src: url(../font/thin.ttf);
+    font-family: custom-thin;
+}
+
+@font-face {
+    src: url(../font/heading.ttf);
+    font-family: custom-heading;
+}
+
+*{
+    font-family:  custom-font;
+    letter-spacing: .1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+body::-webkit-scrollbar{
+	width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track{
+	background: var(--background-color);
+}
+
+body::-webkit-scrollbar-thumb{
+	background: var(--secondary-text-color);
+	border-radius: 15rem;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+	background: var(--text-color);
+}
+
+::-moz-selection { 
+    color: var(--select-text-color);
+    background: var(--select-bg-color);
+}
+  
+::selection {
+    color: var(--select-text-color);
+    background: var(--select-bg-color);
+}
+
+*{
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: transparent;
+
+    -webkit-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+section{
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px) {    
+    body{
+        background: linear-gradient(180deg, #6D00FF 0%, #eadaff 20%, white 50%, white 90%);
+    
+        -webkit-transition: 0.5s ease;
+        -ms-transition: 0.5s ease;
+        transition: 0.5s ease;
+    }
+
+    hr{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+        
+    .lock-scroll {
+        overflow: hidden !important;
+    }
+
+} 
+
+@media only screen 
+and (min-device-width: 600px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}

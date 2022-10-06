@@ -1,0 +1,74 @@
+{
+	"SecureToken" : "709e054f-54fa-4115-933d-a6d7c552a45e",
+
+	"Navigation-Item-1" : "HOME",
+	"Navigation-Item-2" : "ABOUT",
+	"Navigation-Item-3" : "HOW IT WORKS",
+	"Navigation-Item-4" : "CONTACT",
+
+	"Landing-Title" : "KNV HELPS YOUR BUISNESS SCALE TO 6 & 7 FIGURES",
+	"Landing-SubHeader" : "WITH DIGITAL MARKETING",
+	"Landing-Button" : "CONTACT NOW",
+	"Landing-Scroll-Message" : "scroll down",
+
+	"About-Heading" : "KNV, meaning Kristijan and Viktor, is a social media marketing agency (SMMA).",
+	"About-Paragraph-1" : "We are young and ambitious enterprenurs who want to make a change in the Digtial Marketing area. We want to help other like-minded individuals expand their reach online and scale their buisness.",
+	"About-Paragraph-2" : "Kristijan Sotirovski - Digital Marketing (Social Media, SEO, PPC, Affiliate Marketing), George Mason University (GMU), Google certificate for Digital Marketing.",
+	"About-Paragraph-3" : "Viktor Trajkovski - Graphic Design (Logo Design, Web Design, Motion Graphics), Music Producer, Content Creator, European University Skopje, Macedonia, Google certificate for Digital Marketing.",
+	"About-Button" : "CONTACT NOW",
+
+	"How-It-Works-Title-Line-1" : "YOU GIVE US AN IDEA. WE CREATE A STRATEGY.",
+	"How-It-Works-Title-Line-2" : "WE CREATE A DESIGN. YOU CREATE REVENUE.",
+	"How-It-Works-Paragraph-1" : "We deliver creative content that resonates with your customers.",
+	"How-It-Works-Paragraph-2-Line-1" : "Our service uses various social media platforms to attract more customers",
+	"How-It-Works-Paragraph-2-Line-2" : "to your profile, product or business.",
+
+	"How-It-Works-Card-1-Title" : "FACEBOOK",
+	"How-It-Works-Card-1-Content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit porro omnis ducimus sit.",
+	"How-It-Works-Card-2-Title" : "INSTAGRAM",
+	"How-It-Works-Card-2-Content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit porro omnis ducimus sit.",
+	"How-It-Works-Card-3-Title" : "GOOGLE",
+	"How-It-Works-Card-3-Content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit porro omnis ducimus sit.",
+	"How-It-Works-Card-4-Title" : "TIKTOK",
+	"How-It-Works-Card-4-Content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit porro omnis ducimus sit.",
+
+	"Contact-Heading-Line-1" : "LET'S GET TO WORK",
+	"Contact-Heading-Line-2" : "TELL US YOUR EXPECTATIONS!",
+	"Contact-Heading-Line-3" : "LET'S GET TO KNOW EACH OTHER AND MAKE A STRATEGY",
+	
+	"ContactFiled1Placeholder": "YOUR NAME",
+	"ContactFiled2Placeholder": "YOUR EMAIL",
+	"ContactFiled3Placeholder": "SUBJECT",
+	"ContactFiled4Placeholder": "MESSAGE",
+	"ContactButtonMessage1" : "SEND",
+	"ContactButtonMessage2" : "SENT",
+
+	"ContactSendTo" : "contact@knvmedia.com",
+	"ContactDefaultSubject" : "Work Inquiry",
+
+	"Footer-Segment-1-Title" : "EXPLORE",
+	"Footer-Segment-1-Link-1" : "HOME",
+	"Footer-Segment-1-Link-2" : "ABOUT",
+	"Footer-Segment-1-Link-3" : "HOW IT WORKS",
+	"Footer-Segment-1-Link-4" : "CONTACT",
+
+	"Footer-Segment-2-Title" : "PORTFOLIO",
+	"Footer-Segment-2-Link-1" : "OUR CLIENTS",
+	"FooterSegment2Link1Direct" : "#",
+
+	"Footer-Segment-3-Title" : "FOLLOW",
+	"Footer-Segment-3-Link-1" : "INSTAGRAM",
+	"FooterSegment3Link1Direct" : "https://www.instagram.com/",
+	"Footer-Segment-3-Link-2" : "FACEBOOK",
+	"FooterSegment3Link2Direct" : "https://www.facebook.com/",
+	"Footer-Segment-3-Link-3" : "LINKEDIN",
+	"FooterSegment3Link3Direct" : "https://www.linkedin.com/",
+	
+	"Footer-Segment-4-Title" : "GET IN TOUCH",
+	"Footer-Segment-4-Link-1" : "CONTACT@KNVMEDIA.COM",
+	"FooterSegment4Link1Direct" : "mailto: contact@knvmedia.com",
+	"Footer-Segment-4-Link-2" : "KRISTIJAN@KNVMEDIA.COM",
+	"FooterSegment4Link2Direct" : "mailto: kristijan@knvmedia.com",
+	"Footer-Segment-4-Link-3" : "VIKTOR@KNVMEDIA.COM ",
+	"FooterSegment4Link3Direct" : "mailto: viktor@knvmedia.com"
+}

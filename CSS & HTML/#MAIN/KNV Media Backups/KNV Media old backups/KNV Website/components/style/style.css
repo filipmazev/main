@@ -1,0 +1,110 @@
+:root{
+	--background-color: #51238f;
+    --header-color: rgb(251, 251, 251);
+    --button-color: white;
+    
+	--text-color: black;
+    --secondary-text-color: #e2ccff;
+    --hr-color: rgb(225, 225, 225);
+
+    --pop-up-message-color: #0071e3;
+    --svg-color: #f9f9f9;
+
+    --select-text-color: #f9f9f9;
+    --select-bg-color: #282828;
+}
+
+@font-face {
+    src: url(../font/regular.ttf);
+    font-family: custom-regular;
+}
+
+@font-face {
+    src: url(../font/bold.ttf);
+    font-family: custom-bold;
+}
+
+@font-face {
+    src: url(../font/thin.ttf);
+    font-family: custom-thin;
+}
+
+@font-face {
+    src: url(../font/heading.ttf);
+    font-family: custom-heading;
+}
+
+*{
+    font-family:  custom-font;
+    letter-spacing: .1rem;
+}
+
+html{
+    text-rendering: optimizeLegibility;
+}
+
+::-webkit-scrollbar{
+	width: 0.3rem;
+}
+
+::-webkit-scrollbar-track{
+	background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb{
+	background: var(--secondary-text-color);
+	border-radius: 15rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: var(--text-color);
+}
+
+::-moz-selection { 
+    color: var(--select-text-color);
+    background: var(--select-bg-color);
+}
+  
+::selection {
+    color: var(--select-text-color);
+    background: var(--select-bg-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.scrollMajicFix{top:0 !important}
+
+.section, .scrollTo {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {    
+    hr{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+        
+    .lock-scroll {
+        overflow: hidden !important;
+    }
+
+} 
+
+@media only screen 
+and (min-device-width: 600px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
