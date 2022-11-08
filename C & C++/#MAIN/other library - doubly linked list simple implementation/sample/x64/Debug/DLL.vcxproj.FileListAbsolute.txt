@@ -1,1 +1,2 @@
 C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\other library - doubly linked list simple implementation\DLL\x64\Debug\DLL.exe
+C:\Users\filip\Documents\GitHub\main\C & C++\#MAIN\other library - doubly linked list simple implementation\sample\x64\Debug\DLL.exe
