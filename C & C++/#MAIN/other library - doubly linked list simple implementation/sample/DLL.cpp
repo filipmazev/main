@@ -22,6 +22,7 @@ int main()
     operator <<  | friend std::ostream &operator << (std::ostream &input, DLL<TYPE> list); | prints every element in list
     push_back()  | set the a new value to the tail of the list (append a node at the end of a list)
     push_front() | set the a new value to the head of the list (append a node at the begging of a list)
+    push_after() | push_after(TYPE obj, TYPE after), create a new node with a certain value after a give value
     pop_back()   | removes the last node of the list
     pop_front()  | removes the first node of the list
     remove()     | remove(TYPE obj), remove a node with a specific value

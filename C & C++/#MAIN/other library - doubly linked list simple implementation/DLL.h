@@ -23,7 +23,6 @@ namespace std
 			DLLNode<TYPE>* succ{ nullptr };
 			DLLNode<TYPE>* prev{ nullptr };
 
-			template<typename TYPE> friend class DLL;
 			DLLNode() {};
 
 			explicit DLLNode(TYPE value, DLLNode<TYPE>* prev, DLLNode<TYPE>* succ) {
@@ -49,6 +48,11 @@ namespace std
 				if (this->head == nullptr) { push_back(obj); return; }
 				auto* insert = new DLLNode<TYPE>(obj, this->tail, nullptr);
 				this->tail->succ = insert; this->tail = insert;
+			}
+
+			void push_after(TYPE obj, TYPE after) {
+				DLLNode<TYPE>* temp = this->find(after);
+				auto* insert = new DLLNode<TYPE>(obj, temp, temp->succ); temp->succ = insert;
 			}
 
 			auto pop_back() noexcept {
