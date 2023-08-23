@@ -98,7 +98,7 @@ public:
     void setSugarLevel() override { 
         int sugar; std::cout << "Choose sugar level [0-3]: "; 
         std::cin >> sugar;  while (std::cin.fail()) { type_error(); std::cin >> sugar; }
-        this->sugar_level = sugar; 
+        this->sugar_level = sugar > MAX_SUGAR ? MAX_SUGAR : (sugar < 0 ? 0 : sugar); 
     }
 
     size_t getSugarLevel() { return this->sugar_level; }
