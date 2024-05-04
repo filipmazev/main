@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "2A/4HSiNcILxm63szWEn+/io2LMIIP09bZZKwurmVkYWFRJPLkp1TSq4LW6z8a2YRIeGAtgMx9ZNLRsOU2G4uA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\filip\\Documents\\Github\\main\\Other\\Movies.Core\\Movies.Core.Domains\\Movies.Core.Domains.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://192.168.45.89:8081/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

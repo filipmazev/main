@@ -1,0 +1,15 @@
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\bin\Debug\net8.0\Movies.Core.Infrastructure.deps.json
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\bin\Debug\net8.0\Movies.Core.Infrastructure.dll
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\bin\Debug\net8.0\Movies.Core.Infrastructure.pdb
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\Movies.Core.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\Movies.Core.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\Movies.Core.Infrastructure.AssemblyInfo.cs
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\Movies.Core.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\Movies.Core.Infrastructure.sourcelink.json
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\Movies.Core.Infrastructure.dll
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\refint\Movies.Core.Infrastructure.dll
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\Movies.Core.Infrastructure.pdb
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\ref\Movies.Core.Infrastructure.dll
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\bin\Debug\net8.0\Movies.Core.Infrastructure.runtimeconfig.json
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\Movies.Core.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\filip\Documents\Github\main\Other\Movies.Core\Movies.Core.Infrastructure\obj\Debug\net8.0\Movies.Core.Infrastructure.genruntimeconfig.cache

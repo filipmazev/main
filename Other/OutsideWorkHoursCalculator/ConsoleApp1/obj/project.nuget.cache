@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "uosl7UQK4VUt/fHMYNfuFOOplz6YAB6WIZbofTioaMDVEm6avxVePmseaQAmcNBzxetuI/TU7BZgiohfbbbRLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\filip\\Documents\\Github\\main\\Other\\OutsideWorkHoursCalculator\\ConsoleApp1\\OutsideWorkHoursCalculator.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://192.168.45.89:8081/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

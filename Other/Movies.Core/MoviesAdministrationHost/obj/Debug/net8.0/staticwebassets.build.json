@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "am+ExoMSynsQVA62KdEr+rfmP46e/G9xJLLBoj1pfuE=",
+  "Source": "MoviesAdministrationHost",
+  "BasePath": "_content/MoviesAdministrationHost",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

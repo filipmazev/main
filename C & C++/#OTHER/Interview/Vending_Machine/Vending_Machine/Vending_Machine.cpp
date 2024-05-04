@@ -196,7 +196,8 @@ int main()
         int n; std::cout << std::endl << "Choose drink: "; std::cin >> n;  while (std::cin.fail()) { type_error(); std::cin >> n; }
         try {
             auto& drink = machine[n];
-            if (drink != nullptr) { drink->print(); break; }
+            if (drink != nullptr) {
+                system("cls"); drink->print(); break; }
         } catch (const std::out_of_range& exception) {
             std::cout << "Error: " << exception.what() << std::endl;
         }
